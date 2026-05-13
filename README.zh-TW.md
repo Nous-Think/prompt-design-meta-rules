@@ -1,4 +1,4 @@
-> **Language / 語言**: [English](README.md) | [繁體中文](README.zh-TW.md)
+> **ReadMe / 請閱讀**: [English](README.md) | [繁體中文](README.zh-TW.md)
 
 > **Prompt / 提示詞**: [English](en-US/meta-rules.md) | [繁體中文](zh-TW/元規則.md)
 >
