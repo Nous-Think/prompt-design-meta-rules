@@ -1,3 +1,3 @@
-> **Language / 語言**: [English](README.md) | 繁體中文
+> **Language / 語言**: English | [繁體中文](README.zh-TW.md)
 >
 > Temp
