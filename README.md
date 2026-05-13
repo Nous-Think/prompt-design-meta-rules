@@ -1,2 +1,3 @@
-# prompt-design-meta-rules
-Meta Rules for prompt engineering / 提示詞設計元規則
+> **Language / 語言**: [English](README.md) | 繁體中文
+>
+> Temp
