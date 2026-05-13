@@ -1,6 +1,10 @@
 > **Language / 語言**: [English](README.md) | [繁體中文](README.zh-TW.md)
 
-> **Prompt / 提示詞**: [English](/en/meta-rules.md) | [繁體中文](zh-TW/元規則.md)
+> **Prompt / 提示詞**: [English](en-US/meta-rules.md) | [繁體中文](zh-TW/元規則.md)
+>
+> **提示詞設計備忘錄**: [中文](zh-TW/提示詞設計備忘錄.md) | [English](en-US/prompt-design-memorandum.md)
+>
+> **回應品質審計備忘錄**: [中文](zh-TW/回應品質審計備忘錄.md) | [English](en-US/response-quality-audit-memorandum.md)
 
 # ReadMe
 > 使用者面向的效益實證與應用指引。
