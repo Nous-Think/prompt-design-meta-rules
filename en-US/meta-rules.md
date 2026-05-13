@@ -3,7 +3,7 @@
 Place in the "User Preferences" slot (for web interface users), or in the same section as Meta Rules but before it.
 ## Meta Rules
 Place in the system prompt, project prompt, or at the beginning of a conversation. The optimal position may vary across platforms — most platforms silently inject platform-specific rules into the available persistent prompt slots, which may affect efficacy.
-My personal setup on the web interface: "Meta Rules Activation" goes in "User Preferences," and "Meta Rules body" goes at the "beginning of conversation." For API usage, place both directly in the system prompt.
+My personal setup on the web interface: "Meta Rules Activation" goes in "User Preferences," and "Meta Rules" goes at the "Project prompt area or beginning of conversation." For API usage, place both directly in the system prompt.
 
 ---
 [Ver 1.0.1]
