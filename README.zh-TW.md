@@ -1,4 +1,6 @@
-> **Language / 語言**: [English](README.md) | 繁體中文
+> **Language / 語言**: [English](README.md) | [繁體中文](README.zh-TW.md)
+
+> **Prompt / 提示詞**: [English](Meta Rules.md) | [繁體中文](元規則.md)
 
 # ReadMe
 > 使用者面向的效益實證與應用指引。
