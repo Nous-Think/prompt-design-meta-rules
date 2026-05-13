@@ -14,7 +14,6 @@ Thank you for your interest! Here's how to contribute.
 ### For Content Changes
 
 - Each language version is an **adaptation**, not a strict translation. If you modify one version, note in your commit message whether the counterpart needs updating.
-- Update [TRANSLATION_STATUS.md](TRANSLATION_STATUS.md) if your change affects sync status.
 
 ### For Test Reports
 
