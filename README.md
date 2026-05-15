@@ -41,7 +41,7 @@ What this means for English-speaking readers: the quality differences in *reason
 
 We strongly recommend testing Meta Rules yourself rather than evaluating it through translated examples alone. Load it, ask a real question in your own language and context, and compare against a bare run. The reasoning quality difference will be immediately apparent — and the specific answers will be natively calibrated to your world.
 
-### Two Cases Where This May Not Be for You
+### Few Cases Where This May Not Be for You
 
 **Your definition of "good response" differs from ours.**
 What Meta Rules optimizes for is fully described in the Response Quality Audit Memorandum. The core criterion is *"the user can act after reading"* — not *"the answer is correct and concise."* If what you value is getting precise short answers fast, Meta Rules is designed for a different objective. We recommend reading the quality definitions in the Audit Memorandum first to see if you agree.
