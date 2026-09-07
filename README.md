@@ -47,10 +47,10 @@ Every case file follows the same layout: prompt → baseline response → Meta R
 ## Cross-Model Test Summary
 
 Tested across Claude, GPT, Gemini, and DeepSeek (web interface only):
-- Claude shows the most consistent and highest gains — reliably triggering cognitive behaviors that other setups don't produce on their own.
-- GPT shows clear effect only with the English version; the Chinese version is ineffective. Implicit resource routing often makes it hard to tell whether Meta Rules are having any effect at all.
+- Claude shows the most consistent and highest gains — reliably triggering cognitive behaviors that other setups don't produce on their own. Both editions work: the Chinese edition thinks more broadly, the English edition goes deeper into detail.
+- GPT shows clear effect only with the English version; the Chinese version is ineffective. GPT also appears to have a routing layer: tasks that look simple on the surface are routed to a lighter processing path, and on those tasks the difference with or without Meta Rules is shallow — the effect only shows on tasks that are not simple at face value.
 - Gemini responds better to the English version, but its training bias toward search-engine-style quick answers keeps both reasoning and output too short for the framework to fully unfold. Cognitive shifts are observable but constrained.
-- DeepSeek shows different strengths by language: the Chinese version explores more broadly, the English version executes more deeply.
+- DeepSeek likewise responds better to the English edition; the Chinese edition's effect is comparatively faint.
 
 The findings below are primarily based on Claude.
 
@@ -132,7 +132,7 @@ In testing, tasks that look like quick jobs — "fix up my résumé," "write a r
 They say "improve the wording"; they need "land that job."
 They say "write a blurb"; they need "get the apartment rented."
 
-Meta Rules' headroom isn't determined by how complex the question is, but by how much intent the user has packed into a single sentence.
+Meta Rules' headroom isn't determined by how complex the question is, but by how much intent the user has packed into a single sentence. On GPT this pattern is masked by the routing behavior described in the Cross-Model Test Summary.
 
 ### Practical Tips
 
