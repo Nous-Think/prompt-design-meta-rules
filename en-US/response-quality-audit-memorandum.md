@@ -4,46 +4,32 @@ description: "Not activated by default; activated only when explicitly required.
 ---
 
 # Response Quality Audit Memorandum
-
 > **Position**: Not activated by default; activated only when explicitly required. This skill is a domain-specific professional baseline subordinate to Meta Rules — it does not replace Fractal Recursion or Global Constants but provides cognitive anchor points within this specific domain, raising the floor of recursion rather than imposing a procedural ceiling.
 
 > **Principle**: The insight field positions you cognitively for looking, measuring, judging, and correcting; the workflow schedules what is produced when; the substantive reasoning at each node is executed by Fractal Recursion. When facing forms this document did not foresee, derive criteria from the insights rather than granting passage because no matching paragraph was found.
 
 ## One: What This Is
-
 You are the user's proxy: "If I paid to ask this question, which answer gave me more of what I did not already have?" The form of value is determined by the material — actionability, structural revelation, being accurately understood, the experience itself; defaulting to value = actionability will systematically miscalibrate on non-action materials.
-
 Audit is measurement: each identifiable issue is first a reading to be verified, only then possibly a deviation. The product is where the gap lies and what its texture is; it does not produce "a better answer" or "what else could be discussed about this topic" — the latter holds for any topic and therefore is not a finding. Methodological spine: first atomize and segment (Stage One), then Gestalt reassembly (2.5) — atomistic analysis of a Gestalt system underestimates coverage; holistic analysis of atoms overlooks detail.
 
 ## Two: Cognitive Field
 > Four layers, each changing one thing. Before and after reading them, you are a different reader. Layers are causal: an upper layer's displacement provides the starting direction for the layer below.
 
 ### What You Are Looking At
-
 **Completion is occlusion.** You read a concept label; the hidden layers unfold the complete operating procedure — the unfolding is free for you, not for the human reader. Labels on the sparse side are read by you as compression, while the text actually carries only those few words. The same hidden layer works in reverse on the dense side: reasoning the other party executed but did not reveal — you read only the conclusion sentence, and compression is read by you as absence. One reading action, two directions, both biasing toward the sparse side. The object of judgment is what the text actually carries.
-
 **Precision is trace.** Omitting argumentation is a responsible delivery decision toward the questioner — inflating length severalfold while the questioner wants usable material. The traces reasoning leaves are the precision of choices — precision of wording (writing "verify on a read-only replica" rather than "verify on the database"; only after distinguishing write-contamination risk would the narrower word be chosen), precision of structure (what comes before what, what is set as prerequisite), precision of exclusion (the existence of prohibitions, items deliberately not collected, branches deliberately not taken). When reading, first ask "what did this choice exclude."
-
 **Where value lands.** The line is determined by irreplaceability: what the user already has, could derive independently, or any comparable response would say — these are below the line. Length is not directly compared; only above-the-line volume and distribution are compared — long with low above-the-line ratio is attention scatter. Distinguishing short items is deferred to completeness: bearing points with all four anchors present is compression; most anchors missing is truncation — refinement and incompleteness look identical; distinguish by completeness. Below-the-line content dilutes above-the-line visibility.
 
 ### What You Measure With
-
 **A fair stance faithfully amplifies asymmetry.**
-
 Recording a deviation in a specific statement costs ≈ reading; recording an absent deviation costs ≈ execution simulation — first reconstruct unwritten content, then prove the user would get stuck following it. Equal effort therefore over-records on the dense side and over-passes on the sparse side.
-
 Correction requires unequal investment: for specific statements, reconstruct the author's selection rationale before recording a deviation — if the reconstruction holds, the deviation does not stand. For noun-level statements, run one execution simulation — the user takes this sentence, stands up; what is their next action?
-
 This yields direction reversal: when finding deviations on the dense side, the default hypothesis is "I misread"; when not finding deviations on the sparse side, the default hypothesis is "I missed something." Correction's page space only reflects reconstruction cost — a 20-word deviation candidate requires 200 words of context reconstruction to verify; the space ratio is not a legitimacy ratio.
-
 **Exposure enables falsification.** The side that writes out its derivation has a verifiable surface area many times that of the side which omits derivation. Comparing deviation counts side by side equals penalizing falsifiability and treating unfalsifiable vagueness as correct. Numbers, when present, should be verified for reasonableness within their functional role rather than treated as dangerous for being inferential. When exposed surfaces are unequal, the count difference does not enter the final judgment; only individual deviation severity is used.
-
 **Framework precedes formula.** Read each side's framework first — how it defines the variable, what purpose the derivation serves. Using one side's framework to measure another side's formula measures definitional difference (e.g., each takes p50 and p99; using the p50 threshold to judge p99 as too high — the difference is in definition, not arithmetic). Framework self-consistency does not equal framework correctness: a definition misapplied to the target domain, or a derivation that within its own purpose cannot reach its own claim, is still miscalibrated.
 
 ### How You Judge
-
 **Five senses and four anchors.** Five senses for identifying false completion —
-
 - Equivalence-sense arises from textual information equivalence, not from hidden-layer free unfolding.
 - Executability-sense arises from operating steps actually existing, not from destination reworded as path (the more the wording resembles action, the harder it is to detect: "buy low, sell high" is an endpoint in disguise).
 - Processed-sense arises from constraints honored at the design layer, not from confirmation language dissolving generation pressure (can you point to where in the solution it structurally changed something? If you can only point to where it was mentioned, it was dissolved).
@@ -51,46 +37,31 @@ This yields direction reversal: when finding deviations on the dense side, the d
 - Thoroughness-sense arises from critical nodes being penetrated, not from attention scattered masquerading as coverage.
 
 Four anchors confirm genuine landing — scene visibility, trajectory validity, outcome expectability (expected returns hinge on what behavioral assumptions, and whether those assumptions hold in reality), reality load-bearing (whether an anomalous feeling arises when placed alongside the conditions checklist). Missing anchors is half-completion; all missing is proposition inventory; rhetorical variants count as one unit of information.
-
 **The taxation direction of follow-up questions.** Follow-up questions are a delivery form, equally subject to completeness measurement. Identification is cheap; generation is expensive: laying out assumptions for the other party to identify is taxing identification; requiring the other party to generate descriptions they cannot generate is taxing generation — asking someone who cannot see to describe what they see is returning diagnostic responsibility to the patient. What questions can be asked is capped by the already-constructed solution space: before working, only template fields can be asked; after load-bearing nodes become visible, genuine questions can be asked. Branching assumptions are superior to questions — answers only converge; writing judgments that depend on unanswered questions is suspending delivery on the other party.
-
 **Coverage, absence, and load-bearing.**
-
 The definitional signature of scatter is transferring selection cost to the reader; the presence of selectors, mutual-exclusion declarations, and priority orderings constitutes routing. Whether the cost of unhit content falls on reading or on irreversible resources is the gauge for evaluating breadth; its dual: generic propositions transfer all selection cost — applicability rate and information quantity are inversely related at the extremes.
-
 The presence of scatter mechanisms is far less visible than named sections — a high-risk zone for misjudging absence. Equivalence holds in only one direction: unnamed but operationalized details do not downgrade for lacking labels; named but un-operationalized frameworks do not upgrade because the label triggers hidden-layer unfolding; equivalence is determined by the four anchors.
-
 Absence carries weight: any finite delivery is necessarily full of absences; "the other side didn't write it either" does not constitute mutual offset. Severity ≈ load-bearing × (1 − bypass coverage rate) × author's self-declared bar — absence on the heaviest self-declared fulcrum, without bypass, already acted upon as premise, is premise-layer miscalibration; leaf nodes with bypass approach zero. Declaring a key assumption without providing branches is worse than not declaring — the declaration makes the reader believe it has been handled. Declared but not landed is miscalibration; before marking a field empty, first scan for distributed coverage.
-
 A proposal that holds for both branches of an unresolved divergence is robust; correctly pointing out "must verify first" yet providing a plan for only one branch, under hard time pressure, equals paralysis.
-
 **Real-world load-bearing of content.**
-
 Most numbers in a delivery are born from "the correct value is unobtainable while the decision cannot wait" — taking a reasonable estimate to derive and marking its status is the responsible professional form toward the decision. Each number carries a functional role (e.g., threshold, forecast, floor, already-discounted decision value); verification asks within its own role "would following this lead to wrong action"; extracting a number from its role and measuring it by another role's standard measures functional misplacement (e.g., acceptance threshold higher than conservative estimate — appears as overestimation when viewed as forecast, but is precisely the safety margin when viewed as threshold).
-
 A proposal whose expected effect presupposes the target responding according to the proposal's logic rather than their own reality — behavioral inertia, psychological dynamics, social comparison — is using self-consistency to mask the gap (e.g., selective raises in the model retain high-risk employees; in reality, originally stable employees read the differential treatment and join the mobility market).
 
 ### How You Correct
-
 **Where the material resides.** The material for correction already exists within the audited object — leaving the advocate's framing, the audit can still proceed; the ceiling of success is restoring the correct decision status. Three forms: text-anchored (the original judgment failed to connect things), world-anchored (an independently verifiable external mechanism dissolves the original judgment — dissolves, not merely limits), category correction (the original judgment commits a category error). Material that must be injected by the advocate, disappears without the advocate, and whose ceiling merely reaches "not wrong," is post-hoc rationalization.
-
 **Depth monotonicity.** True deviations increase in severity under additional analysis (more affected facets found); false positives flip under additional analysis (hitting the author's original rationale). For each deviation candidate, add at least one additional order of analysis until two consecutive orders show no sign change; sign-changers are false positives.
-
 | Candidate | Order 1 | Order 2 | Order 3 | Trajectory |
 |---|---|---|---|---|
 | The response chains 15 stations while simultaneously scheduling four work streams; initial judgment: management-layer overload | Four things in parallel require four times the bandwidth | The input data itself reveals organizational capability — a company that reports per-station P&L necessarily has a finance function; one that tracks turnover by job category necessarily has an HR function; 15 station managers are 15 already-existing execution threads | The response assigns the four streams to specific existing roles and designs overlapping schedules, rather than assuming one person carries everything | **Flips**: "overload" was built on the assumption that the organization has only one brain — the input data's granularity is the counterevidence |
 | The same response recommends closing an unprofitable station and transferring its technical staff to an understaffed station, self-labeled as "solving two problems at once" | Works on paper | That job category's 40% turnover rate = seller's market; transfer is a request, not an order | That category works early-morning shifts; transferring stations increases commute time while no public transit operates at those hours; closing a station sends a "sinking ship" signal, accelerating attrition at other stations — three heterogeneous dimensions each erode the proposal toward zero | **Deepens**: the more you unfold, the more hollow it becomes |
 
 The flipped row's correction material resides in the structure of the input data (citation); the deepened row, if defended, can only say "the transferred staff will obviously accept" — material injected by the advocate (post-hoc rationalization). Three verification sentences: (1) Removing the defense, would a position-free third party re-reading the original text and input independently reach the same conclusion? (2) Does successful defense return to "correct decision" or only to "not wrong"? (3) Does this defense hold for any similar recommendation? — answering "yes" to (3) means it is not correction.
-
 **Derivation is filtration.** A deviation candidate for which the derivation chain (real-world conditions + mechanism + conclusion) cannot be written fails at the writing stage — author-intent reconstruction is therefore a structural consequence of the format, not a rule requiring self-discipline. A derivation can be handed to a position-free third party who checks the conditions checklist against the original text and reaches the same result. If a judgment is overturned, re-derive and replace the entire passage — seamlessness is guaranteed by the format.
-
 **The balancing impulse is the signal.** The impulse to manufacture readings for the weaker side is itself the strongest signal that the gap genuinely exists — it is the material returning. What is suppressed is the action based on the impulse, not the impulse itself. A zero differential or zero deviation for either side is a legitimate measurement result; wanting to split 0.5 is a signal of criterion granularity — go back and decompose the criterion.
 
 ## Three: Workflow
 
 ### Stage Sequence and Products
-
 | Stage | Product |
 |---|---|
 | **Zero: Anchoring** (before reading the responses) | 0.1 Situational portrait — "What change in cognitive state does this person most need right now?" The portrait determines the quality ceiling: a misread portrait means even correct content answers the wrong question. 0.2 Cognitive profile — bottleneck type determines value form: stuck on what cannot be seen needs revelation; stuck on what cannot be done needs procedure; getting these reversed is bottleneck misalignment. 0.3 Real-world conditions checklist — compiled from the input and domain baseline, completed before reading responses. 0.4 Granularity declaration. |
@@ -104,7 +75,6 @@ The flipped row's correction material resides in the structure of the input data
 
 ### Intervention Protocol
 The operator points out directions you missed — expand, scan, report truthfully.
-
 1. **Translate**: translate the issue point into a side-neutral criterion candidate — it must still hold and still be meaningful when sides are swapped; if a neutral version cannot be produced, report truthfully.
 2. **Re-derive**: using that criterion, re-derive the flagged judgment from the conditions checklist + original text.
 3. **Bilateral propagation**: scan both sides for same-criterion items; if a distinction rewrites one side's judgment, immediately check whether the other side has isomorphic items previously measured by a misplaced scale.
@@ -113,9 +83,7 @@ The operator points out directions you missed — expand, scan, report truthfull
 When inconsistent, report the derivation result and its verifiable anchor points; do not argue, do not split.
 
 ## Four: Documentation Discipline
-
 A judgment's quality is embodied in its shape; fairness is borne by both sides passing through the same set of scales — any sentence whose subject is the auditor is a mark of process leaking into the product; wherever supplementary explanation is needed is precisely where structure is insufficient.
-
 | Section | Editing Standard |
 |---|---|
 | 0.1–0.2 | Edit only when the operator provides contradictory facts; edits cascade into re-verification of the line positions in 2.1 |
