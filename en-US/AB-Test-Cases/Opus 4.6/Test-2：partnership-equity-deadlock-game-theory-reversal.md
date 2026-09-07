@@ -2,15 +2,16 @@
 
 > All content below — the prompt, both responses, and the audit — was originally produced in Chinese and has been translated into English for accessibility.
 
----
+> Model: Opus 4.6
 
 # AB Test Prompt
 
 My partner and I each hold 50% equity. He wants to bring in a new investor, but I think the valuation is too low. He says if I don't agree, he'll exit. Our partnership agreement only covers profit distribution — no exit mechanism. All things considered, what's the best way to handle this?
 
----
+# Baseline Response (Opus 4.6)
 
-# Bare-run Response (Opus 4.6)
+<details>
+<summary>Expand full response</summary>
 
 This is a complex situation involving legal, financial, and interpersonal dimensions. Let me help you sort through it from a few angles. A quick note first: I'm not a lawyer or financial advisor — the following analysis is for your reference, and I'd recommend pairing any major decisions with professional legal counsel.
 
@@ -38,9 +39,12 @@ Find a lawyer experienced in commercial partnerships and corporate law as soon a
 
 If you'd like, you can share more about the company's organizational type (limited company or company limited by shares), what each partner is responsible for in the business, and roughly what terms the proposed investor is offering — I can help you think through specifics.
 
----
+</details>
 
 # Meta Rules Response (Opus 4.6)
+
+<details>
+<summary>Expand full response</summary>
 
 ## Input Correction
 
@@ -123,26 +127,31 @@ You're in a classic **dual-veto duopoly game**: either party can block change, b
 The following options can be presented simultaneously, letting your partner choose — this is more constructive than a flat rejection:
 
 **Option A: Accept the investment, but revise terms**
+
 - Renegotiate the valuation based on the independent appraisal
 - Add your protective provisions (anti-dilution, tag-along rights, preemptive rights)
 - Investor cannot hold a board majority
 - Milestone-based funding tranches rather than a single lump sum
 
 **Option B: You make the additional investment yourself**
+
 - If the company genuinely needs capital, you contribute proportionally at the valuation your partner advocates (or the independent valuation)
 - This addresses the funding need without bringing in an outside shareholder
 - If your partner refuses, it exposes that his real intent may not be "the company needs money"
 
 **Option C: Introduce competitive bids**
+
 - Agree to bring in an investor, but require a market-based process (approach at least 3–5 potential investors)
 - Let the market determine the valuation rather than a single investor
 - This is the most reliable way to verify valuation reasonableness — if your partner objects, it strongly implies a relationship of interest with the specific investor
 
 **Option D: Partner buys you out, or you buy out the partner**
+
 - Apply "Texas Shootout" logic: one party names a price, the other chooses to buy or sell
 - This is the cleanest deadlock resolution mechanism
 
 **Option E: Establish governance framework before discussing anything else**
+
 - First, sign a comprehensive shareholders' agreement (covering exit, deadlock resolution, non-compete)
 - Only then discuss the investment
 - This is the infrastructure for any long-term collaboration
@@ -150,17 +159,20 @@ The following options can be presented simultaneously, letting your partner choo
 ### Phase 4: Respond to Escalation Scenarios (Ongoing)
 
 **If your partner actually announces an exit:**
+
 - Don't panic — this enters legal procedure, and you have ample time and rights
 - Immediately inventory: client relationships, supplier contracts, intellectual property, trade secret ownership
 - If it's a partnership: demand legally-mandated liquidation; the withdrawing partner's share is settled at actual asset value
 - If it's a company: his equity doesn't vanish; at most he can transfer it — and you have right of first refusal or consent rights
 
 **If your partner starts coasting / passive resistance:**
+
 - Document instances of obligation non-performance (emails, work records)
 - This constitutes breach of duty, strengthening your future legal position
 - Assess the business's viability without him and prepare personnel backup
 
 **If your partner privately signs documents with the investor:**
+
 - In a 50/50 structure, equity changes made without your consent are very likely legally void
 - Immediately send a lawyer's letter asserting your rights
 
@@ -173,6 +185,7 @@ Your partner's exit threat actually opens a window he may not have considered: *
 ### II. Conflict-of-Interest Review
 
 In practice, when a 50/50 partner actively pushes a low-valuation investment, the most common hidden motives are:
+
 - The investor has promised the partner an additional post-investment role (CEO compensation, consulting fees)
 - The investor and partner have a family or business relationship
 - The partner plans to further dilute you post-investment through additional rounds or option pools
@@ -201,9 +214,9 @@ The following information gaps could change strategic direction and cannot be su
 
 **Recommended action priority**: Before making any negotiation move, first complete "engage lawyer to review agreements + confirm legal structure." Not because you need to litigate, but because **you need to know exactly how many cards you're holding before you open your mouth at the negotiation table**. The biggest mistake most people make in these deadlocks isn't strategic error — it's starting verbal negotiations without knowing their legal standing, inadvertently making commitments or concessions that carry legal force.
 
----
+</details>
 
-# Quality Audit for This AB Test
+# AB Test Quality Audit
 
 ## Stage Zero: Before Reading the Responses
 
@@ -246,7 +259,7 @@ Paragraph-level + whole-response level.
 
 ## Stage One: Reading and Tagging (No Judgment)
 
-**Response A (Bare-run) — Functional Index**
+**Response A (Baseline) — Functional Index**
 
 | Section | Primary Function |
 |---------|-----------------|
@@ -330,6 +343,7 @@ A's completion node is intact on this item; B's is also intact but more refined.
 Plus the reverse exploitation in Advanced Gains I: "You can directly propose: Since you believe the company is worth X, I'm willing to buy your shares for X/2. How does that sound?"
 
 Auditing this exclusive item:
+
 - Could the user find this on their own? This is a game-theoretic derivation requiring simultaneous understanding of valuation logic and exit mechanics' interaction. Unlikely to appear in this form in standard business articles. High inaccessibility.
 - How far from the core path? Extremely close — this directly changes the negotiation's power structure. The user entering negotiations with this argument forces the partner to either accept being bought out at his own stated valuation, or admit the valuation is too low — both outcomes favor the user.
 - Assessment: **Extremely high-value exclusive.** A negotiation weapon deployable in the very next conversation, whose logical self-consistency makes it difficult for the partner to refute.

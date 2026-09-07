@@ -2,11 +2,14 @@
 
 > All content below — the prompt, both responses, and the audit — was originally produced in Chinese and has been translated into English for accessibility.
 
+> Model: Opus 5
+
 # AB Test Prompt
 
 I'm getting ready to switch jobs and want to rework my resume. Below is my current work experience section along with some real numbers and projects. Help me turn it into a more compelling version. I'm in digital marketing and mainly targeting brand-side marketing manager roles.
 
 Current version: ABC Digital Marketing | Marketing Planner → Senior Planner (2020–2025)
+
 * Managed client social media accounts
 * Planned and executed digital ad campaigns
 * Wrote marketing proposals
@@ -15,6 +18,7 @@ Current version: ABC Digital Marketing | Marketing Planner → Senior Planner (2
 * Participated as in-house training instructor
 
 Real numbers and achievements (but I don't know how to work them in):
+
 * Ran social media for 4–6 clients simultaneously (FB+IG), spanning beauty brand "LURE," chain gym "動次," organic food brand "綠田," and 3C accessories brand "MATZ"
 * When I took over "LURE"'s IG, it had 12K followers; two years later it was at 87K — no bought followers, mainly through Reels and KOL collaborations
 * FB/Google Ads monthly budget ~NT$1.5–2.5M (all clients combined), ROAS averaged above 3.5; for "動次" membership ads, I optimized CPA from NT$680 down to NT$320
@@ -24,9 +28,10 @@ Real numbers and achievements (but I don't know how to work them in):
 * Internal training covered Meta ad operations and GA4 basics for new hires, roughly four cohorts totaling ~20 people
 * Tools: Meta Business Suite, Google Ads, GA4, Looker Studio, Canva, Notion
 
----
-
 # Baseline Response (Opus 5)
+
+<details>
+<summary>Expand full response</summary>
 
 The biggest problem with your original version is that every verb is "managed," "planned," "assisted" — these are job descriptions, not results. And your actual numbers are quite strong, especially the 綠田 and MATZ cases — those are essentially brand-side work that just happened to be done from the agency side. So the core rewrite strategy is: **pull those two cases to the front so the resume reads as a brand operator at first glance, not an ad optimizer.**
 
@@ -66,11 +71,14 @@ One practical reminder: if your contracts include NDAs, you may need to change t
 
 Want me to draft a cover letter or personal introduction paragraph? That's where you can address "why transition from agency to brand-side" — usually the question that trips up this type of career move.
 
----
+</details>
 
 # Meta Rules Response (Opus 5)
 
-# Core Decisions
+<details>
+<summary>Expand full response</summary>
+
+# Core Decision
 
 ## Decision 1: The real problem with this resume isn't "not compelling enough" — it's "written in agency language"
 
@@ -132,21 +140,26 @@ In the version below, I've applied defensive wording — "maintained while budge
 > Led full-scope digital marketing for 4–6 brand clients simultaneously; annual media budget under management NT$18–30M; led a 2-person planning team.
 
 **▍ Brand Digital Transformation Lead | Organic Food Brand "綠田"**
+
 - Facing stagnant growth in traditional distribution channels, built the brand's e-commerce customer-acquisition system from scratch: redefined website traffic architecture, pivoted social content positioning, and rebuilt the ad account along a three-tier awareness/interest/conversion funnel.
 - **Monthly website revenue grew from NT$150K to NT$850K within 3 months (growth of 467%)**, helping the brand shift from channel dependency to owned-channel revenue and establishing a replicable acquisition model.
 
 **▍ Brand Repositioning Lead | 3C Accessories Brand "MATZ"**
+
 - Led the positioning upgrade from "budget accessories" to "design-forward," overseeing new visual identity system rollout, comprehensive Tone of Voice rewrite, and planning and executing a content collaboration matrix with 5 design-focused KOLs.
 - **Brand keyword search volume grew 240% within 3 months**, shifting the competitive basis from price to brand preference and reducing revenue dependency on promotional cycles.
 
 **▍ Performance Marketing | Cross-Industry Ad Account Management**
+
 - Managed Meta and Google Ads campaigns with monthly budgets of NT$1.5–2.5M, **maintaining overall ROAS above 3.5 as budget scale continued to expand**.
 - Rebuilt the membership conversion pathway for chain gym "動次": restructured audience segmentation, established a creative testing framework, and corrected conversion event tracking — **reducing unit acquisition cost from NT$680 to NT$320 (−53%)**.
 
 **▍ Social Brand Management | Beauty Brand "LURE"**
+
 - After takeover, restructured the content strategy around Reels short-form video as the primary growth driver, paired with a tiered KOL collaboration matrix. **IG followers grew from 12K to 87K in 2 years (+625%)** — growth driven entirely by organic reach and partnership-driven traffic, with no paid follower acquisition.
 
 **▍ Team Leadership & Knowledge-System Building**
+
 - Led 2 planners; developed 1 from a fresh graduate to independently managing full client engagements.
 - Built the company's internal digital marketing training program, delivering Meta ad operations and GA4 analytics workshops across **4 cohorts, ~20 trainees**, reducing time-to-independence for new hires.
 
@@ -167,24 +180,29 @@ In the version below, I've applied defensive wording — "maintained while budge
 I've listed the likely follow-up questions and response frameworks for each metric. Prepare these before any interview:
 
 **綠田 NT$150K → NT$850K**
+
 - Follow-up: "How much of the revenue growth came from increased ad spend versus improved efficiency?"
 - You must prepare: ad spend changes over the period, ROAS trajectory, organic traffic share changes. If spend also grew 5×, this growth has no margin of distinction — so make sure you can surface efficiency-side evidence.
 - Follow-up: "What happened after the three months? Did it hold?" → **You must have an answer.** If it declined afterward, say so honestly and explain why (seasonality, client pulled budget). Honesty is more credible than evasion.
 
 **MATZ search volume +240%**
+
 - Follow-up: "Did the search volume growth translate to revenue?"
 - You must prepare: absolute base for brand search volume (going from 100 to 340 versus 10,000 to 34,000 are very different stories), same-period revenue or average order value changes.
 - If you don't have revenue data, use this framework: "Search volume was the leading indicator for brand awareness; we set awareness-tier KPIs at that stage. Revenue conversion appeared in subsequent campaign cycles, but I didn't have access to complete data by the time I left." — **Acknowledging boundaries is more professional than blurring them.**
 
 **動次 CPA NT$680 → NT$320**
+
 - Follow-up (nearly guaranteed): "What about conversion volume over the same period?"
 - This is your highest-risk metric. If volume dropped simultaneously, rewrite this line to "while maintaining X-period conversion volume." If volume increased, this line upgrades from medium to strong — make sure to add it.
 
 **LURE 12K → 87K**
+
 - Follow-up: "What did the follower growth contribute to business results?"
 - Brand-side universally regards follower count as a vanity metric. You need at least one bridging data point: engagement rate trajectory, social-to-website traffic share, social-attributed orders, or overall brand revenue growth during the period. **Any one of these doubles this line's value.**
 
 **ROAS 3.5**
+
 - Follow-up: "Which account? Does it include branded keywords? Is the attribution window platform-reported or back-end actual?"
 - Have the methodology ready. If it's Meta platform attribution (7-day click / 1-day view), proactively state it — this signals to the interviewer that you understand the boundaries of your data.
 
@@ -253,7 +271,7 @@ Concrete approach: **pick your top 3 target brands and spend 3–4 hours each pr
 
 This action's priority is higher than further polishing resume wording, because the resume's marginal return has significantly diminished after the version above, while the teardown opens an entirely different evaluation dimension.
 
----
+</details>
 
 # AB Test Quality Audit
 
@@ -521,22 +539,22 @@ A deviation: 9 items, including 1 factual-layer (contradicts source material), 1
 
 Examining each candidate with one additional level of depth (depth monotonicity):
 
-**Candidate 1: 綠田 block's "three-tier awareness/interest/conversion funnel" is an inference fill.**
+**Candidate 1: 綠田 block's "three-tier awareness/interest/conversion funnel" is an inference fill.**  
 Initial observation: source material does not mention funnel structure. One level deeper: the three-tier funnel is a universal default practice for digital marketers (Section 0.3 item 4). A senior planner managing NT$1.5–2.5M monthly almost certainly uses one; challenge risk is very low. Moreover, the function here is to concretize "ad account restructuring" from an abstract description — the user explicitly said "I don't know how to work them in," which is precisely the service they're purchasing. Overturned.
 
-**Candidate 2: "As budget scale continued to expand" is an inserted fact.**
+**Candidate 2: "As budget scale continued to expand" is an inserted fact.**  
 Initial observation: source material only provides the NT$1.5–2.5M range without stating a trend. One level deeper: progressing from Marketing Planner (2020) to Senior Planner (2025), from one client to 4–6 — career advancement and client accumulation inherently imply budget expansion. Moreover, B's core decision section already disclosed this as defensive wording ("the real fix is supplying data") and listed it in the fill-in inventory's causal structure. This is a high-probability career default; answerable in an interview ("I started with one client and left managing six"); and already flagged within its own loop. Overturned.
 
-**Candidate 3: Business-significance sentence "reducing revenue dependency on promotional cycles" exceeds what search-volume metrics can support.**
+**Candidate 3: Business-significance sentence "reducing revenue dependency on promotional cycles" exceeds what search-volume metrics can support.**  
 Initial observation: search volume alone cannot derive changes in promotional dependency. One level deeper: the interview defense kit spells out the follow-up verbatim ("did search volume translate to revenue?"), the data to prepare (absolute base, same-period revenue), and a response framework if no data is available ("we set awareness-tier KPIs; revenue conversion appeared in subsequent cycles; I didn't have complete data by departure"). The sentence is not a claim written and abandoned — it is flagged as dependent on revenue-linkage data, with two outcome paths prepared. Overturned.
 
-**Candidate 4: Tools list retains Canva without an explicit trade-off.**
+**Candidate 4: Tools list retains Canva without an explicit trade-off.**  
 Initial observation: A made a judgment; B did not. One level deeper: the tools list is scanned holistically; the marginal signal of any single item is near zero. In the user's highly-feasible job segment (D2C, startups, small brand teams of a few people), the marketing manager personally creating visuals is normal. Canva signals "can ship without waiting for design's schedule." The risk of being read as an executor comes from outcome metrics stopping at the media layer, not from the tools list. Near-zero-magnitude action; not executing it does not constitute a deviation. Overturned.
 
-**Candidate 5: Retains the word "client," not consistent with stated rule.**
+**Candidate 5: Retains the word "client," not consistent with stated rule.**  
 Initial observation: Language-conversion rule 1 says to avoid using "client" as the subject, but the resume has three instances. One level deeper: examining all three — the scale position ("4–6 brand clients"), the problem-source position ("the client faced …"), and the factual-description position ("independently managing full client engagements") — none occupies the subject position. Execution is consistent with the rule. Overturned.
 
-**Candidate 6: Teardown recommendation exceeds the resume-rewrite task; is unsolicited and lacks insider knowledge.**
+**Candidate 6: Teardown recommendation exceeds the resume-rewrite task; is unsolicited and lacks insider knowledge.**  
 Initial observation: the user asked for a resume rewrite, not career coaching. One level deeper: all four actions use public data; the output framework is framed as "what I see from the outside," not "what you did wrong" — no internal information required. Two levels deeper: Section 0.3 item 3's second suspicion ("without a brief, can you define problems on your own?") is something a resume structurally cannot answer — a teardown's definition is "no one asked you to do it; you did it yourself," and B sequences it after the resume is finished, not before. Three levels deeper: the downside floor is spending time while self-calibrating diagnostic capability (at minimal cost); no net-negative scenario exists. Three consecutive levels with no sign change. Overturned.
 
 B deviation: 0 items. All six candidates overturned through depth monotonicity. Exposure surface is not equivalent (A has ~5 verifiable points, B has ~12); the quantity difference does not enter the judgment.

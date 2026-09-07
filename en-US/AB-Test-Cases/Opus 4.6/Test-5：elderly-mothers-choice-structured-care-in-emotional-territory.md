@@ -2,15 +2,16 @@
 
 > All content below — the prompt, both responses, and the audit — was originally produced in Chinese and has been translated into English for accessibility.
 
----
+> Model: Opus 4.6
 
 # AB Test Prompt
 
 My mom is 70, lives alone. She recently told me she wants to sell her house and move in with a boyfriend she's been dating for six months. I've met the guy once — seemed okay, but I don't really know him. My sister is adamantly opposed, thinks she's being scammed. But my mom says this is the first time in her life she's made a decision for herself. I don't know whose side to take.
 
----
+# Baseline Response (Opus 4.6)
 
-## Bare-run Response (Opus 4.6)
+<details>
+<summary>Expand full response</summary>
 
 This really is a tough spot, because you're being pulled in three directions at once: worry about your mom's safety, respect for her autonomy, and pressure from your sister. The fact that you don't know whose side to take actually shows you're thinking carefully, not reacting impulsively.
 
@@ -34,9 +35,12 @@ As for your sister, you can communicate: "Our goal is the same — we both want 
 
 You don't need to take anyone's side. You can take the side of "helping Mom make this decision more solidly."
 
----
+</details>
 
 # Meta Rules Response (Opus 4.6)
+
+<details>
+<summary>Expand full response</summary>
 
 ## Input Correction
 
@@ -156,9 +160,9 @@ I cannot assess the true nature of this relationship — all recommendations are
 
 Before handling any family conversation, I'd suggest you **first call your county/city's "Elder Protection Hotline" (1980) or the Legal Aid Foundation on your own** — not to file a report, but to consult. These organizations handle similar cases daily and can provide objective judgment frameworks you can't access within the family's emotional field, including: which are genuine warning signs, what legal tools you have, and at what point intervention is needed. The value of this path: it lets you obtain professional coordinates before talking to Mom and your sister, rather than being pulled between two emotions on gut instinct alone.
 
----
+</details>
 
-# Quality Audit for This AB Test
+# AB Test Quality Audit
 
 ## Stage Zero: Before Reading the Responses
 
@@ -190,7 +194,7 @@ A family therapist or elder social worker — first three sentences: "You don't 
 
 ## Stage One: Reading and Tagging
 
-**Response A (Bare-run) — Functional Index**
+**Response A (Baseline) — Functional Index**
 
 | Section | Function |
 |---------|----------|
@@ -272,6 +276,7 @@ B: Same insight but with three layers of expansion —
 A: "Don't sell the house first, try living together" + "don't transfer ownership, keep finances independent." Correct direction, but "what if she insists on selling" has no answer.
 
 B: Three-tier progressive solution —
+
 - Optimal: Rent + trial period 6–12 months
 - Second-best: If she insists on selling, proceeds go into a **self-benefit trust** (names a standard Taiwanese banking product, doesn't require the other party's consent, doesn't affect cohabitation)
 - Floor: Four non-skippable checklist items

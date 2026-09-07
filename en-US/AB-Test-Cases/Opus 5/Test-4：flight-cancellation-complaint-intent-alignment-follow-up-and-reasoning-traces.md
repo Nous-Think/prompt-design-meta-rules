@@ -2,6 +2,8 @@
 
 > All content below — the prompt, both responses, and the audit — was originally produced in Chinese and has been translated into English for accessibility.
 
+> Model: Opus 5
+
 # AB Test Prompt
 
 Help me write a complaint letter — I'm really furious.
@@ -9,6 +11,7 @@ Help me write a complaint letter — I'm really furious.
 Here's what happened: last week I was taking my parents on a five-day trip to Japan. They're both in their seventies, this was their first time abroad, and I'd been saving for six months to arrange it for them. On the day of departure, the flight was suddenly canceled — the airline said it was mechanical issues.
 
 They rebooked us on the next day's flight, but:
+
 - No accommodation was provided; they told us to handle it ourselves. I scrambled to book a hotel near the airport — NT$3,800
 - The rebooked flight wasn't direct — it connected through Hong Kong with a four-hour layover. My parents have bad legs and can barely walk; it was brutal on them
 - Because we arrived a day late, the first night at the onsen ryokan we'd booked was non-refundable — a straight loss of NT$12,000
@@ -18,14 +21,15 @@ After getting back, I filed a complaint through their website. A week later I go
 
 My parents didn't complain out loud, but I could tell they were disappointed — they'd been so excited about their first trip abroad and it turned out like this. I want to write a more formal letter demanding reasonable compensation, at least to cover my actual losses. The tone shouldn't be too aggressive — I'm worried they'll just ignore it — but it can't be too polite either, or they'll think they can brush me off.
 
----
-
 # Baseline Response 1 (Opus 5)
 
+<details>
+<summary>Expand full response</summary>
+
 # Reasoning
-I'm considering whether to draft a single complaint letter or present multiple approaches—one that's firm but collaborative, and another that references regulatory bodies like the aviation authority and consumer protection office for added leverage.
-The key strategic point is that mechanical failures typically aren't considered extraordinary circumstances under aviation law, which strengthens the compensation claim. I should mention Taiwan's relevant regulations and the complaint channels available through the aviation authority and consumer protection mediator, though I'll be careful not to overstate provisions I'm not entirely certain about. I'm deciding whether to do a quick search to verify Taiwan's regulations on international flight cancellations and compensation — it would strengthen the letter's credibility without requiring me to cite specific articles I'm uncertain about. A couple of targeted searches should give me enough grounding to reference the regulatory framework confidently.
-(Web search)
+I'm considering whether to draft a single complaint letter or present multiple approaches—one that's firm but collaborative, and another that references regulatory bodies like the aviation authority and consumer protection office for added leverage.  
+The key strategic point is that mechanical failures typically aren't considered extraordinary circumstances under aviation law, which strengthens the compensation claim. I should mention Taiwan's relevant regulations and the complaint channels available through the aviation authority and consumer protection mediator, though I'll be careful not to overstate provisions I'm not entirely certain about. I'm deciding whether to do a quick search to verify Taiwan's regulations on international flight cancellations and compensation — it would strengthen the letter's credibility without requiring me to cite specific articles I'm uncertain about. A couple of targeted searches should give me enough grounding to reference the regulatory framework confidently.  
+(Web search)  
 I'm identifying the key legal provisions here. The Civil Aviation Passenger and Air Carrier Dispute Resolution Regulations clearly state that carriers must provide free accommodation, meals, communication, and other necessities when flights are delayed or rerouted—and the failure to provide lodging is a direct violation. There's also the Civil Code provision on carrier liability for late arrivals, though it allows for force majeure exceptions.
 
 # Visible Response
@@ -159,16 +163,17 @@ My recommendation is to **send the Reasoned Negotiation Version first**. If you 
 A few additional points:
 
 **Things to do before sending**
+
 - Request a **written flight cancellation certificate** from the airline (stating the date, flight number, and cancellation reason). This document is useful not just for your claim but also for insurance.
 - Scan and attach all supporting documents: hotel credit card statement, onsen ryokan booking confirmation and cancellation policy terms, original and rebooked boarding passes.
 - Recommended delivery method: send via the airline's official customer service email **plus** registered mail to the company's head-office customer service department. Registered paper letters have a much higher probability of being properly filed.
 
-**Another path you might be overlooking**
+**Another path you might be overlooking**  
 If the credit card you used comes with travel inconvenience insurance, or if you separately purchased travel insurance, flight-cancellation-related additional accommodation costs and non-refundable losses are typically within coverage. This can be pursued **simultaneously** with the airline claim — different legal bases, no conflict (though you cannot receive double compensation for the same loss; in practice, the insurance company will ask how much the airline paid). Some cards' coverage activates automatically — worth checking which card you used to buy the tickets.
 
 Finally — NT$15,800 is your bottom line, correct, but in practice the other side often starts by offering something in the middle. If they come back with around NT$10,000 plus mileage or an upgrade, that would actually count as a good-faith result — worth evaluating whether to accept. Send the letter first, see how they respond, and I can help you draft the reply if needed.
 
----
+</details>
 
 # Second Input
 > To address the argument that "the user simply didn't state their goal clearly — just keep asking and it'll be fine," the test continued with the following follow-up input.
@@ -181,24 +186,27 @@ I want you to think through this thoroughly — with "I want to actually recover
 
 # Baseline Response 2 (Opus 5)
 
+<details>
+<summary>Expand full response</summary>
+
 # Reasoning
-I'm deciding whether to present this recovery strategy as a file or inline in chat. It's a substantial multi-week action plan with checklists, but the guidance suggests strategies should be delivered inline for easy reference during our conversation.
-Now I need to research the key legal and procedural frameworks: travel insurance coverage and claim timelines under Taiwan's insurance law, the consumer protection complaint process through the Consumer Protection Commission, the Civil Aviation Administration's dispute resolution procedures, small claims court eligibility and costs, payment orders as an option, and the relevant statutes of limitations for airline passenger claims.
-(Web search)
-I noticed that the filing fee has two different figures — NT$1,000 and NT$1,500 — depending on the January 1, 2025 adjustment.
-(Web search)
-I've realized a critical legal detail: Article 18 of the domestic-route standard contract mentions "mechanical failure not attributable to the airline," which means the airline could argue that mechanical failure constitutes a non-attributable cause to claim exemption. My previous response was too definitive in stating that mechanical issues are attributable — in reality, the airline could defend with sudden or unpreventable-despite-normal-maintenance failures. I should be honest with the user about this two-sided legal risk.
-Additionally, Article 4 of the Dispute Resolution Regulations covers "delay or route change" — whether flight cancellation falls within this requires examining Article 3's "inability to depart at the scheduled time." A canceled flight rebooked to the next day should be arguable as a delay — this argument holds. The CAA Article 4 requirement is administrative regulation — violations may result in fines but don't directly constitute a civil liability claim basis, though it can be used as pressure leverage.
-Now turning to travel inconvenience insurance: flight delays typically require 4 to 6+ hours to qualify for claims; flight cancellations depend on the policy. Credit-card-bundled insurance usually requires full public-transport fare payment with that card. The claims limitation period is 2 years under Insurance Act Article 65; the notification deadline is 5 days from awareness, though in practice this is usually applied more leniently.
-There's another important point: the NT$12,000 onsen ryokan expense could be attempted through direct negotiation with the hotel — writing to the hotel via the booking platform or directly explaining the flight cancellation with proof attached. Some ryokans will accommodate partial refunds or rescheduling, and this is an option the user probably hasn't considered. Success rate is meaningful and cost is lowest. If booked through a booking platform, the platform itself may have assistance channels. As for credit card chargeback, it's unsuitable for the hotel since there was no breach of contract, and unsuitable for the airfare since the ticket was actually used, just on a different flight.
-(Web search)
-The most critical point is that credit card inconvenience insurance has a 60-day claim deadline. The user departed last week so is still within the window, but this is the highest-priority item. Additionally, if the hotel was booked through a third-party site, only that site's receipt is needed, and the next-day rebooking already far exceeds the 4-hour delay threshold.
-But there's a major limitation: many credit card inconvenience insurance policies only cover delays occurring at "overseas airports or missed-connection locations" — per that wording, a cancellation at a Taiwan airport with accommodation booked in Taiwan wouldn't be covered. However, some policies do cover departures from domestic airports (some application forms include a field for "if the departure delay location is a domestic airport, provide front and back copies of national ID card").
-As for the NT$12,000 onsen ryokan, trip-cancellation insurance typically only covers cancellation due to the insured's illness or death — not airline mechanical failures — so recovery via insurance is very unlikely; the main paths remain the airline or hotel negotiation. Also need to avoid double compensation — if insurance pays, the same amount cannot be claimed from the airline.
-Now I need to decide the strategy: if taking the insurance route, don't request ticket refunds or chargebacks, because policy terms explicitly state "if the transaction is canceled, the company shall not be liable for claims" — this is a critical conflict point. I need to organize a complete action plan including the three most urgent items and the full timeline.
-Next I need to detail all possible recovery routes — insurance is fastest and most likely, hotel negotiation is lowest cost but often overlooked, airline negotiation, consumer protection complaint, CAA petition, small claims court — and explain why I don't recommend chargeback or payment orders. Finally I need to emphasize one key point: no double compensation; must decide whether to pursue insurance first then airline, or in parallel with honest disclosure. Confirming Civil Code Article 623 Paragraph 2 regarding the 2-year limitation period for passenger carrier delay compensation claims, and Consumer Protection Act Articles 43 and 44 mediation procedures. Also confirming the 1950 hotline, online complaint system, and small claims court information.
-Regarding the filing fee, I'll note approximately NT$1,000 to NT$1,500 and explain the post-2025 adjustment. I'll also add the CAA service hotline 0800-211798 and the Consumers' Foundation as a consumer protection organization complaint channel.
-When calculating losses, I need to honestly note: lost annual leave is legally difficult to claim, because annual leave is already factored into salary, unless actual income reduction can be proven. Elderly family members' emotional distress under Civil Code Article 195 requires infringement of personal rights — mere contractual delay typically doesn't qualify. So the core claim amount should focus on NT$15,800.
+I'm deciding whether to present this recovery strategy as a file or inline in chat. It's a substantial multi-week action plan with checklists, but the guidance suggests strategies should be delivered inline for easy reference during our conversation.  
+Now I need to research the key legal and procedural frameworks: travel insurance coverage and claim timelines under Taiwan's insurance law, the consumer protection complaint process through the Consumer Protection Commission, the Civil Aviation Administration's dispute resolution procedures, small claims court eligibility and costs, payment orders as an option, and the relevant statutes of limitations for airline passenger claims.  
+(Web search)  
+I noticed that the filing fee has two different figures — NT$1,000 and NT$1,500 — depending on the January 1, 2025 adjustment.  
+(Web search)  
+I've realized a critical legal detail: Article 18 of the domestic-route standard contract mentions "mechanical failure not attributable to the airline," which means the airline could argue that mechanical failure constitutes a non-attributable cause to claim exemption. My previous response was too definitive in stating that mechanical issues are attributable — in reality, the airline could defend with sudden or unpreventable-despite-normal-maintenance failures. I should be honest with the user about this two-sided legal risk.  
+Additionally, Article 4 of the Dispute Resolution Regulations covers "delay or route change" — whether flight cancellation falls within this requires examining Article 3's "inability to depart at the scheduled time." A canceled flight rebooked to the next day should be arguable as a delay — this argument holds. The CAA Article 4 requirement is administrative regulation — violations may result in fines but don't directly constitute a civil liability claim basis, though it can be used as pressure leverage.  
+Now turning to travel inconvenience insurance: flight delays typically require 4 to 6+ hours to qualify for claims; flight cancellations depend on the policy. Credit-card-bundled insurance usually requires full public-transport fare payment with that card. The claims limitation period is 2 years under Insurance Act Article 65; the notification deadline is 5 days from awareness, though in practice this is usually applied more leniently.  
+There's another important point: the NT$12,000 onsen ryokan expense could be attempted through direct negotiation with the hotel — writing to the hotel via the booking platform or directly explaining the flight cancellation with proof attached. Some ryokans will accommodate partial refunds or rescheduling, and this is an option the user probably hasn't considered. Success rate is meaningful and cost is lowest. If booked through a booking platform, the platform itself may have assistance channels. As for credit card chargeback, it's unsuitable for the hotel since there was no breach of contract, and unsuitable for the airfare since the ticket was actually used, just on a different flight.  
+(Web search)  
+The most critical point is that credit card inconvenience insurance has a 60-day claim deadline. The user departed last week so is still within the window, but this is the highest-priority item. Additionally, if the hotel was booked through a third-party site, only that site's receipt is needed, and the next-day rebooking already far exceeds the 4-hour delay threshold.  
+But there's a major limitation: many credit card inconvenience insurance policies only cover delays occurring at "overseas airports or missed-connection locations" — per that wording, a cancellation at a Taiwan airport with accommodation booked in Taiwan wouldn't be covered. However, some policies do cover departures from domestic airports (some application forms include a field for "if the departure delay location is a domestic airport, provide front and back copies of national ID card").  
+As for the NT$12,000 onsen ryokan, trip-cancellation insurance typically only covers cancellation due to the insured's illness or death — not airline mechanical failures — so recovery via insurance is very unlikely; the main paths remain the airline or hotel negotiation. Also need to avoid double compensation — if insurance pays, the same amount cannot be claimed from the airline.  
+Now I need to decide the strategy: if taking the insurance route, don't request ticket refunds or chargebacks, because policy terms explicitly state "if the transaction is canceled, the company shall not be liable for claims" — this is a critical conflict point. I need to organize a complete action plan including the three most urgent items and the full timeline.  
+Next I need to detail all possible recovery routes — insurance is fastest and most likely, hotel negotiation is lowest cost but often overlooked, airline negotiation, consumer protection complaint, CAA petition, small claims court — and explain why I don't recommend chargeback or payment orders. Finally I need to emphasize one key point: no double compensation; must decide whether to pursue insurance first then airline, or in parallel with honest disclosure. Confirming Civil Code Article 623 Paragraph 2 regarding the 2-year limitation period for passenger carrier delay compensation claims, and Consumer Protection Act Articles 43 and 44 mediation procedures. Also confirming the 1950 hotline, online complaint system, and small claims court information.  
+Regarding the filing fee, I'll note approximately NT$1,000 to NT$1,500 and explain the post-2025 adjustment. I'll also add the CAA service hotline 0800-211798 and the Consumers' Foundation as a consumer protection organization complaint channel.  
+When calculating losses, I need to honestly note: lost annual leave is legally difficult to claim, because annual leave is already factored into salary, unless actual income reduction can be proven. Elderly family members' emotional distress under Civil Code Article 195 requires infringement of personal rights — mere contractual delay typically doesn't qualify. So the core claim amount should focus on NT$15,800.  
 As for the onsen ryokan's NT$12,000, I need to clarify whether this is indirect loss or a necessary expenditure, and examine how Article 18's exemption clause applies.
 
 # Visible Response
@@ -388,6 +396,7 @@ In reality, for the airline to send someone to court, pull maintenance records, 
 Prepare everything now — every path going forward will need these:
 
 **Airline-Related**
+
 - E-ticket / booking confirmation (showing original flight time)
 - Original flight boarding pass (if you received one)
 - Actual flown boarding passes (including Hong Kong connection segment)
@@ -397,12 +406,14 @@ Prepare everything now — every path going forward will need these:
 - Any evidence of ground staff stating "arrange accommodation yourself": recordings, chat screenshots, counter notice photographs
 
 **Accommodation and Itinerary**
+
 - Airport hotel booking confirmation, invoice/receipt, **credit card statement** (not the card-swipe slip)
 - Onsen ryokan booking confirmation, payment proof
 - **Screenshot of onsen ryokan's cancellation policy terms** (must be the original text, not your summary)
 - Written response from ryokan refusing refund
 
 **Other**
+
 - Credit card statement for the ticket purchase (proving full payment with that card — required for insurance)
 - ID documents for both elderly family members (may be needed for insurance applications)
 - If any medical documentation is available (e.g., existing knee/joint conditions), this would strongly support the claim that "four-hour connection caused substantial hardship"
@@ -447,31 +458,34 @@ One last thing. The part of this that hurts the most — your parents not saying
 
 Want me to write any of these now? The Japanese letter to the ryokan, the cancellation certificate request to the airline, an insurance claim cover letter, or the standardized small-claims filing form — name one and I'll write it.
 
----
+</details>
 
 # Meta Rules Response (Opus 5)
 
+<details>
+<summary>Expand full response</summary>
+
 # Reasoning
-I'm gathering the details for a complaint letter in Traditional Chinese about a cancelled flight to Japan. The user is based in Taipei, so I need to reference Taiwan's relevant aviation regulations—specifically the Civil Aviation Administration's passenger rights and dispute resolution procedures for flight cancellations and delays. I should consider whether the airline is Taiwanese or foreign-operated, as that affects which regulations apply.
-The key leverage point here is that mechanical failures aren't considered extraordinary circumstances under Taiwan's rules—they're within the airline's control. Under Taiwan's aviation passenger rights regulations, when a flight is cancelled due to reasons attributable to the carrier, the airline must provide meals, beverages, communication access, accommodation with transportation, and other necessities. If they refused to provide accommodation and told the passenger to arrange their own, that's a violation—the airline must reimburse those costs. I should emphasize this in the complaint letter as it strengthens the user's position. Cathay Pacific or HK Express is likely the carrier, but I'll structure this with placeholders to cover either case. For the delay compensation, I need to check Taiwan's Civil Aviation Act Article 91 and the standard passenger contract terms, plus the Consumer Protection Act — Taiwan isn't formally a Montreal Convention party, but its domestic law mirrors those protections. Japan is a signatory, which may affect liability depending on where the flight originated and the carrier's registration. I realized that delay compensation is not explicitly stipulated in the Civil Aviation Act, so I should instead use the framework of consumer protection law and civil code breach of obligation. For complaint channels, passengers can file with the Civil Aviation Administration's consumer services division, or with the Executive Yuan Consumer Protection Commission.
-The key strategy is to reposition this case from "requesting sympathy" to "a clearly calculated damages claim" listing specific amounts and evidence. I should distinguish between direct losses that are documented and receipted (NT$3,800 plus NT$12,000 totaling NT$15,800) requiring full reimbursement, and harder-to-quantify losses (elderly passengers' physical burden, compressed itinerary, lost vacation time) positioned as goodwill compensation items — this gives the other side negotiation room while protecting the core claim.
-Set a 14-day deadline and clearly indicate escalation channels (CAA complaint, Consumer Protection Officer complaint, small claims court), using firm factual tone rather than aggressive threats. Most importantly, change the communication channel — don't reply to the same customer service inbox that sent the boilerplate response. Instead, send by registered mail to the General Manager's office or Customer Service Director, and simultaneously file with the CAA so they forward it to the airline requiring a formal response, pulling the case out of the boilerplate reply queue.
-Regarding the NT$12,000 onsen ryokan, need to prove the expense is non-refundable and that I've attempted negotiation (notified the hotel, attempted rescheduling), with screenshots of the hotel's cancellation policy and proof of non-refund to strengthen the claim — because airlines typically push back on consequential damages. Should also check whether the credit card includes travel inconvenience insurance; many cards' flight delay insurance covers accommodation expense claims — this is a parallel claim path; if insurance already covered the hotel expense, it shouldn't be double-claimed.
-Additionally, must request a written flight cancellation certificate from the airline — insurance claims have time limits, and the onsen ryokan sometimes agrees to reschedule or issue partial credit upon receiving a cancellation certificate. Most importantly, do not use the NT$500 discount voucher, as using it could be interpreted as accepting the settlement. Should explicitly state in the letter that the voucher has not been used and is not regarded as settlement of this matter. As for the non-direct rebooking through Hong Kong, this involves involuntary rerouting under the carriage contract, particularly when elderly passengers are involved — their rights need further examination.
-The airline failed to inform the passenger of their full options — this is a substantive oversight. The passenger should have been offered full refund or endorsement to another airline's direct flight, but was not informed of these choices. Additionally, for passengers in their seventies, the airline should have proactively offered wheelchair service and airport lounge access during the four-hour Hong Kong layover — this is a failure of duty of care. Now calculating the loss amount: accommodation NT$3,800, onsen ryokan NT$12,000, airport transportation costs.
-Plus meal expenses (receipts needed), subtotal approximately NT$15,800 or more. Beyond full cash reimbursement of actual losses, should also request inconvenience compensation — I suggest NT$5,000 per person for three passengers (NT$15,000 total) as inconvenience compensation, with the total around NT$30,800, but the floor being NT$15,800 in cash plus equivalent ticket or mileage compensation as a package.
-The letter should be formal, fact-oriented, legally grounded, with clear deadlines and escalation paths, avoiding emotional language or personal attacks. Opening should directly state this is a damages claim, not a complaint. As for format, this formal damages claim letter should be produced as a standalone document, presented in mail or letter format.
-I'm inclined to embed the letter content directly in the response so the user can fill in specific details and print or send by registered mail — this is more efficient than creating a separate file.
-(Web search)
-I'm reviewing the relevant civil aviation regulations and civil code provisions. The Civil Aviation Passenger Dispute Resolution Regulations specify what airlines must provide during disruptions—communication, food, accommodation, and medical assistance—while the Civil Code establishes that carriers are responsible for passenger injuries and delays, with limited exceptions for force majeure events.
-(Web search)
-I'm noticing a critical detail from CAA's regulations: they explicitly recognize "機件故障" (mechanical failures) that aren't attributable to the airline as potential force majeure circumstances. This means the airline will likely argue that mechanical issues fall outside their responsibility, which complicates the passenger's claim for compensation.
-However, I can build a two-pronged legal argument here. First, I need to shift the burden of proof onto the airline—under civil law, they must demonstrate that the mechanical fault was genuinely beyond their control (not a maintenance or inspection failure). Second, even if the airline successfully claims force majeure, CAA's own regulations still require them to cover "必要費用" (necessary expenses) incurred due to the delay, which would include the NT$3,800 hotel stay. So the argument becomes: either the airline is fully liable for all damages including the luxury accommodation, or at minimum they must cover the essential expenses. Additionally, the 調處辦法 imposes an unconditional duty on the airline to provide accommodation and meals when delays affect passengers—there's no force majeure exception carved out for that obligation.
+I'm gathering the details for a complaint letter in Traditional Chinese about a cancelled flight to Japan. The user is based in Taipei, so I need to reference Taiwan's relevant aviation regulations—specifically the Civil Aviation Administration's passenger rights and dispute resolution procedures for flight cancellations and delays. I should consider whether the airline is Taiwanese or foreign-operated, as that affects which regulations apply.  
+The key leverage point here is that mechanical failures aren't considered extraordinary circumstances under Taiwan's rules—they're within the airline's control. Under Taiwan's aviation passenger rights regulations, when a flight is cancelled due to reasons attributable to the carrier, the airline must provide meals, beverages, communication access, accommodation with transportation, and other necessities. If they refused to provide accommodation and told the passenger to arrange their own, that's a violation—the airline must reimburse those costs. I should emphasize this in the complaint letter as it strengthens the user's position. Cathay Pacific or HK Express is likely the carrier, but I'll structure this with placeholders to cover either case. For the delay compensation, I need to check Taiwan's Civil Aviation Act Article 91 and the standard passenger contract terms, plus the Consumer Protection Act — Taiwan isn't formally a Montreal Convention party, but its domestic law mirrors those protections. Japan is a signatory, which may affect liability depending on where the flight originated and the carrier's registration. I realized that delay compensation is not explicitly stipulated in the Civil Aviation Act, so I should instead use the framework of consumer protection law and civil code breach of obligation. For complaint channels, passengers can file with the Civil Aviation Administration's consumer services division, or with the Executive Yuan Consumer Protection Commission.  
+The key strategy is to reposition this case from "requesting sympathy" to "a clearly calculated damages claim" listing specific amounts and evidence. I should distinguish between direct losses that are documented and receipted (NT$3,800 plus NT$12,000 totaling NT$15,800) requiring full reimbursement, and harder-to-quantify losses (elderly passengers' physical burden, compressed itinerary, lost vacation time) positioned as goodwill compensation items — this gives the other side negotiation room while protecting the core claim.  
+Set a 14-day deadline and clearly indicate escalation channels (CAA complaint, Consumer Protection Officer complaint, small claims court), using firm factual tone rather than aggressive threats. Most importantly, change the communication channel — don't reply to the same customer service inbox that sent the boilerplate response. Instead, send by registered mail to the General Manager's office or Customer Service Director, and simultaneously file with the CAA so they forward it to the airline requiring a formal response, pulling the case out of the boilerplate reply queue.  
+Regarding the NT$12,000 onsen ryokan, need to prove the expense is non-refundable and that I've attempted negotiation (notified the hotel, attempted rescheduling), with screenshots of the hotel's cancellation policy and proof of non-refund to strengthen the claim — because airlines typically push back on consequential damages. Should also check whether the credit card includes travel inconvenience insurance; many cards' flight delay insurance covers accommodation expense claims — this is a parallel claim path; if insurance already covered the hotel expense, it shouldn't be double-claimed.  
+Additionally, must request a written flight cancellation certificate from the airline — insurance claims have time limits, and the onsen ryokan sometimes agrees to reschedule or issue partial credit upon receiving a cancellation certificate. Most importantly, do not use the NT$500 discount voucher, as using it could be interpreted as accepting the settlement. Should explicitly state in the letter that the voucher has not been used and is not regarded as settlement of this matter. As for the non-direct rebooking through Hong Kong, this involves involuntary rerouting under the carriage contract, particularly when elderly passengers are involved — their rights need further examination.  
+The airline failed to inform the passenger of their full options — this is a substantive oversight. The passenger should have been offered full refund or endorsement to another airline's direct flight, but was not informed of these choices. Additionally, for passengers in their seventies, the airline should have proactively offered wheelchair service and airport lounge access during the four-hour Hong Kong layover — this is a failure of duty of care. Now calculating the loss amount: accommodation NT$3,800, onsen ryokan NT$12,000, airport transportation costs.  
+Plus meal expenses (receipts needed), subtotal approximately NT$15,800 or more. Beyond full cash reimbursement of actual losses, should also request inconvenience compensation — I suggest NT$5,000 per person for three passengers (NT$15,000 total) as inconvenience compensation, with the total around NT$30,800, but the floor being NT$15,800 in cash plus equivalent ticket or mileage compensation as a package.  
+The letter should be formal, fact-oriented, legally grounded, with clear deadlines and escalation paths, avoiding emotional language or personal attacks. Opening should directly state this is a damages claim, not a complaint. As for format, this formal damages claim letter should be produced as a standalone document, presented in mail or letter format.  
+I'm inclined to embed the letter content directly in the response so the user can fill in specific details and print or send by registered mail — this is more efficient than creating a separate file.  
+(Web search)  
+I'm reviewing the relevant civil aviation regulations and civil code provisions. The Civil Aviation Passenger Dispute Resolution Regulations specify what airlines must provide during disruptions—communication, food, accommodation, and medical assistance—while the Civil Code establishes that carriers are responsible for passenger injuries and delays, with limited exceptions for force majeure events.  
+(Web search)  
+I'm noticing a critical detail from CAA's regulations: they explicitly recognize "機件故障" (mechanical failures) that aren't attributable to the airline as potential force majeure circumstances. This means the airline will likely argue that mechanical issues fall outside their responsibility, which complicates the passenger's claim for compensation.  
+However, I can build a two-pronged legal argument here. First, I need to shift the burden of proof onto the airline—under civil law, they must demonstrate that the mechanical fault was genuinely beyond their control (not a maintenance or inspection failure). Second, even if the airline successfully claims force majeure, CAA's own regulations still require them to cover "必要費用" (necessary expenses) incurred due to the delay, which would include the NT$3,800 hotel stay. So the argument becomes: either the airline is fully liable for all damages including the luxury accommodation, or at minimum they must cover the essential expenses. Additionally, the 調處辦法 imposes an unconditional duty on the airline to provide accommodation and meals when delays affect passengers—there's no force majeure exception carved out for that obligation.  
 I have enough material now to structure the response around these legal leverage points. I'm adjusting the compensation request package — direct losses of NT$15,800 plus NT$5,000 per person as equivalent compensation (choice of cash or unrestricted-route ticket credit valid for at least two years), totaling NT$30,800, with NT$15,800 in cash as the floor. I should also remind the user that if they have receipts for airport transportation, taxi fares, or meal expenses, those should be added to the claim.
 
 # Visible Response
 
-# Core Decisions
+# Core Decision
 
 First, a reframing: this is not a "complaint letter" — it's a "damages claim letter"
 
@@ -483,15 +497,15 @@ So the letter's mission isn't to convey emotion — it's to pull the case out of
 
 I've verified the current regulations, and there's a structure within them that is extremely favorable to you but that ordinary people wouldn't discover:
 
-**Layer 1 — Duty of care: unconditionally established.**
+**Layer 1 — Duty of care: unconditionally established.**  
 Under Article 4 of the Civil Aviation Passenger and Air Carrier Dispute Resolution Regulations (民用航空乘客與航空器運送人運送糾紛調處辦法), when a carrier's delay or route change or change in departure/arrival location affects passenger rights, the carrier shall, considering actual circumstances and passenger needs, provide in a timely manner: necessary communication, necessary meals or accommodation, necessary cold-weather or emergency medical supplies, and necessary connecting transportation or other transport. Where local conditions make provision impossible, the carrier shall promptly explain the reasons in detail and handle the matter appropriately.
 
 Note that this article **has no "attributable" prerequisite.** Regardless of whose fault the mechanical failure is, at the moment of flight cancellation, providing accommodation is the airline's statutory obligation, not goodwill. "Handle it yourself" is a breach of obligation. The NT$3,800 you advanced is expenditure made on their behalf to fulfill their legal duty — its nature is **reimbursement of subrogated costs**, not a request for a favor.
 
-**Layer 2 — Damages liability: burden of proof is on them.**
+**Layer 2 — Damages liability: burden of proof is on them.**  
 Civil Code Article 654 provides that passenger carriers are liable for delays, with the exception of force majeure. **The exception is an affirmative defense, and the burden of proof falls on the carrier.** The airline stating "mechanical issues" in four characters does not constitute proof — that is a description of the cause, not a defense establishing exemption.
 
-**Layer 3 — This is the most critical step.**
+**Layer 3 — This is the most critical step.**  
 The CAA's published passenger advisory states: when an airline faces force majeure factors causing flight delays (such as weather changes, mechanical failures not attributable to the airline, etc.), unless other trade customs apply, liability is limited to necessary expenses incurred by passengers due to the delay.
 
 Read that sentence structure carefully — **even under the interpretation most favorable to the airline (mechanical failure deemed non-attributable), they still must compensate "necessary expenses incurred by passengers due to the delay."** Your airport hotel NT$3,800 is a textbook case of this definition.
@@ -551,6 +565,7 @@ After a flight cancellation, passengers should request a "Flight Cancellation Ce
 This is the most easily overlooked path that could directly recover the NT$3,800. Most banks provide travel inconvenience insurance coverage for consumers who purchase tickets with their credit card; when flight delays occur during travel, consumers may receive compensation per the issuing bank's terms.
 
 **Specific steps:**
+
 - Call the customer service number for **the specific card you used to buy the tickets** (not just any card — must be the one that paid for the fare), and ask three questions:
   1. "Does this card's travel inconvenience insurance cover flight cancellations (Trip Cancellation / Flight Delay)?"
   2. "What is the claim filing deadline from the date of the incident?" (Most are 180 days; some are shorter — make sure to confirm)
@@ -645,7 +660,6 @@ Re:        Regarding the cancellation of Flight XX-____ on 【date】,
            reimbursement of subrogated costs and compensation for resulting
            damages. I respectfully request your investigation and handling.
 
-
 I. Factual Account
 
   The undersigned, 【name】, national ID number 【】, contact phone 【】,
@@ -711,7 +725,6 @@ II. Damages Incurred
   activities; my parents were subjected to unnecessary connections and
   extended waiting; and I expended one additional day of annual leave.
 
-
 III. Legal Basis
 
   (1) Regarding the Obligation to Provide Accommodation
@@ -772,7 +785,6 @@ III. Legal Basis
      be borne by your company under any legal evaluation, without room for
      dispute.
 
-
 IV. Regarding Your Company's Previous Reply
 
   On 【date】, the undersigned filed a petition through your company's
@@ -786,7 +798,6 @@ IV. Regarding Your Company's Previous Reply
   undersigned has not used the voucher and does not regard it as any form
   of settlement or waiver of rights in connection with this matter; all
   claims are expressly reserved.**
-
 
 V. Requested Remedies
 
@@ -804,7 +815,6 @@ V. Requested Remedies
      in question.
 
   Total requested amount: NT$______.
-
 
 VI. Deadline and Further Steps
 
@@ -830,7 +840,6 @@ VI. Deadline and Further Steps
   This is a right the undersigned is entitled to exercise under law, and
   is stated here for the record.
 
-
 VII. Attachments
 
   Attachment 1: Original e-ticket and booking record
@@ -843,7 +852,6 @@ VII. Attachments
   Attachment 6: Undersigned's previous complaint form record and your
                  company's reply in full
   Attachment 7: Passport biographical pages for all three travelers
-
 
                          Petitioner: __________ (signature)
 
@@ -867,6 +875,7 @@ VII. Attachments
 The reason is structural: after the CAA accepts a petition, it forwards the case to the airline for investigation and response, and the petition processing deadline is 7 days (excluding holidays). Petitioners can use a tracking number to check case progress. This means the case exits the customer-service automated queue and enters a track where a written explanation must be provided to the regulatory authority — **a case handled by customer service agents and a case that requires a written response to the CAA are handled at different authorization levels with different case-closure standards.**
 
 **How to do it:**
+
 - URL: Civil Aviation Administration website → Public Services → Online Petition
 - Consumer service hotline: **0800-211798**
 - After submission, the system sends a verification email — you must click the verification link in that email to complete confirmation — **many people miss this step; not clicking verification means the petition was never submitted.**
@@ -993,7 +1002,7 @@ So among the things you should do today, **"looking up the registered address an
 
 One more counterintuitive point: **don't inflate the claim amount.** General advice says "start high, then negotiate down," but in corporate customer service claim scenarios, a detailed list where every item has a receipt and amounts are precise to the dollar has a credibility advantage that far outweighs whatever negotiation room inflating would buy. The handler needs to get sign-off from above, and what they need is a document that "is obviously legitimate at a glance and can be approved directly." Your advantage is that every single item is real — use that advantage to its fullest.
 
----
+</details>
 
 # AB Test Quality Audit
 

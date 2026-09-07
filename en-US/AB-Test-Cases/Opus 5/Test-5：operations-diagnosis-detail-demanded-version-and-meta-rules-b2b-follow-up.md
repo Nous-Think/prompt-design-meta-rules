@@ -2,6 +2,8 @@
 
 > All content below — the test design, responses, and analysis — was originally produced in Chinese and has been translated into English for accessibility.
 
+> Model: Opus 5
+
 # Test Purpose
 
 This is not an AB test but an attribution test. It asks: **can the most visible characteristic of the Meta Rules response — sufficient detail with every action item directly executable — be obtained simply by explicitly requesting it in the prompt?**
@@ -11,8 +13,6 @@ Most people (including AI) after reading the quality gap in the AB tests intuiti
 - The response must self-check whether, after reading, the user might still ask "is there a higher-resolution action guide? Is there a framework or checklist to aid judgment?" — if so, the gap between understanding and action must be closed. Specific details must not be compressed into propositions for the sake of length; if there is incremental value, length must grow accordingly.
 - Every action item must carry its complete subsequent operations in-place — the reader's trajectory after finishing should be to start doing, not to ask follow-up questions. Restating a destination as a path is the most frequent form of convergence (example: "buy cheap stocks and sell after they hit the daily limit") — its hallmark is that the more it sounds like action, the harder it is to detect. If an action item does not carry operations that would provide obvious incremental value, it must be expanded in-place until it does — judged by "would the executor need to ask a follow-up before starting?", not by the generator's sense of completion.
 
----
-
 # Test Prompt
 > The prompt is identical to Test 1 (Operations Diagnosis — Baseline and Meta Rules Under a High-Level Task Prompt), with only the two rules above appended to the quality requirements. The response below is designated C, to distinguish it from Test 1's A (baseline) and B (Meta Rules).
 
@@ -20,8 +20,9 @@ Most people (including AI) after reading the quality gap in the AB tests intuiti
 ## Role
 Ground the analysis in expertise across retail operations management, consumer behavior analysis, and supply chain strategy — but don't limit it to these if broader knowledge improves response quality.
 ## Background
-We are a mid-sized chain bakery brand with 8 years of history, operating 12 stores in northern metropolitan areas, with annual revenue of approximately NT$280M and roughly 180 employees.
+We are a mid-sized chain bakery brand with 8 years of history, operating 12 stores in northern metropolitan areas, with annual revenue of approximately NT$280M and roughly 180 employees.  
 **Recent one-year operating data:**
+
 - Total revenue YoY +6%, but excluding 2 newly opened stores, same-store revenue YoY −3%
 - Customer traffic YoY −8%, but average transaction value YoY +12% (from NT$185 to NT$207)
 - Core product line (European bread series) revenue share dropped from 45% to 38%; pastries and cakes rose from 25% to 33%
@@ -29,7 +30,9 @@ We are a mid-sized chain bakery brand with 8 years of history, operating 12 stor
 - Raw material costs YoY +14% (mainly imported flour and butter)
 - Labor costs YoY +11% (minimum wage increase + 40% baker turnover rate)
 - ~60K members, but monthly active members (at least one purchase) only 12K
+
 **Known issues:**
+
 - Three legacy store leases expire within 8 months; landlords have signaled 15–25% rent increases
 - Two new stores have not yet reached breakeven (6 months in, running ~NT$150K/month loss per store)
 - Bakers are hard to recruit and turnover is high; 2 stores have been forced to shorten operating hours due to staffing shortages
@@ -45,9 +48,10 @@ Diagnose the structural problems behind these data points and provide operationa
 ## Output Structure
 Include: diagnostic framework (problem structure and causal relationships), prioritized action sequence (with time dimension), resource reallocation recommendations, and hypotheses requiring further validation. If there are other critical dimensions not mentioned above, proactively address them.
 
----
-
 # Baseline Response (Opus 5)
+
+<details>
+<summary>Expand full response</summary>
 
 # Operations Diagnosis and 12-Month Action Plan
 
@@ -76,6 +80,7 @@ This gap has only three explanations, and they point to completely different dia
 Back-solving from your ratios:
 
 **Revenue decomposition**
+
 - Last year's revenue = 280M ÷ 1.06 ≈ **NT$264M**
 - 10 legacy stores this year = 264M × 0.97 ≈ **NT$256M**
 - 2 new stores' 6-month contribution = 280M − 256M = **NT$24M** → **single-store monthly revenue ≈ NT$2M**
@@ -85,11 +90,13 @@ Back-solving from your ratios:
 > This overturns the intuitive explanation of "new stores are still building their customer base." The new stores' problem **is not insufficient customers — it's that the single-store cost model is broken.** This is the first key finding of this diagnosis; I address it specifically in §2.2.
 
 **Delivery decomposition**
+
 - This year's delivery = 280M × 22% = **NT$61.6M**
 - Last year's delivery = 264M × 12% = **NT$31.68M**
 - Delivery YoY **+94%**
 
 **In-store (non-delivery) revenue decomposition**
+
 - This year's in-store = 280M − 61.6M = **NT$218.4M**
 - Last year's in-store = 264M − 31.68M = **NT$232.3M**
 - Company-wide in-store revenue **−6.0%** (and this **includes the two new stores**)
@@ -158,6 +165,7 @@ Last year: same
 ```
 
 **Interpretation benchmarks:**
+
 - If mix-shift contribution **> 6 pp** (i.e., more than half) → the transaction-value growth is an illusion; the customer base is deteriorating. This diagnostic's conclusions all hold — proceed immediately to Part 2
 - If pure price-increase contribution **> 8 pp** while traffic is plunging → your pricing has exceeded consumers' willingness-to-pay ceiling; review pricing strategy immediately (see §3.4)
 - If items per transaction are **declining** → customers are "buying less per visit" — this is the earliest signal of rising price sensitivity
@@ -220,6 +228,7 @@ A 40% annual baker turnover rate is not an HR problem — it is a production-arc
 **The labor market can't supply this.** Taiwan's bakery industry faces a structural shortage of mid-career bakers. The entry wage is uncompetitive against service-industry alternatives with better hours; the career path is unclear; the work starts at 3–4 AM. The 40% turnover is not a symptom of poor management — it is the equilibrium of a production model that demands artisan-level labor in a market that cannot supply it at scale.
 
 **Every store exit creates a cascade:**
+
 - Experienced baker leaves → quality variance on core items (especially European bread, where batch consistency depends entirely on tacit skill)
 - Quality drops → regulars notice → visit frequency falls → traffic decline
 - Remaining staff absorbs workload → overtime increases → next departure accelerates
@@ -230,6 +239,7 @@ A 40% annual baker turnover rate is not an HR problem — it is a production-arc
 ## 1.5 Mechanism M1: Delivery Margin Arbitrage Imbalance (With a Calculable Decision Rule)
 
 The math:
+
 - In-store gross margin: 52% → COGS ≈ 48%
 - Delivery gross margin: 18%
 - If delivery prices equal in-store prices → 52% − platform commission = 18% → **commission ≈ 34%**
@@ -237,6 +247,7 @@ The math:
 34% falls squarely in Taiwan's typical platform commission range (30–35%). The equation balancing at this number is itself evidence that **delivery prices have not been adjusted at all — no markup, no commission pass-through.**
 
 **What this means in cash:**
+
 - This year's delivery revenue: NT$61.6M at 18% margin → gross profit NT$11.1M
 - Had the same NT$61.6M been sold in-store at 52% margin → gross profit NT$32M
 - **The channel shift destroyed approximately NT$20.9M in gross profit**
@@ -369,6 +380,7 @@ Create an Excel table: horizontal axis 13 weeks, vertical axis as follows:
 ```
 
 **Interpretation rules:**
+
 - Any week where closing cash falls below the safety level → **the corresponding action must be taken 4 weeks prior** (defer capex, negotiate supplier credit terms, draw on credit facilities)
 - Update every Monday morning, always looking 13 weeks ahead
 - This table is maintained by the finance director but **the CEO must personally review it every week**
@@ -424,12 +436,14 @@ Build a table placing New Store A, New Store B, and legacy-store averages side b
 **The three most likely culprits and their treatments:**
 
 **Culprit 1 | Rent ratio too high (if > 15%)**
+
 - This is a **site-selection error**, not an operations problem; improvement potential is limited
 - Action: immediately pull the lease and confirm (a) whether there's a rent-adjustment clause, (b) early-termination penalty amount, (c) whether subletting is permitted
 - Bring 6 months of actual operating data to negotiate with the landlord for "revenue-share rent" or "stepped rent" (first 12 months −20%, month 13 onward restore)
 - **Core script: help the landlord understand that "you closing means 3–6 months of vacancy plus fitout subsidies for the next tenant" — far more expensive than a 20% rent reduction**
 
 **Culprit 2 | Labor ratio too high (if > 26%)**
+
 - Very likely over-staffing from the opening period that was never right-sized
 - Action: pull the past 6 months of **hourly transaction data** (POS timestamps) for these two stores; plot hourly heat maps
 - Identify time slots with transaction volume below 40% of the daily average (typically 10:00–11:30, 14:00–16:30)
@@ -437,6 +451,7 @@ Build a table placing New Store A, New Store B, and legacy-store averages side b
 - Expected savings: NT$60–100K per store per month
 
 **Culprit 3 | Opening costs amortized over too short a period**
+
 - If accounting policy amortizes fitout costs over a short useful life, the P&L will inevitably look terrible
 - Action: confirm with your accountant whether the fitout amortization period is reasonable (should typically match the lease term; 5 years is common)
 - If the amortization period is indeed too short, adjusting it may immediately improve the accounting P&L
@@ -461,6 +476,7 @@ Two stores = NT$374K/month = NT$4.48M/year
 **Four staffing solutions, ranked by speed of execution:**
 
 **Solution 1 | Eliminate the assumption that "a baker must be present to operate" (Days 1–3)**
+
 - Reality: what these two stores are missing is most likely **production-side bakers**, not sales-side staff
 - Action: have a nearby store (within 30-minute drive) **bake and deliver** products; the affected store operates as a sales-only point
 - Required: one insulated delivery box (~NT$3,000–8,000), 1–2 delivery runs per day
@@ -468,16 +484,19 @@ Two stores = NT$374K/month = NT$4.48M/year
 - **This is the single highest-ROI action in this entire phase**
 
 **Solution 2 | Cross-store support roster (Days 3–7)**
+
 - Build a company-wide baker "support availability list" with fields: name, home store, supportable stores (within 40-minute commute), available time slots, specialty categories
 - Cross-store shifts receive a "cross-store support allowance" (recommended NT$500–800/shift), counted as a positive factor in annual reviews
 - Coordinated centrally by the operations manager, not arranged privately between store managers (private arrangements create social debts and cannot scale)
 
 **Solution 3 | SKU simplification to reduce staffing requirements (Days 3–10)**
+
 - Cut these two stores' SKUs to the company-wide top 60% by sales volume
 - Retain all items sharing dough with other products (see §3.2's dough-parent method)
 - Short-term loss of marginal item revenue, exchanged for full operating hours — **net value is necessarily positive**
 
 **Solution 4 | Temporary/part-time staffing (Days 7–14)**
+
 - Sales-side staffing can use part-timers: low threshold, fast to recruit
 - Production-side **do not use temporary staff** — skill instability damages quality; net-negative
 
@@ -486,17 +505,20 @@ Two stores = NT$374K/month = NT$4.48M/year
 Raw materials +14% (imported flour, butter) — this is a **combined effect of exchange rates and international commodity prices**, not within your control. But three things are within your control:
 
 **Action 1 | Centralized procurement negotiation**
+
 - If 12 stores are still purchasing independently, centralize immediately
 - Pull the past 12 months of per-store procurement records; aggregate annual volume by item
 - Use annual volume to renegotiate with top 3 suppliers, requesting "annual contract pricing + quarterly adjustment mechanism" instead of spot pricing
 - Expected: 3–6% reduction achievable on commodity items like flour and butter
 
 **Action 2 | Alternative sourcing evaluation for key ingredients**
+
 - Imported butter is the highest-increase item. Action: have the R&D baker conduct **blind tests** — same recipe, imported cultured butter vs. domestic/Australasian source. Score by 10 employees + 20 member panelists
 - **Substitute only on items where the blind-test score difference is not statistically significant**; core signature items remain unchanged
 - Record the blind test results — if you're later accused of "cutting corners," this is your evidence
 
 **Action 3 | Credit-term negotiation**
+
 - When cash flow is tight, credit terms are the cheapest form of financing
 - Propose to top 3 suppliers: "We'll maintain purchasing volume and sign a 12-month contract in exchange for extending credit terms from net-30 to net-60"
 - For suppliers, locking in volume matters more than credit terms; success rate is meaningful
@@ -572,24 +594,27 @@ Store: ____  Month: ____  Operating days: ____
 ### ⚠️ Three Rules That Must Be Upheld (Otherwise This Table Becomes Useless)
 
 **Rule 1 | "Headquarters overhead allocation" goes on the last line and does not affect store manager evaluations**
+
 - Store managers cannot control headquarters costs; evaluating them on it destroys trust in the entire table
 - Store manager KPIs are tied to "store-level cash contribution," not accounting profit/loss
 
 **Rule 2 | Waste loss must be listed separately, never buried in ingredient cost**
+
 - Waste rate is the **only visible indicator** of production-planning accuracy
 - Healthy waste rate for bakeries: 3–6%. Above 8% indicates production scheduling is out of control
 - Once buried in ingredient cost, it becomes permanently invisible
 
 **Rule 3 | Delivery revenue records "consumer's total payment," with commissions listed separately as cost**
+
 - If you record only the platform's net remittance, you will never know how much commission you're paying
 - And you cannot calculate the true channel-margin differential
 
 ### Execution Steps
 
-**Week 1**: Finance director manually completes 1 store's template (choose the legacy store with the most complete data)
-**Week 2**: Template reviewed jointly by CEO + operations director + that store's manager; refine field definitions
-**Weeks 3–4**: Expand to all 12 stores; simultaneously back-fill two years of same-period data (for comparison)
-**Week 5 onward**: Enter steady state — tables produced by the 5th of each month
+**Week 1**: Finance director manually completes 1 store's template (choose the legacy store with the most complete data)  
+**Week 2**: Template reviewed jointly by CEO + operations director + that store's manager; refine field definitions  
+**Weeks 3–4**: Expand to all 12 stores; simultaneously back-fill two years of same-period data (for comparison)  
+**Week 5 onward**: Enter steady state — tables produced by the 5th of each month  
 **Week 6**: Convene the first "Single-Store P&L Review Meeting" (governance design in §3.8)
 
 ### Pre-Requisite Check: Can Your Systems Do This?
@@ -671,11 +696,13 @@ Actual daily sales = 35 loaves
 **Step 5 | Exception Retention List (Month 3, Week 4)**
 
 Three types of items must be retained even with poor numbers — requires CEO personal approval:
+
 1. **Brand-identity items** (mentioned in media, won awards, known in consumer minds as "your signature")
 2. **Customer-segment-locking items** (e.g., sugar-free, oil-free health toast that locks in elderly and health-conscious segments — low ticket but extremely high frequency)
 3. **Time-slot-filling items** (the only bestseller during afternoon hours; cutting it zeroes out afternoon traffic)
 
 **Step 6 | Delisting Execution (Month 4)**
+
 - Announce 14 days in advance via in-store POP, LINE Official Account, and delivery platform pages
 - Copy doesn't say "discontinued" — says "**seasonal farewell**" — preserving space for future revival and reducing regular-customer backlash
 - 30 days after delisting, track whether the item's original purchasers (filter by member ID) have churned; if churn > 15%, review whether to revive
@@ -726,10 +753,12 @@ Delivery list price = in-store list price × 1.28 to 1.35
 ```
 
 **Rationale and messaging:**
+
 - Taiwan consumers already widely understand that "platform prices are higher than in-store prices" — this isn't deception, it's cost-of-channel transparency
 - The platform page explicitly states: "Delivery prices include platform service costs; in-store prices are more favorable" — **this sentence is itself free advertising to drive customers back to the store**
 
 **Execution notes:**
+
 - Some platform contracts include "price-parity clauses"; review every clause before signing
 - If such a clause exists, circumvent it by using "delivery-exclusive items" (different items mean no basis for price comparison) — **this is also a side benefit of Action 1**
 
@@ -738,6 +767,7 @@ Delivery list price = in-store list price × 1.28 to 1.35
 **This is the most important item in this section, because what it creates is a permanent asset.**
 
 **Build specifications:**
+
 - LINE Official Account + LINE shopping module (or integrate with a third-party SaaS such as Shopline / 91APP's store-pickup module)
 - Minimum functionality: **select store → select products → select pickup time slot → pay online → pick up in store**
 - Build cost estimate: NT$500K–1.5M (depending on customization); monthly fees NT$10–50K
@@ -779,6 +809,7 @@ Margin comparison (on a NT$500 order):
 ```
 
 **Tracking design (without tracking it's as if you didn't do it):**
+
 - QR Code carries **UTM parameters**, source tagged as `delivery_card`
 - Track monthly: cards distributed → scans → registrations → in-store redemptions
 - Target conversion rates: scan rate > 8%, registration-to-in-store redemption > 35%
@@ -817,6 +848,7 @@ Simultaneously require:
 ```
 
 **Step 2**: This schedule must appear in four places:
+
 - A large decal on the store's glass door (not small print — must be readable from a distance)
 - A permanent item in the LINE Official Account's rich menu
 - The "business description" field of the Google Business Profile
@@ -841,11 +873,13 @@ Simultaneously require:
 Three monetization directions (can run in parallel):
 
 **Direction A | Off-peak-exclusive items**
+
 - Items available only from 14:00–17:00 and not on delivery platforms
 - Selection criteria: simple process (no added baker burden), visually appealing (photo-worthy), unit price NT$60–120
 - Examples: fresh-baked scones + house-made jam, pressed toast sandwiches
 
 **Direction B | Dine-in seating (only for stores with available space)**
+
 - Inventory which of the 12 stores have 8+ sqm of underutilized space
 - Add 4–6 seats + coffee equipment (semi-automatic espresso machine ~NT$80–150K)
 - Coffee gross margin 75–85%, and **coffee is "the reason to stay"** — it increases incidental bread purchases
@@ -869,6 +903,7 @@ For each SKU:
 ```
 
 **Typical results (for reference only; must use your actual data):**
+
 - **Low elasticity**: signature items, cakes, gift boxes, distinctive items with no substitutes → can increase 5–8%
 - **High elasticity**: white toast, dinner rolls, basic staples — these are **traffic items** that customers use as price benchmarks → **not only should they not be raised, consider rolling back**
 
@@ -895,6 +930,7 @@ For each SKU:
 - Questions 3 and 5 are the key ones. **Question 5's answer is the current state of your employer brand.**
 
 **The four most common exit reasons in bakery (your interviews should fall within these):**
+
 1. The physiological and social cost of pre-dawn shifts (starting at 3–4 AM means losing a normal social life)
 2. Low and opaque salary ceiling (5 years of experience pays about the same as 2)
 3. Technical stagnation (making the same things every day, learning nothing new)
@@ -913,6 +949,7 @@ For each SKU:
 | **L5** | Technical Director | Sets company-wide recipe standards; leads central production technology; externally represents the brand | Negotiated |
 
 **System design requirements:**
+
 - **Grading assessments twice per year (April and October), fixed dates, open enrollment** — not unilaterally decided by supervisors
 - Assessment panel of 3: Technical Director + one L4 from another store + one external consultant/instructor (the external person is the source of credibility)
 - **Assessment criteria published in advance** — anyone can know "what do I need to achieve to advance"
@@ -952,6 +989,7 @@ At 36 months: 2 months of base salary; every 12 months thereafter: 2 months
 ### Action 4 | Technical Achievement Mechanism (Month 5 Onward, Quarterly)
 
 **Quarterly new-product development competition:**
+
 - All L2+ bakers may enter; each submits 1 item
 - Judges: Technical Director + 3 store managers + 20 randomly selected active members (member scores count for 40%)
 - Winning items **launch across all stores, with the product label bearing the developer's name and home store**
@@ -1006,6 +1044,7 @@ And the market can't even retain 12 for you.
 ### Phase 1: Feasibility Evaluation (Months 6–7)
 
 **Step 1 | Inventory freezable items**
+
 - Technical Director evaluates each SKU: **fully freezable / partially freezable (dough only) / not freezable**
 - Generally: toast, dinner rolls, croissant, and Danish **dough** freezes well; sourdough and high-hydration European bread loses flavor quality after freezing
 - **Target: identify items covering 55–70% of revenue that are freezable** (100% is not needed; signature items can remain fresh-produced)
@@ -1072,6 +1111,7 @@ Each store needs:
 - Cost: contract-manufactured dough unit price will be ~15–25% higher than in-house, but saved baker labor hours and reduced waste may offset
 
 **Negotiation points:**
+
 - Require **exclusive recipe rights** (they may not sell your formulas to third parties), with specified penalties for breach
 - Require **minimum order flexibility**, with first 6 months as a trial period
 - Require **3 rounds of sampling** before signing, each scored by your Technical Director
@@ -1159,8 +1199,8 @@ Is the store's cash contribution > 0?
 
 ### Monthly Single-Store P&L Review Meeting
 
-**Time**: 8th–10th of each month (within 3 days of table publication)
-**Duration**: 2.5 hours, hard stop
+**Time**: 8th–10th of each month (within 3 days of table publication)  
+**Duration**: 2.5 hours, hard stop  
 **Attendees**: CEO (mandatory), Operations Director, Finance Director, 12 store managers (video OK), Technical Director
 
 **Fixed agenda (order cannot be changed):**
@@ -1179,13 +1219,14 @@ Is the store's cash contribution > 0?
 ```
 
 **Three rules that must be upheld:**
+
 1. **Bottom-three managers talk about "what they're doing," not "why it's not their fault."** The facilitator's job is to interrupt at the first explanatory sentence and redirect.
 2. **Every decision must have a name and a date.** A decision without a name is not a decision.
 3. **Prior month's decision completion status is distributed in writing before the meeting starts** — does not consume meeting time, but is publicly visible.
 
 ### Weekly Operations Meeting
 
-**Time**: Every Monday 09:00, 60 minutes
+**Time**: Every Monday 09:00, 60 minutes  
 **Content**: Past week's revenue and traffic (vs. plan), waste-rate anomaly stores, staffing gaps, this week's bake-schedule achievement rate
 
 ### CEO's Weekly Fixed Actions
@@ -1328,6 +1369,7 @@ Message (LINE one-to-one push, not mass broadcast):
    — [Store manager name]"
 ```
 **Key points:**
+
 - **Signed by the store manager** (not "customer service center")
 - **Limited quantity + limited time + limited store** — triple scarcity
 - **No discount** — it's "we saved one for you"
@@ -1451,6 +1493,7 @@ NT$437.5K < tolerable ceiling of NT$528K → 【Financially acceptable】
 **Three things to complete by Month 1:**
 
 **Prep 1 | Find 2–3 actually usable alternative locations**
+
 - Requirements: same or adjacent trade area, similar floor area, suitable for food service (**confirm building use classification, exhaust/drainage, and electrical capacity**)
 - **Physically visit and actually ask for rent and deposit figures** — not just a hunch
 - You don't necessarily intend to lease these, but **you must have real numbers**
@@ -1485,6 +1528,7 @@ Option 3: Close                   One-time cost C − monthly loss saved × 12 +
 ### Pre-Negotiation Landlord Intelligence
 
 **Before the first negotiation, determine three things:**
+
 1. **Who is the landlord?** Individual owner vs. corporation / asset management company — the former values relationship and stability; the latter only looks at numbers and market rates
 2. **Does this landlord own other storefronts nearby?** If they have vacancies, their negotiation room is larger than they're showing
 3. **What's the vacancy rate on this street?** Walk the block and count the "for rent" signs. High vacancy = your leverage is strong
@@ -1509,6 +1553,7 @@ Option 3: Close                   One-time cost C − monthly loss saved × 12 +
 ```
 
 **Analysis:**
+
 - **Lead with relationship and intent** (I want to stay), reducing adversarial tone
 - **Provide specific numbers** (14%, 11%) — numbers turn your difficulty into fact rather than haggling
 - **Don't make the first offer** — let them speak first so you know where the room is
@@ -1589,6 +1634,7 @@ Option 3: Close                   One-time cost C − monthly loss saved × 12 +
 ```
 
 **Analysis:**
+
 - **"I calculated all three options"** — demonstrates you have choices, stated as fact not threat
 - **"I don't want to move"** — preserves the relationship; lets them know your preference is genuine
 - **"The most I can do is X, we can sign today"** — a clear endpoint plus an immediate-close incentive
@@ -1597,6 +1643,7 @@ Option 3: Close                   One-time cost C − monthly loss saved × 12 +
 ### Should You Negotiate the Three Stores Together or Separately?
 
 **Separately.** Reasons:
+
 - The three stores may have different landlords; separate by default
 - Even with the same landlord, negotiating separately lets you test the landlord's floor in the first negotiation and apply it to the next two
 - **Negotiation order: start with the store you're most confident you'll keep** (not the one you least mind losing)
@@ -1738,6 +1785,7 @@ Target:
 **At 12 stores, a single food safety incident is enough to destroy 8 years of brand equity.**
 
 **Minimum actions (Months 2–3):**
+
 - Each store establishes **daily temperature logs** (refrigeration, freezing, oven) — paper or digital, but must be signed daily
 - **Ingredient lot-number traceability**: retain purchase orders for 2 years; log lot numbers for flour, butter, and eggs
 - Quarterly **third-party microbiological testing** (2 high-risk items per store, e.g., items with butter fillings or fresh fruit decoration)
@@ -1749,6 +1797,7 @@ Target:
 **Imported flour and butter costs are up 14%, but the bigger risk is: if your primary flour comes from a single supplier, any supply disruption directly halts production.**
 
 **Actions:**
+
 - Inventory top 10 ingredients; flag "single-supplier" items
 - For each critical ingredient, **complete sampling and approval of at least one backup supplier** (no need to place orders — just sample, confirm quality is usable)
 - Safety stock: maintain 14–21 days for critical ingredients (cash flow permitting)
@@ -1808,14 +1857,17 @@ Every number in your problem description points upward (revenue +6%, transaction
 
 **This is not poor management on your part — it is the inevitable result of "managing chain retail with aggregate metrics."** The first step in correction is putting 12 single-store P&L statements on the table and looking at them once a month.
 
+</details>
+
 # Concurrent Test
 > As a control group, the Meta Rules operations diagnosis conversation from Test 1 was followed up with the question: "I'm interested in B2B — how should I go about it?" B2B was the only topic left as a hook without expansion in the original response, so it can be used to observe: whether the Meta Rules' expansion quality is maintained in follow-up, and whether there was substance behind that hook or it was empty. No length comparison is made here; only the source and quality of detail are compared.
 
----
-
 # Meta Rules Response (Opus 5)
 
-# Core Decisions
+<details>
+<summary>Expand full response</summary>
+
+# Core Decision
 B2B Channel Build-Out: Starting from the Easiest Segment
 
 ## First, a Clarification: B2B Is Not One Business
@@ -1879,6 +1931,7 @@ This list's value is that it eliminates two layers of uncertainty:
 In practice, a 12-store bakery brand with NT$280M revenue typically accumulates 800–2,000 tax-ID receipt records over three years; after deduplication, approximately 300–600 companies. **This is your first B2B customer list, acquired at zero cost, and it has existed since day one — nobody has ever pulled it.**
 
 **Actions (complete within this week):**
+
 - Export three years of tax-ID receipt records from POS; required fields: tax ID, company name, cumulative amount, last purchase date, purchasing store, primary items
 - Sort by cumulative amount: top 100 are A-tier (store manager personally contacts), 101–300 are B-tier (phone + LINE), remainder C-tier (mass EDM)
 - Use tax IDs to look up company registration data (Ministry of Economic Affairs Business Registration Public Information Query Service) to add addresses and capital amounts for employee-scale estimation
@@ -1909,6 +1962,7 @@ In practice, a 12-store bakery brand with NT$280M revenue typically accumulates 
 **Note the design here: the discount's consideration is "volume"; the added value's consideration is "even more volume."** Don't use discounts to buy everything — it eliminates negotiation room on price.
 
 **Recommended three price points (don't exceed three):**
+
 - **NT$680** — for client and employee gifting, volume tier (drives quantity; also the entry price)
 - **NT$1,280** — the anchor, expected to account for 50–60% of projected sales
 - **NT$2,280** — image tier and premium gifting, highest gross profit contribution
@@ -1977,6 +2031,7 @@ Tasting box delivery → 3-day follow-up call → first small order → establis
 | **Meeting box** | NT$160 | Sandwich/bagel + salad + dessert |
 
 **Hidden costs that must be built into the quote (extremely commonly missed):**
+
 - Individual packaging bags, labels: NT$5–8 per person
 - Utensils, napkins, serving tongs: NT$3–5 per person
 - Delivery labor and vehicle: NT$200–250 per trip (details below)
@@ -1988,6 +2043,7 @@ Tasting box delivery → 3-day follow-up call → first small order → establis
 **Delivery cost is calculated per trip, not per order amount.** An NT$800 order and an NT$3,000 order have identical delivery costs.
 
 Per-trip delivery cost estimate:
+
 - Staff delivery (within 3 km, round trip including handoff ~35–45 min): labor NT$200 + vehicle wear NT$40 ≈ **NT$240**
 - Third-party (Lalamove/GoGoX etc., within 3 km): **NT$100–160**
 
@@ -2006,24 +2062,25 @@ Per-trip delivery cost estimate:
 
 ## Five Items That Must Be Written into the Terms
 
-**1. Order Cut-Off Time**
+**1. Order Cut-Off Time**  
 "Confirmed by 3 PM the day before delivery." This is the key protection for your production schedule. Last-minute additions are subject to a rush surcharge (+15%) with no guarantee of item availability.
 
-**2. Raw Material Price-Adjustment Clause**
+**2. Raw Material Price-Adjustment Clause**  
 "When cumulative cost increases of primary raw materials (flour, butter, eggs) exceed 8% compared to contract signing date, both parties may renegotiate pricing."
 
 **You just experienced a 14% raw material increase.** If you'd had B2B last year without this clause, you'd be locked into old prices all year, absorbing everything yourself. **This clause's value during a cost-inflation period is equivalent to insurance.**
 
 **3. Payment Terms and Overdue Handling**
+
 - Monthly purchases under NT$30K: **pay-per-order** (LINE Pay / transfer / card) — no monthly billing
 - NT$30–100K: Net-30
 - NT$100K+: Net-45, requires a signed contract
 - 15 days overdue: supply suspended — write this clause, and actually enforce it
 
-**4. Quality and Return Standards**
+**4. Quality and Return Standards**  
 Explicitly define what can be returned (wrong items, quantity shortage, obvious quality defects, delivery more than 30 minutes late) and what cannot (client's own headcount changes, taste preferences). Without this, individual cases will bleed you through arguments.
 
-**5. Termination Notice Period**
+**5. Termination Notice Period**  
 Both parties must provide 14 days' written notice to terminate recurring supply. This lets you predict capacity and prevents clients from disappearing without warning.
 
 # Segment Three: Cafe Wholesale (T+6 Onward, Frozen Dough Model)
@@ -2032,7 +2089,7 @@ Both parties must provide 14 days' written notice to terminate recurring supply.
 
 **Why it's worth doing:** This is the only channel that provides **stable base load**. A fixed weekly quantity gives your production schedule a predictable floor — with a floor, retail-side forecasting errors occur only on the incremental portion, and **overall waste rate drops systemically.** This is its second-order benefit, and most people don't calculate it.
 
-**Limit products to 5–8 SKUs, and they must be in frozen or par-baked form:**
+**Limit products to 5–8 SKUs, and they must be in frozen or par-baked form:**  
 Croissants, Danish, bagels, toast, dinner rolls, savory pie shells — these have high restoration quality after frozen/par-baked reheating, and are the categories cafes need most.
 
 **Do not accept customization.** B2B's efficiency comes entirely from scaled production reducing per-unit labor hours. If you let clients order freely, you're just moving retail's "small batch, high variety" into B2B — efficiency goes to zero, and this directly contradicts the SKU rationalization you're already pursuing.
@@ -2042,6 +2099,7 @@ Croissants, Danish, bagels, toast, dinner rolls, savory pie shells — these hav
 **This also explains the origin of the "B2B margin 32%" figure in my previous recommendation** — that is the net contribution after deducting delivery and packaging, not the ex-factory margin. The two differ by 12–15 percentage points; use the former for pricing decisions.
 
 **Three things must be validated before frozen dough, all non-negotiable:**
+
 1. Is blast-freezing equipment adequate (standard freezers can't do it — requires −35°C or below for rapid freezing to preserve gluten structure)
 2. Cold-chain delivery temperature maintenance (requires insulated containers or refrigerated vehicles)
 3. Client-side reheat consistency (must provide standard reheat parameters and conduct on-site training)
@@ -2071,6 +2129,7 @@ Croissants, Danish, bagels, toast, dinner rolls, savory pie shells — these hav
 **Having a store manager handle B2B as a side task will inevitably fail**, because the store always has more urgent matters, and B2B development is important-but-not-urgent work that will be indefinitely deferred.
 
 **Recommended configuration:**
+
 - **1 dedicated B2B person** (a senior store manager reassigned, not externally hired) — the reason is they know the products, understand capacity constraints, and have internal credibility to coordinate resources. These three matter more than sales experience.
 - **Store managers as local development incentives** — when a store manager successfully develops a B2B client, 1.5% of that client's first 12 months' revenue is allocated as a bonus to that store. This turns 12 stores into 12 B2B touchpoints without needing 12 salespeople.
 
@@ -2121,16 +2180,16 @@ The difference from monthly revenue is that it excludes one-time orders. A month
 
 # Information You Need to Confirm
 
-**1. Can your POS export complete tax-ID receipt records?**
+**1. Can your POS export complete tax-ID receipt records?**  
 This determines whether segment one is "zero-cost launch" or "requires 4–6 weeks to build a list." If POS can't export, the alternative is pulling from the invoice-issuance system or the outgoing-invoice files on the finance side. **This is the single most important thing to confirm this week.**
 
-**2. Have you completed food business registration and purchased product liability insurance?**
+**2. Have you completed food business registration and purchased product liability insurance?**  
 These are entry tickets for all B2B. If not yet done, complete immediately — doesn't affect segments one and two but will block segment three onward.
 
-**3. Do you have blast-freezing equipment (−35°C or below)?**
+**3. Do you have blast-freezing equipment (−35°C or below)?**  
 If yes, segment three can be moved up to T+4 with no capital expenditure. If no, requires NT$800K–1.5M, scheduled after segment-one cash recovery.
 
-**4. Which of the 12 stores have the most available afternoon capacity?**
+**4. Which of the 12 stores have the most available afternoon capacity?**  
 Segment two's office afternoon tea must be anchored to stores with production and delivery headroom. If no store has headroom, it means SKU rationalization hasn't yet freed up capacity — **B2B should be deferred.** This is not a capacity problem; it's a sequencing problem.
 
 # Self-Critique
@@ -2149,7 +2208,7 @@ The tasting-box conversion rates I gave for segment two (15–25% to first order
 
 **None of these cost money, but they determine whether the next 12 months of B2B can actually get off the ground.**
 
----
+</details>
 
 # Test Insights
 

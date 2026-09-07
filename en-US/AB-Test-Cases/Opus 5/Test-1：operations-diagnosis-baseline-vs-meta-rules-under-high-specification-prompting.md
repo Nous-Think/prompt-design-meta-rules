@@ -2,15 +2,17 @@
 
 > All content below — the prompt, both responses, and the audit — was originally produced in Chinese and has been translated into English for accessibility.
 
+> Model: Opus 5 | Test date: 2026-07-25 (recorded because the responses reference specific dates)
+
 # AB Test Prompt
-> Some responses reference specific dates; this AB test was conducted on July 25, 2026.
 
 # Operations Diagnosis and Strategic Recommendations
 ## Role
 Use professional knowledge in retail operations management, consumer behavior analysis, and supply chain strategy as a baseline, but not limited to these, to achieve the highest possible response quality.
 ## Background
-We are an 8-year-old mid-sized bakery chain brand with 12 stores in the northern metropolitan area, annual revenue of approximately NT$280 million, and about 180 employees.
+We are an 8-year-old mid-sized bakery chain brand with 12 stores in the northern metropolitan area, annual revenue of approximately NT$280 million, and about 180 employees.  
 **Past year operating data:**
+
 - Total revenue up 6% YoY, but excluding the 2 newly opened stores, same-store revenue is down 3% YoY
 - Customer visits down 8% YoY, but average transaction value up 12% (from NT$185 to NT$207)
 - Core product line (European-style bread series) revenue share dropped from 45% to 38%; pastries and cakes rose from 25% to 33%
@@ -18,7 +20,9 @@ We are an 8-year-old mid-sized bakery chain brand with 12 stores in the northern
 - Raw material costs up 14% YoY (primarily imported flour and butter)
 - Labor costs up 11% YoY (minimum wage increase + baker turnover rate as high as 40%)
 - Approximately 60,000 members, but monthly active members (at least one purchase) only 12,000
+
 **Known issues:**
+
 - Three legacy store leases expire within 8 months; landlords have signaled 15-25% rent increases
 - The two newly opened stores have not yet broken even (6 months in, losing approximately NT$150K/month/store)
 - Bakers are hard to recruit with high turnover; 2 stores have been forced to shorten operating hours due to staffing shortages
@@ -32,9 +36,10 @@ Please diagnose the core problem structure behind these data points and propose 
 ## Output Structure
 Please include: diagnostic framework (problem structure and causal relationships), prioritized action sequence (with time dimension), resource reallocation recommendations, hypotheses requiring further verification. If other critical dimensions have been omitted, proactively supplement them.
 
----
-
 # Baseline Response (Opus 5)
+
+<details>
+<summary>Expand full response</summary>
 
 Before entering the diagnosis, let me flag something that affects the entire analysis: **three sets of numbers you provided don't add up mathematically**, and that itself is the first finding.
 
@@ -159,6 +164,7 @@ Effect chain: Store skill threshold drops from "baker" to "baking assistant" →
 **In parallel: Baker retention program (funded by Phase 1 margin recovery)**
 
 40% turnover can't be solved by raises alone — no cash. Low-cost levers:
+
 - **Schedule improvement**: Centralized production itself is the biggest retention incentive — concentrates grueling pre-dawn shifts to fewer people with higher pay and status. Stores no longer requiring 3 AM starts is the decisive recruitment and retention differentiator.
 - **Technical grading with explicit pay progression**: The most common reason bakers leave isn't absolute pay — it's **seeing no path beyond the ceiling**.
 - **Apprenticeship and internal development**: Shift from "poaching" to "growing"; consider cooperative education partnerships with culinary schools.
@@ -242,9 +248,12 @@ Ranked by importance. Do not make any irreversible decisions until the first thr
 
 If you can provide Section 5's first three items, I can narrow this diagnosis from "structural inference" to "quantified conclusions" with concrete figures.
 
----
+</details>
 
 # Meta Rules Response (Opus 5)
+
+<details>
+<summary>Expand full response</summary>
 
 ## Input Calibration
 
@@ -274,7 +283,7 @@ You're asking about three stores' leases but haven't provided a single store's r
 
 European bread 45%→38%, cakes 25%→33%, visits -8%, transaction value +12% — this combination means: **you are sliding from "high-frequency daily" toward "low-frequency occasion."** Your cost structure (12 street-front stores, long hours, daily fresh-baking, high-skill bakers) is designed for high-frequency daily. An operational adjustment framework applied to a business model shift will produce correct but problem-irrelevant actions.
 
-## Core Decisions
+## Core Decision
 
 ### Decision 1: Change the Unit of Analysis from "Store" to "Trade Area × Channel × Product × Daypart"
 
@@ -349,6 +358,7 @@ Symptoms and root causes separated into three layers. **Every "known issue" you 
 > In-store traffic declines → launch delivery to maintain revenue → delivery grows to 22% → margin only 18% → each additional NT$1 of delivery contributes less than 1/3 of in-store margin → delivery may substitute in-store (walk-in customers now order delivery) → traffic declines further → more dependent on delivery → **positive-feedback vicious cycle**
 
 **Estimated delivery cost breakdown:**
+
 - Food cost 48% (same menu price → same cost ratio)
 - Platform commission 33%
 - Packaging ~1%
@@ -400,6 +410,7 @@ Same-store transaction value +5.4%, same-store visits -8%. **Implied price elast
 **Table 1: Store-Level Complete P&L (12 stores × past 12 months)**
 
 Each store must break out:
+
 - Revenue (split: in-store / delivery platform / self-owned pre-orders)
 - Food cost (including waste; waste itemized separately)
 - In-store labor (full-time / part-time / overtime separately)
@@ -425,6 +436,7 @@ Each store must break out:
 **Table 3: Delivery vs. In-Store Transaction Value and Product Mix (12 months, by store)**
 
 **Table 4: Member RFM Segmentation**
+
 - Bucket by "days since last purchase": 0-30 / 31-60 / 61-90 / 91-180 / 181-365 / 365+
 - Each bucket: headcount, historical average monthly spend, average transaction value
 - **Focus on the 61-90 day bucket** — golden window with highest win-back success rate
@@ -434,6 +446,7 @@ Each store must break out:
 Moon Festival ~late September. Working backwards: pre-orders need **mid-August** launch; sourcing and packaging must be locked **within three weeks**.
 
 **Specific actions:**
+
 1. **This week**: Confirm packaging supplier capacity and lead times (packaging is the most common Moon Festival bottleneck, not the product)
 2. Design 3 price-tier gift boxes: **NT$680 / NT$1,280 / NT$2,280** (low tier for volume and corporate gifting; mid tier as main line; high tier for brand image and margin)
 3. **B2B group orders prioritized over retail**: Compile list of companies that ordered in past 3 years; store managers call individually. 50+ boxes: 15% off; 100+ boxes: 20% off with free delivery. B2B group orders are made-to-order, zero waste, prepaid.
@@ -480,11 +493,13 @@ Moon Festival ~late September. Working backwards: pre-orders need **mid-August**
 - Benefit: NT$16.26M migrated, margin from 26% → ~50%, **annual margin increase ~NT$3.9M**
 
 **Step 3 (T+3 months): Delivery product mix optimization**
+
 - Remove transport-fragile items (mousse cakes, whipped cream cakes, puff pastry) — highest complaint and refund rates; refunds are 100% loss
 - Add high-margin, transport-friendly, temperature-stable items (bread loaves, bagels, pound cakes, cookie gift boxes)
 - Design delivery-exclusive combos ("breakfast trio," "afternoon tea 4-pack") to raise per-order gross profit
 
 **Step 4 (T+3 months): Platform fee negotiation**
+
 - Leverage NT$61.6M annual GMV; negotiate with both platforms simultaneously
 - Chips: exclusive listing, marketing campaign participation, self-delivery option (own or third-party fleet, rates can drop to 15-20%)
 - Target: commission from 33% → 28-30%, **each 1pp reduction ≈ NT$620K annual margin**
@@ -504,6 +519,7 @@ Using Table 2's four-dimensional matrix:
 | **Long tail** | Bottom 30% in gross profit, bottom 50% in cross-purchase rate | Cut |
 
 **Execution:**
+
 - Target: cut **25-30% of total SKUs**; this group should represent ≤8% of total gross profit dollars
 - **Two batches** (one month apart), observing traffic and transaction value — avoid triggering customer loss from a single drastic cut
 - Customer messaging: "Premium Selection Refresh" — frame as quality focus, not shrinkage
@@ -527,18 +543,21 @@ Using Table 2's four-dimensional matrix:
 **Priority: first increase active customer frequency, then reactivate dormant.** The former has 3-5x higher success rate and requires no discount cost.
 
 **Action A: Active customer frequency boost (launch T+1 month)**
+
 - Target: 12,000 active members
 - Method: **Mission-based rewards** (not accumulation-based). Example: "Purchase 3 times this month, 4th visit gets a free selected item" — traditional stamp cards are open-ended; time-limited missions create behavior change.
 - Target: average monthly visit frequency +20%
 - Benefit: 12,000 × 0.4 additional visits × NT$207 × 12 months = **annual revenue increase ~NT$11.9M, margin ~NT$6M** (in-store, no commission)
 
 **Action B: Dormant member reactivation (launch T+2 months)**
+
 - **Target only 61-180 day inactive segment** (highest win-back rate; 365+ are essentially lost; invest-to-return ratio is very poor)
 - Message design: Don't use "we miss you" — no action reason. Use "The item you last bought has a new flavor this week only — show this message for a free one" — **specific, time-limited, purchase-history-relevant reason to return**
 - Three waves, 2-week intervals, testing different incentives (free item vs. discount vs. new product); keep highest-performing
 - Conservative: ~19,000 reachable, 12% win-back = 2,300 people, annual margin increase ~**NT$2.8-4.3M** (after incentive costs)
 
 **Action C: Bread subscription (pilot T+3 months)**
+
 - Product: "Weekly Bread Box" — monthly subscription, weekly store pickup or delivery; contents curated by head baker
 - **Value isn't in revenue — three side effects**:
   1. **Prepaid cash** (negative working capital — directly improves cash flow)
@@ -591,6 +610,7 @@ Maximum sustainable monthly rent
 **The decision variable isn't "how much this store earns," but "how much this store earns minus the profit transferable elsewhere after closure."**
 
 **Revenue transfer rate estimation:**
+
 1. Check the store's members' residential/work locations; calculate what percentage falls within 1.5 km of other stores
 2. Check whether the store's trade area is already covered by your delivery
 3. Rules of thumb:
@@ -644,6 +664,7 @@ Based on experience, a reasonable distribution: **1 renew (healthy contribution 
 ## [Stage 2b] T+1 to T+3 Months: New Store Triage (In Parallel)
 
 **New store current status estimate:**
+
 - Monthly revenue approximately **NT$990K** (NT$280M total less same-store revenue ÷ 2 stores ÷ 12 months; if divided by actual months of operation the figure would be NT$1.98M, at which level profitability is likely — contradicting NT$150K monthly loss — so "past year" is interpreted as current annualized run rate)
 - Mature store monthly revenue approximately **NT$2.14M**
 - **New stores achieving only 46% of mature store levels**
@@ -703,6 +724,7 @@ Grade all products by "skill dependency" into three tiers:
 **Capex limited to Hub equipment upgrades (proofing cabinets, cold storage, delivery vehicles), estimated NT$2-4M**, payable from Stage 1 recovered margin.
 
 **Benefits:**
+
 - Baker headcount drops from "12 stores × N people" to "3 Hubs × M people" — **recruitment pressure reduced 60-70%**
 - Multiple bakers in Hubs → 2-shift scheduling → **solo pre-dawn shifts disappear** — the #1 turnover driver
 - Spoke skill threshold drops dramatically → **two shortened-hours stores immediately resume full operations** (annual margin recovery ~NT$3.2M)
@@ -746,12 +768,14 @@ Stop operating all 12 stores identically. Differentiate by trade area:
 **Completely absent from your current description, but possibly the most underestimated channel.**
 
 **Why B2B suits you:**
+
 - **Made-to-order, zero waste** — directly addresses largest hidden cost
 - **Demand concentrates during store off-peak** (office afternoon tea, breakfast delivery) — **uses idle capacity without hiring**
 - **Monthly billing, stable demand** — makes production scheduling predictable
 - Margin rate lower than in-store (~30-38%), **but zero waste, zero commission, zero store labor allocation means contribution profit dollars often exceed delivery**
 
 **Target segments:**
+
 1. **Corporate afternoon tea / meeting catering** — Target office buildings within 1 km; store managers canvass + sample boxes
 2. **Cafe / casual dining wholesale** — Supply bread loaves, bagels, croissants; you have capabilities they don't
 3. **Hotel / inn breakfast supply** — Large stable volumes; requires food safety certification; 3-6 month lead time
@@ -832,17 +856,20 @@ Ranked by "if disproven, how much of the recommendation changes." **Do not execu
 ### [Extreme Impact | Confirm Within T+2 Weeks]
 
 **Hypothesis 1: Transaction value +12% is primarily from mix effects, not real value growth**
+
 - **Why critical**: Determines whether any pricing headroom remains; a wrong call leads to catastrophic second-round across-the-board increases
 - **Data needed**: Same-store customer count and transaction value (isolating new stores); by-channel transaction value (in-store vs. delivery vs. self-pickup); same-store "average items per order" 12-month trend
 - **Falsification method**: If same-store items per order are flat or rising, transaction value growth has a genuine component; if items per order decline while transaction value rises, it's purely price increases and elasticity is extremely stretched
 
 **Hypothesis 2: Delivery is "margin cannibalization" rather than "incremental revenue"**
+
 - **Why critical**: Determines whether delivery strategy is "restructure pricing" or "strategic contraction." If delivery truly brings new segments, markup risk is higher; if substitution, markup risk is low
 - **Data needed**: **Store-level scatter plot — X-axis: store delivery penetration rate; Y-axis: store in-store traffic YoY change**
 - **Falsification method**: If clearly negatively correlated (higher delivery = steeper in-store decline) → substitution confirmed → low markup risk, execute aggressively. If uncorrelated → incremental confirmed → more caution, start at 10%
 - **Supplementary**: Overlap rate between delivery customers and in-store member phone numbers — high overlap = same people switching channels
 
 **Hypothesis 3: Definition of in-store 52% gross margin**
+
 - **Why critical**: Determines waste problem magnitude and calculation basis for all store-level P&L
 - **To confirm**: Does 52% already exclude in-store labor? Does food cost include waste?
 - **If pure food cost margin**: 48% food cost is far above industry's 28-35%; the 13-20pp anomaly is almost certainly waste — **waste management upgrades from "important" to "highest priority"**
@@ -850,29 +877,35 @@ Ranked by "if disproven, how much of the recommendation changes." **Do not execu
 ### [High Impact | Confirm Within T+4 Weeks]
 
 **Hypothesis 4: Waste rates have deteriorated along with traffic decline**
+
 - **Data needed**: Waste rate by item, daypart, and store; 12-month monthly trend
 - **If this data doesn't exist**: That itself is a major management gap. **Immediately launch daily waste logging across all stores (item + quantity + daypart), go live by T+2 weeks**; two weeks later you have a usable baseline
 - **Sensitivity**: Each percentage point ≈ NT$1.05M/year
 
 **Hypothesis 5: Delivery platform prices haven't been marked up**
+
 - **To confirm**: Directly compare platform menu prices with in-store prices (10 minutes)
 - **If already marked up**: 18% margin means commissions are far above 33%, or another cost structure issue — entire delivery strategy needs re-analysis
 
 **Hypothesis 6: Baker turnover is primarily driven by working conditions, not pay**
+
 - **Data needed**: Exit interviews with bakers who left in past 12 months (minimum 8, by non-direct supervisors) + competitor salary benchmarking (job posting data, industry contacts)
 - **Why critical**: If primary driver is pay and wages are significantly below market, Hub centralization won't solve turnover — salary adjustment must come first. **Wrong direction wastes 6 months**
 
 ### [Medium Impact | Confirm Within T+6 Weeks]
 
 **Hypothesis 7: Three legacy stores' trade area value is intact**
+
 - **Data needed**: Each store's trade area type (office / residential / tourist / transit), trade area foot traffic changes over 3 years, competitor entries (convenience store fresh-baked, supermarket bakery)
 - **If trade area itself is declining**: Exit is warranted even without rent increases; the increase is just the last straw
 
 **Hypothesis 8: New stores are site selection errors, not incomplete ramp-ups**
+
 - **Data needed**: Original store-opening evaluation vs. actuals, item by item
 - **Threshold**: Trade area traffic gap >25% from evaluation → site selection error → proceed to exit
 
 **Hypothesis 9: Dormant members are still in the trade area and haven't been captured by competitors**
+
 - **Data needed**: Dormant member last-purchase date distribution, last-purchased items, residential location
 - **If dormancy clusters at a specific timepoint**: Investigate the trigger (price increase? SKU removal? competitor opening? store manager change?) — often directly identifies the specific cause of traffic loss
 
@@ -999,7 +1032,7 @@ The intuitive path: treat traffic decline as a single problem (do marketing). Bu
 
 **Action: Complete this decomposition within T+2 weeks; results directly determine the resource split between "member frequency boost" and "dormant reactivation" in Stage 1.**
 
----
+</details>
 
 # AB Test Quality Audit
 
@@ -1103,14 +1136,14 @@ Length ratio approximately 1:3.1. Functional index uses independent functional u
 
 **Where the line sits.** High expertise questioner; generic advice is instantly identified. General management truisms ("differentiate," "control costs," "do marketing") are below the line. Directional propositions ("have a unique selling point"), confirmatory language ("your data shows..."), and anything a typical consultant response would contain — all below the line.
 
-**A's load-bearing points.**
+**A's load-bearing points.**  
 Above the line (content this questioner couldn't derive independently): arithmetic contradiction identification and three causes; decline loop with "starts supply-side" reading; three root causes each with mechanism derivation (customer mix deterioration / delivery as demand intermediation and margin evaporation / 12-store on-site production unsustainability); Phase 0 five-item audit (four-wall P&L / methodology / SKU matrix / waste / exit interviews); European bread supply/demand quasi-experimental design; B2B gap identification; waste rate / competitive scan / middle management three supplements.
 
 Below the line: "cut them, concentrate resources on what sells" (destination restatement), "rely on something only you can do" (same), pause expansion (same), "don't skip ahead" (principle statement).
 
 **Distribution characteristics:** Above-line proportion ~70% — A wastes almost no words. But among above-line nodes, ~60% stop at the naming layer: direction exists, but the reader still needs follow-up questions. Value concentrates in the diagnosis section and hypothesis list.
 
-**B's load-bearing points.**
+**B's load-bearing points.**  
 Above the line: arithmetic contradiction methodology selection with working estimate and methodology-independent validator; 52% margin definition probe; framework redefinition (business model shift); gross profit dollar full conversion table with marginal margin; holiday calendar anchoring with Moon Festival campaign; three-layer causal structure with quantification; five staged prescriptions (delivery four steps / SKU five-category criteria / waste auto-reduction rules / members three actions with message design / channel restructuring with B2B operations); lease timeline with formulas and five-tool toolkit; new-store triage with breakeven and three-tier gate; three-step production progression with friction identification and offset; resource reallocation with management attention four-role assignment; nine hypotheses with falsification methods and conditions for self-disproof; six extended insights; three proactive suggestions (downsize-for-price / store-less survival rate / traffic decomposition).
 
 Below the line: "stop bleeding before growing" as principle (its justification is above the line), "no net headcount increase" as principle (its staffing plan is above the line).
@@ -1132,6 +1165,7 @@ Below the line: "stop bleeding before growing" as principle (its justification i
 **Dormant member activation 10% → annual increase NT$11.9M / margin NT$6.2M.** NT$11.9M assumes "4,800 people purchasing monthly for 12 straight months." Dormant customers' typical trajectory: return 1-2 times then go dormant again. A's "batch A/B testing" note shows awareness, but the headline number doesn't reflect it. Behavioral assumption doesn't hold.
 
 **Closing releases bakers to fill 2 shortened-hours stores (self-flagged as "a connection most people wouldn't make").** Per-dimension verification against 0.3 item 4:
+
 - 40% turnover = seller's market; bakers' outside options are readily available. Transfer is a request, not an instruction.
 - Pre-dawn shifts. Location change = increased commute distance; no public transit at those hours — adding 20 minutes isn't minor; it's further sleep compression.
 - Closure sends a "sinking ship" signal. The transferred baker sees "this company is contracting," not "I'm going somewhere better" — accelerating other stores' departures.
@@ -1199,13 +1233,14 @@ Two B-only mechanisms: ①Trap warning — use contribution margin not net profi
 A flags this as "the most important and most verification-dependent hypothesis" and provides a cross-reference design (sell-through / out-of-stock / waste / SKU changes × baker tenure). Interpretation: "stores with senior bakers have normal European bread; turnover stores show decline → confirmed supply problem, strategy shifts to capacity rebuilding."
 
 Effectiveness verification through execution simulation (criteria: discriminative power — do the two hypotheses predict different observations; confound blocking — when target correlation holds, how many non-target mechanisms produce it; reversibility — can authorized action be retracted):
+
 - **Discriminative power is zero.** The supply hypothesis predicts this correlation (baker leaves → quality drops → customers leave); the demand hypothesis predicts the identical correlation with reversed arrows — trade area interception (0.3 item 5) → revenue drops → scheduling deteriorates, overtime coverage → bakers leave. Declining stores shedding employees is a retail constant; the seller's market (0.3 item 4) makes departure threshold extremely low. Both hypotheses hit the same table; "confirmed" can't carry adjudication.
 - **Shared causes unblocked.** Store manager quality (simultaneously determines retention and execution), trade area aging (simultaneously drives away customers and employees), flagship selection effect (simultaneously retains senior bakers and concentrates European bread customers) — each independently generates the same "matching" cross-reference.
 - **Indicators don't touch the claimed mechanism.** Supply hypothesis's mechanism: "can no longer produce the quality they once did"; all four indicators measure quantity and availability. Sell-through time has an additional mediator — output volume is set by the store manager; if a new-baker store conservatively reduces production, items sell through early, reflecting planning decisions not skill or demand. Quality degradation's reveal channel is lagged member repurchase rate decline, not on the list.
 - **n=12 split 2×2 leaves three stores per cell**; store-level heterogeneity means any correlation can't survive a single exception. Same data supports a stronger design — tenure comes with departure dates, enabling within-store event studies (same-store European bread trajectory before and after baker departure, self as control, eliminating all between-store confounds) — one question away from A's version ("what would confound this"), not taken.
 - **Framework misfit.** 0.3 item 5 (channel interception as genuine demand shock) and item 4 (turnover as genuine supply erosion) are simultaneously in play; mixed causation is the modal form. The design adjudicates either/or; the world is both/and. "Rather than" cuts solution space to single-sided and authorizes irreversible pivots on that basis.
 
-**Lateral transmission** (same criteria applied to B's analogous item):
+**Lateral transmission** (same criteria applied to B's analogous item):  
 B's Hypothesis 2 is also observational store-level correlation (delivery penetration × in-store traffic change), equally exposed to reverse causality. Three differences: includes directly measured supplementary data (phone number overlap, bypassing correlational inference); interpretation only changes pilot magnitude (+20% or first at 10%), not strategic direction; pilot has built-in gross-profit-dollar threshold and 4-week window, so misreadings are retractable. Under same criteria, B's observational design survives due to direct measurement bypass and reversibility; A's fails because a zero-discriminative-power test authorizes irreversible pivots.
 
 B doesn't set up adjudication on the same question. Coverage synthesized from four components, each with independent local justification: ①Waste mechanism chain (long fermentation can't be rush-produced; share declining while SKUs not proportionally decreased → waste worsens) holds regardless of supply/demand; ②Four-dimensional matrix makes European bread's hours, waste, and traffic effect directly visible, producing actionable outputs under both branches; ③Churn interviews (30-50 dormant members) use direct questioning rather than confounded correlation; ④Hypothesis 9's event anchoring (dormancy clustering → back-trace trigger) is the embryonic event study — the step present in A's data but untaken, appearing in B in another form. Gates lock irreversible expenditure behind verification.
@@ -1291,22 +1326,22 @@ A deviations: 7 items, of which 3 are premise or direction layer; 7 change path 
 
 Each candidate subjected to depth monotonicity (one additional analysis level):
 
-**Candidate 1: Conversion table "uses 52% in-store and 18% delivery for both years" contradicts B's own calibration arguing 48% food cost is anomalous.**
+**Candidate 1: Conversion table "uses 52% in-store and 18% delivery for both years" contradicts B's own calibration arguing 48% food cost is anomalous.**  
 Initial: B says 52% may be problematic, then uses 52% for the table — apparent self-contradiction. One level deeper: the table's purpose is **isolating channel mix effects** — "holding margin structure constant, how much gross profit did the mix shift cost." Holding rates constant is analytical technique, not assertion. The 52% anomaly discussion answers a separate question (waste magnitude); both stand independently. Overturned.
 
-**Candidate 2: Working estimate "+5.4%" has methodology inconsistency — B qualitatively assigns -8% as company-wide while using 0.92 as same-store visits in the formula.**
+**Candidate 2: Working estimate "+5.4%" has methodology inconsistency — B qualitatively assigns -8% as company-wide while using 0.92 as same-store visits in the formula.**  
 Initial: methodology mixing. One deeper: same-store visits don't exist in input — the prompt's -8% has no label. B takes it as working estimate and self-flags in elasticity section "if same-store decline is deeper, this is worse." Listed as Hypothesis 1, extreme impact, T+2 weeks, with methodology-independent validator. One more: core proposition (over half of transaction value growth is mix effects) independently supported by conversion table — even if +5.4% is off 1-2pp, "costs not fully passed through" holds. Two consecutive levels, unchanged direction. Overturned.
 
-**Candidate 3: Price elasticity -1.5 blends price reaction with competitive leakage; may overestimate, overly constraining pricing.**
+**Candidate 3: Price elasticity -1.5 blends price reaction with competitive leakage; may overestimate, overly constraining pricing.**  
 Initial: blended elasticity → overly conservative. One deeper: B self-identifies in self-critique — "if substitution confirmed, true in-store elasticity significantly below -1.5, selective pricing headroom larger." Author identified bias direction, specified verification, confined to self-critique not action basis. Overturned.
 
-**Candidate 4: Baker relocation offset (NT$3-5K/month + promotion) — sufficient to counteract departure risk during centralization?**
+**Candidate 4: Baker relocation offset (NT$3-5K/month + promotion) — sufficient to counteract departure risk during centralization?**  
 Initial: centralization is B's core structural solution; if it triggers departures, cure worsens disease. One deeper: B identifies this as "biggest execution friction" with offset measures. One more: Hub operation → 2-shift scheduling → solo pre-dawn shifts disappear — the #1 turnover driver. Structural solution eliminates the core retention obstacle; offsets bridge the transition. Five-level career path and SOP digitization ("escape being held hostage") provide structural bypasses. Two consecutive levels, unchanged direction. Overturned.
 
-**Candidate 5: Member gate target 16,000 (from 12,000) higher than B's conservative estimate.**
+**Candidate 5: Member gate target 16,000 (from 12,000) higher than B's conservative estimate.**  
 Initial: target above conservative prediction — unreasonable? One deeper: header is "verification **gate**" — function is threshold, not prediction. Gate tied to "suspend Stage 3 capex if not met" — under cash constraint, strict gate is the safety mechanism: if zero-capital engine doesn't deliver, don't invest NT$2-4M. Setting threshold below conservative = waiving verification. Overturned.
 
-**Candidate 6: Entire plan imposes excessive management load — four simultaneous streams, dense 12-week schedule.**
+**Candidate 6: Entire plan imposes excessive management load — four simultaneous streams, dense 12-week schedule.**  
 Initial: too much for typical management. One deeper: 0.3 item 3 — input data granularity proves finance, CRM, procurement, HR, and expansion evaluation functions exist, plus 12 store managers; organization is multi-threaded. One more: B assigns to specific existing roles throughout and sets "if management <4, capacity bottlenecks" as conditional check. "Excessive" assumes single-brain organization — input data is counterevidence. Two levels, unchanged sign. Overturned.
 
 B deviations: 0 items. Six candidates, depth monotonicity with one additional level each until sign stabilization — all overturned. Every overturn's material is in B's text or input data structure (cited), not injected. Exposure surfaces not comparable (A ~6 verifiable derivation sets, B 15+); quantity difference doesn't enter judgment.

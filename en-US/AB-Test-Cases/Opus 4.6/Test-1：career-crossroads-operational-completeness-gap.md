@@ -2,15 +2,16 @@
 
 > All content below — the prompt, both responses, and the audit — was originally produced in Chinese and has been translated into English for accessibility.
 
----
+> Model: Opus 4.6
 
 # AB Test Prompt
 
 I've been at my current job for three years. Not learning anything new anymore, but the colleagues are great and the pay's decent. Recently got an offer with a 15% raise, but I've heard that company works you to the bone.
 
----
+# Baseline Response (Opus 4.6)
 
-# Bare-run Response (Opus 4.6)
+<details>
+<summary>Expand full response</summary>
 
 This is a very typical career dilemma. A few angles to help you think it through:
 
@@ -26,9 +27,12 @@ What does "brutal" actually mean? Is it long hours but valuable work that builds
 
 I'd suggest reframing the question from "should I go or not" to "what kind of person do I want to become in the next two to three years." If your current place can't help you move in that direction, then maybe not this particular offer — but it's definitely time to start moving.
 
----
+</details>
 
 # Meta Rules Response (Opus 4.6)
+
+<details>
+<summary>Expand full response</summary>
 
 ## Input Correction
 
@@ -125,9 +129,9 @@ The following information gaps could change the decision direction and cannot be
 
 **Proactive recommendation:** Regardless of your final decision, **start interviewing now.** Not to collect offers, but to calibrate against the market. You've gone three years without testing your market price and competitiveness — that information gap is itself a decision blind spot. Interviewing is the lowest-cost form of intelligence gathering, and with an existing offer as your floor, you'll approach it with far more composure than if you were interviewing "naked."
 
----
+</details>
 
-# Quality Audit for This AB Test
+# AB Test Quality Audit
 
 ## Stage Zero: Before Reading the Responses
 
@@ -169,7 +173,7 @@ Paragraph-level + whole-response level. Both responses have sufficient content d
 
 ### Stage One: Reading and Tagging (No Judgment)
 
-#### Response A (Bare-run) — Functional Index
+#### Response A (Baseline) — Functional Index
 
 | Section | Primary Function | Summary |
 |---------|-----------------|---------|
@@ -198,10 +202,10 @@ Paragraph-level + whole-response level. Both responses have sufficient content d
 
 ### 2.1 Situational Portrait Reading
 
-**What kind of person did Response A treat the user as?**
+**What kind of person did Response A treat the user as?**  
 Someone who needs help sorting through their thoughts — aware something's off but needing someone to lay out each factor for them. A's strategy is "let me help you think through each angle one at a time," with the tone of a warm, friendly conversation.
 
-**What kind of person did Response B treat the user as?**
+**What kind of person did Response B treat the user as?**  
 A decision-maker with a compressed framework — needing not just a factor breakdown but to be shown that their problem frame itself has blind spots (options compressed into binary, critical input unverified). B's strategy is "first fix the way you're looking at the problem, then give you an action plan."
 
 **Comparison with the 0.1 portrait**: The reconstructed portrait points toward "needs scaffolding to convert anxiety into action." A provides clear factor analysis but thin action scaffolding; B provides both factor analysis and a complete action pathway. B's portrait reading is closer to the reconstruction.
@@ -247,6 +251,7 @@ A decision-maker with a compressed framework — needing not just a factor break
 **B exclusive: Four-path expansion (especially Path C)**
 
 Follow-up checklist:
+
 - Could the user find this on their own? Using an offer to negotiate with a current manager — some career-experienced people would know this, but someone asking in this tone probably wouldn't. And even knowing it's possible, the specifics of how to negotiate ("don't threaten — use a collaborative frame" + specific script + decision signal: "a vague response is itself your signal to leave") are high-inaccessibility content.
 - How far from the core path? Extremely close. Path C may be the highest expected-value option — it preserves existing relationships and stability while testing whether the current role has growth potential, without surrendering the offer's bargaining leverage.
 - Assessment: **High-value exclusive.** Three anchors present (scene visible: schedule a one-on-one with the manager; action rehearsable: open with specific script; outcome predictable: concrete response vs. vague response as a decision signal).

@@ -2,40 +2,40 @@
 
 > All content below — the prompt, both responses, and the audit — was originally produced in Chinese and has been translated into English for accessibility.
 
----
+> Model: Opus 4.6
 
 # Ultralight Task Tests
 
 ## Test A
 I broke up with someone I'd been with for five years. Can't do anything these past two days.
 
-### Bare-run Response (Opus 4.6)
-Five years is a very long time. A loss like that makes life feel like a huge chunk was suddenly ripped out. Not being able to do anything is a completely normal reaction — you don't need to force yourself to pull it together right away.
-At this stage, just let yourself be sad. Crying is fine, staring into space is fine, lying around is fine — these are all ways you're processing this. Grief isn't weakness — it's because you loved genuinely.
+### Baseline Response (Opus 4.6)
+Five years is a very long time. A loss like that makes life feel like a huge chunk was suddenly ripped out. Not being able to do anything is a completely normal reaction — you don't need to force yourself to pull it together right away.  
+At this stage, just let yourself be sad. Crying is fine, staring into space is fine, lying around is fine — these are all ways you're processing this. Grief isn't weakness — it's because you loved genuinely.  
 If you want to talk — whether it's about what happened, or you just want someone to be with while you talk — I'm here.
 
 ### Meta Rules Response (Opus 4.6)
-Five years — that's a very long time. Long enough that they'd grown into every crevice of your life — your habits, your rhythms, even the first voice that comes to mind when you think about something. So not being able to do anything right now isn't because you're not strong enough — it's that a load-bearing pillar of your entire daily structure was suddenly pulled out.
-These two days, you don't need to "accomplish anything." Eat if you can, sleep if you can, cry if you need to. None of this is weakness — it's your mind and body processing a massive drop.
+Five years — that's a very long time. Long enough that they'd grown into every crevice of your life — your habits, your rhythms, even the first voice that comes to mind when you think about something. So not being able to do anything right now isn't because you're not strong enough — it's that a load-bearing pillar of your entire daily structure was suddenly pulled out.  
+These two days, you don't need to "accomplish anything." Eat if you can, sleep if you can, cry if you need to. None of this is weakness — it's your mind and body processing a massive drop.  
 If you want to talk — whether it's about what happened, or you just want a place to dump everything without worrying about the other person's feelings — I'm here. And if you don't want to talk, that's completely fine too.
 
 ## Test B
 I feel like maybe I'm not cut out to be a mom.
 
-### Bare-run Response (Opus 4.6)
-A lot of moms have actually felt this way. The fact that you're willing to say it out loud already takes courage.
-Being a mom is incredibly hard — doubting yourself, feeling exhausted, feeling like you're not doing well enough — these are all very normal feelings and don't mean you're actually not cut out for it. In fact, it's the people who genuinely care about their children who keep asking themselves this.
+### Baseline Response (Opus 4.6)
+A lot of moms have actually felt this way. The fact that you're willing to say it out loud already takes courage.  
+Being a mom is incredibly hard — doubting yourself, feeling exhausted, feeling like you're not doing well enough — these are all very normal feelings and don't mean you're actually not cut out for it. In fact, it's the people who genuinely care about their children who keep asking themselves this.  
 Would you be willing to share more about what's making you feel this way? Is it something that happened recently, or more of a feeling that's been building up?
 
 ### Meta Rules Response (Opus 4.6)
-By the time you're saying this out loud, usually quite a lot has already piled up behind it.
-Can you tell me what's making you feel this way? Is it something recent, or has this thought been following you for a while?
+By the time you're saying this out loud, usually quite a lot has already piled up behind it.  
+Can you tell me what's making you feel this way? Is it something recent, or has this thought been following you for a while?  
 I want to hear about your situation first, and then we can look at what's inside this feeling together — which parts are real signals, and which might be exhaustion or self-blame talking.
 
 ## Test C
 Do Taiwanese people need a visa to enter Japan right now?
 
-### Bare-run Response (Opus 4.6)
+### Baseline Response (Opus 4.6)
 No visa needed. Taiwan passport holders traveling to Japan for short-term tourism, business, or family visits are eligible for visa-free stays of up to 90 days. This policy has been in effect since 2005 and continues to apply.
 
 A few conditions to note:
@@ -58,7 +58,7 @@ Before entry, it's recommended to fill out your information on **Visit Japan Web
 ## Test D
 Help me think of a name for a book club group chat.
 
-### Bare-run Response (Opus 4.6)
+### Baseline Response (Opus 4.6)
 Let me brainstorm some book club group names for you — various styles, pick whichever direction you like:
 
 1. **翻頁之間** (Between Pages) — Clean and evocative, suggesting each page turn is a conversation.
@@ -95,9 +95,7 @@ If "書適圈" doesn't quite match your tone, here are different directions:
 
 If you tell me two things about this book club, I can sharpen the name further: **what type of books you read** (business / literature / no restriction), and **the relationship and atmosphere between members** (colleagues / friends / online strangers; serious / casual).
 
----
-
-# Quality Audit for This AB Test
+# AB Test Quality Audit
 
 ## Core Decision
 
@@ -107,7 +105,7 @@ If you tell me two things about this book club, I can sharpen the name further: 
 
 Both responses are similar in length, similar in structure, and neither has an analytical framework. The difference is in language precision:
 
-A: "Life feels like a huge chunk was suddenly ripped out"
+A: "Life feels like a huge chunk was suddenly ripped out"  
 B: "They'd grown into every crevice of your life — your habits, your rhythms, even the first voice that comes to mind when you think about something... a load-bearing pillar of your entire daily structure was suddenly pulled out"
 
 "A huge chunk" is a correct metaphor but lacks distinctiveness — any loss can be described as "a huge chunk ripped out." B's "load-bearing pillar" precisely names the functional role a five-year relationship plays in daily structure — it's not just "a piece is missing," it's "the pillar holding up your entire daily operation was pulled out, so everything is collapsing." This explains why "can't do anything" — not because you're not strong enough, but because structural support has vanished.

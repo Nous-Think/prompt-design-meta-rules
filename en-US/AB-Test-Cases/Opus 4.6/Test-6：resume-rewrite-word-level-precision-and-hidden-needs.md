@@ -2,13 +2,14 @@
 
 > All content below — the prompt, both responses, and the audit — was originally produced in Chinese and has been translated into English for accessibility.
 
----
+> Model: Opus 4.6
 
 # AB Test Prompt
 
 I'm preparing to switch jobs and want to revise my resume. Below is my current work experience write-up plus some actual numbers and projects — help me rewrite it into a more compelling version. I work in digital marketing and I'm mainly targeting brand-side marketing manager positions.
 
 Current version: ABC Digital Marketing Agency | Marketing Planner → Senior Planner (2020–2025)
+
 * Responsible for client social media management
 * Planned and executed digital ad campaigns
 * Wrote marketing proposals
@@ -17,6 +18,7 @@ Current version: ABC Digital Marketing Agency | Marketing Planner → Senior Pla
 * Participated as internal training instructor
 
 Actual numbers and achievements (but I don't know how to work them in):
+
 * Simultaneously managed social accounts (FB+IG) for 4–6 clients across industries including beauty brand "LURE," chain fitness brand "動次," organic food brand "綠田," and 3C accessories brand "MATZ"
 * When I took over "LURE"'s IG account it had 12K followers; two years later it reached 87K — no paid followers, mainly through Reels and KOL collaborations
 * FB/Google ad monthly budget approximately NT$1.5–2.5M (all clients combined), average ROAS maintained above 3.5; for "動次"'s membership ads, after my optimization CPA dropped from NT$680 to NT$320
@@ -26,9 +28,10 @@ Actual numbers and achievements (but I don't know how to work them in):
 * Internal training was teaching new hires Meta ad operations and GA4 basics — ran about 4 cohorts totaling ~20 people
 * Tools: Meta Business Suite, Google Ads, GA4, Looker Studio, Canva, Notion
 
----
+# Baseline Response (Opus 4.6)
 
-# Bare-run Response (Opus 4.6)
+<details>
+<summary>Expand full response</summary>
 
 Your material is actually very strong — the main issue is the original write-up reads too much like a "job description" without showcasing results. The rewrite direction: every bullet should carry a "did what → produced what result" structure, and put the items that best demonstrate strategic thinking and team leadership up front, since you're targeting a brand-side manager position.
 
@@ -56,9 +59,12 @@ Team management is last not because it's unimportant, but because the team size 
 
 If you'd like me to adjust to a specific format (Word doc or English version) or review other sections, just let me know.
 
----
+</details>
 
 # Meta Rules Response (Opus 4.6)
+
+<details>
+<summary>Expand full response</summary>
 
 ## Input Correction
 
@@ -80,7 +86,7 @@ The rewrite strategy is based on three judgments:
 
 Below is a ready-to-use rewritten version:
 
-**ABC Digital Marketing Agency (2020–2025)**
+**ABC Digital Marketing Agency (2020–2025)**  
 Marketing Planner (2020–2022) → Senior Marketing Planner (2022–2025)
 
 Drove end-to-end digital marketing for 4–6 cross-industry brands (beauty / fitness / organic food / 3C), managing monthly ad budget of NT$1.5–2.5M with a team of 2.
@@ -122,9 +128,9 @@ Lacking the actual target job posting JD, so the ordering weights are inferred f
 - **External information gap**: If you have a specific target job posting JD, share it with me and I can do line-by-line customized fine-tuning, including keyword matching and weak-spot reinforcement strategy.
 - **Recommended action**: Prepare a standalone "project portfolio" (one-page PDF or Notion page) presenting the 綠田 and MATZ cases in a Before → Strategy → Result visual format. In brand-side manager interviews, being able to present structured case studies will immediately separate you from candidates who only submit resumes — because it proves you have the ability to "systematize your experience," and this is the most underestimated threshold for manager positions.
 
----
+</details>
 
-# Quality Audit for This AB Test
+# AB Test Quality Audit
 
 ## Stage Zero
 

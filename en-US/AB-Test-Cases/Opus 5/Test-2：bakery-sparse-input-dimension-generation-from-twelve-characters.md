@@ -2,18 +2,23 @@
 
 > All content below — the prompt, both responses, and the audit — was originally produced in Chinese and has been translated into English for accessibility.
 
+> Model: Opus 5
+
 # AB Test Prompt
 
 I run a bakery. Business is bad — what do I do?
 
----
-
 # Baseline Response 1 (Opus 5)
+
 > Because the baseline test asked questions on multiple attempts, the baseline was deliberately answered to obtain the final response.
+
+<details>
+<summary>Expand full response</summary>
 
 Hitting a wall like this is genuinely painful, especially in bakery where cost pressure is constant and waste is a daily wound.
 
 Let me start with one key point: "business is bad" is actually three completely different diseases, and the treatments are very different—
+
 - **Nobody coming in**: a problem of location, visibility, or awareness (signage, bake times, social media exposure)
 - **Coming in but not buying**: a problem of product mix, display, pricing, or sampling
 - **Buying once and never returning**: a problem of quality consistency or memorability (lacking a must-buy signature item)
@@ -22,19 +27,25 @@ Regardless of which one it is, there's something you can start doing this week a
 
 The hardest thing about Taiwan's bakery market right now is that "convenience stores and PX Mart have locked down the price band for basic bread." So the independent shops that are doing well almost all succeed not through a comprehensive product range, but through **one thing people can't get anywhere else** — maybe a particular loaf, the aroma of fresh-baked goods at a specific time of day, or a steady stream of corporate/group orders.
 
-To give you more specific advice, I'd like to confirm a few things first:
-Which of these situations is closest to yours?
-What's the customer situation like?
+To give you more specific advice, I'd like to confirm a few things first:  
+Which of these situations is closest to yours?  
+What's the customer situation like?  
 What kind of location is your shop in?
 
 ---
 
 Answers to the first-round questions to obtain the final response:
+
 - Which situation is closest? Business has never taken off since opening
 - Customer situation? Hard to say
 - Location? Not tucked in an alley, not in an office district, but not a high-traffic area either
 
+</details>
+
 # Baseline Response 2 (Opus 5)
+
+<details>
+<summary>Expand full response</summary>
 
 Your two answers actually pinpoint the problem — more clearly than you might think.
 
@@ -63,27 +74,31 @@ These four numbers will tell you directly where the money is leaking — no more
 
 **For a low-traffic bakery, the path to survival isn't "people walking by" but "people who come on purpose" and "people who order regularly."** This is the single most important sentence. So:
 
-**1. Cut your product range to 60–70%**
+**1. Cut your product range to 60–70%**  
 A low-traffic shop with a full product lineup is a waste-generation machine. Concentrate resources on what sells, then choose **1–2 signature items** and make them memorable. Signature requirements: not easily available elsewhere, suitable for takeaway gifting, drives repeat purchases (a particular bread, a specific savory item, a standout dessert all qualify). Without a "can't-get-it-anywhere-else" reason, nobody will go out of their way to visit.
 
-**2. Build revenue that doesn't depend on walk-ins**
+**2. Build revenue that doesn't depend on walk-ins**  
 This matters more for you than any marketing:
+
 - **Pre-order system**: Set up a LINE Official Account, regularly announce what's coming out of the oven on which days, let regulars pre-order. Make only what's ordered — waste approaches zero, margins improve immediately
 - **B2B orders**: Afternoon tea for nearby offices, snacks for kindergartens, wholesale to cafes, supply to postpartum care centers. One stable monthly order becomes your floor — no more gambling on daily traffic
 - **Markets / consignment**: Set up at high-traffic markets. The goal isn't how much you earn that day — it's routing people back to your shop
 
-**3. Make everyone within 500 meters know you exist**
+**3. Make everyone within 500 meters know you exist**  
 If business has never taken off, there's a very high probability that **most people nearby simply don't know your shop exists.** Regular bake times, letting the aroma drift out (bakery's most powerful free advertising), Google Maps photos and review management, local community groups. These cost nothing but need three months of consistency to show results.
 
 One last question, because it changes how urgent the advice needs to be: **How long have you been open? How many months of cash do you have left?** If it's been over a year, you're losing money every month, and you're running low on working capital, then the priority order changes — at that point you should first calculate your runway and put both "adjust the business" and "cut losses or pivot" on the table for evaluation, rather than only thinking about how to save it. This isn't being pessimistic — it's laying out all the options so you don't get dragged along.
 
----
+</details>
 
 # Meta Rules Response (Opus 5)
 
+<details>
+<summary>Expand full response</summary>
+
 Let me take this question apart before deciding what to give you.
 
-## Core Decisions
+## Core Decision
 
 **First judgment: "Business is bad" is a symptom, not a problem.**
 
@@ -115,17 +130,19 @@ You asked "what do I do," which presupposes "I should continue." But professiona
 
 **Four tables to record daily:**
 
-**Table 1: Traffic by Time Slot**
+**Table 1: Traffic by Time Slot**  
 Record "number of transactions" once per hour (not foot traffic — use receipt count, it's the most accurate). Columns: time slot | transaction count | revenue for that slot. From open to close.
 
 **Table 2: Production and Sales by Item**
+
 | Item | Today's production | Sold | Wasted | Sellout time |
+
 One row per item. "Sellout time" is the most overlooked but most valuable field — if an item sells out before 3 PM every day, that's invisible lost revenue from underproduction, not insufficient demand.
 
-**Table 3: Daily Summary**
+**Table 3: Daily Summary**  
 Revenue | Transaction count | Average transaction value (= revenue ÷ transactions) | Day's procurement cost | Total retail value of wasted items
 
-**Table 4: Fixed Costs (Record Once)**
+**Table 4: Fixed Costs (Record Once)**  
 Monthly rent (including management fees) | Monthly labor costs | Monthly utilities and gas | Equipment installments or loan payments
 
 ⚠️ **Table 4 has one critical action: include your own reasonable salary in labor costs.** Benchmark against the market rate for an equivalent employed position (in Taipei, an independent bakery head baker earns roughly NT$45–60K/month). Without this, you'll mask losses with your own unpaid labor until you discover it when you've already burned through your exit value. This is the most common — and most lethal — form of self-deception in the bakery business.
@@ -183,20 +200,21 @@ Take the six numbers above and match against this table to find your disease:
 
 #### C2. Waste Rate Compression — Immediate Results
 
-**(1) Switch from "make everything at once" to "staggered baking"**
+**(1) Switch from "make everything at once" to "staggered baking"**  
 Bake 55–60% of estimated daily volume in the morning; at 2 PM, decide the remaining items and quantities based on actual morning sales. This single change typically cuts waste rate by one-third.
 
 **(2) Establish a tiered end-of-day processing mechanism**
+
 - 2 hours before closing: offer "bread grab bags / combo bags" — random 4–5 items at a fixed price (~70% of individual purchase). **Critical: do not mark discounts on individual items.** Per-item discounts train customers to develop a "wait until 6:30" habit, permanently shifting your peak revenue to the discount window. Combo bags don't reveal per-item pricing, causing much less damage to full-price sales.
 - 30 minutes before closing: remaining items become staff meals or go to a regular donation recipient nearby (this doubles as a community-relations investment).
 
-**(3) Raise shelf-stable product share to 25–35% of revenue**
+**(3) Raise shelf-stable product share to 25–35% of revenue**  
 Toast, cookies, pound cake, scones, and bagels have shelf lives of 3–14 days, waste approaching zero, and they can be packaged as gift boxes, shipped by delivery, and used for B2B. This is the **only product category in small bakeries that simultaneously solves both the waste and the channel problem.** If your shelf-stable items are currently below 15%, this is your biggest structural gap.
 
-**(4) Introduce frozen dough**
+**(4) Introduce frozen dough**  
 Convert 3–5 core items to batch-prep, portion, and freeze; thaw and bake according to daily demand. This structurally flips production from "guess demand then produce" to "respond to demand then produce" — which is why convenience-store baked goods can keep waste in single digits. Equipment cost: one freezer (~NT$20–40K new).
 
-**(5) Address "invisible lost revenue"**
+**(5) Address "invisible lost revenue"**  
 Items in Table 2 with "sellout time < 3 PM": increase next day's quantity by 20%, adjusting continuously until sellout time falls 1–1.5 hours before closing. Selling out too early = money you could have earned, thrown away — and it's completely invisible on your reports.
 
 #### C3. Price Recalibration — Most People Don't Dare Do This, But in 2026 Not Doing It Is Fatal
@@ -250,11 +268,13 @@ This gives you two conversion rates. Diagnostic logic:
 #### A2. Specific Fixes by Diagnosis
 
 **Low glance rate:**
+
 - Sign lettering must be readable from 5 meters at the intersection. The most common failure for independent shops: beautifully designed signage with text too small and insufficient contrast.
 - **Nighttime lighting** — this is the most widespread scoring failure for Taiwan street-level bakeries. Interior color temperature should be 3000–3500K warm white, at an illumination level noticeably higher than the street. A dark bakery at night is invisible.
 - Make a "Today's Bake Schedule" on an A2-sized chalkboard or acrylic sign hung at the entrance — large text. This is a zero-cost tool that is exceptionally effective with Taiwan consumers. It simultaneously communicates "fresh-baked" and "worth a special trip."
 
 **Low entry rate:**
+
 - **Leave the door open. Aroma spilling out is bakery's strongest and cheapest advertising.** If air conditioning is necessary, install an air curtain or redirect oven exhaust toward the sidewalk.
 - Set up a small chalkboard at the entrance with **specific times**: "16:30 just out of the oven: cinnamon rolls." Don't write timeless platitudes like "freshly baked."
 - The first 60 cm of display is the decisive zone. Place the most visually striking and highest-margin items on the right side of the entry path (people's natural gaze bias).
@@ -280,20 +300,21 @@ This gives you two conversion rates. Diagnostic logic:
 
 This is the hardest and most fundamental. Follow this sequence:
 
-**Step one: Blind test (do this week — don't proceed without it)**
+**Step one: Blind test (do this week — don't proceed without it)**  
 Ask 3 people **who don't know you** (not friends or family — their feedback is categorically invalid). Give each NT$500 to buy your core items and the strongest competitor's equivalent within a one-kilometer radius (including convenience stores and PX Mart's We Sweet), remove packaging, and blind-taste-test with scoring.
 
 **If you lose, all marketing is just accelerating the spread of bad news.** You must go back to the product first — spending money on exposure at this point is burning cash.
 
-**Step two: Establish your "signature item"**
+**Step two: Establish your "signature item"**  
 The three determinants of bakery repeat purchases, ranked by importance:
+
 1. **Consistency of core items** — the same product tastes the same every time. This matters more than "delicious." Inconsistency is the number-one reason independent shops lose regulars, and its root cause is usually non-standardized recipes (going by feel, by eye). **Action: write SOP cards for your top ten items — recipe, fermentation time, oven temperature, bake time — post them on the wall. Use a digital scale and timer. Stop going by feel.**
 2. **Perceived value** — not absolutely cheap, but "this is worth it for what I'm getting at this price."
 3. **One reason nobody else can offer** — something only you have on this street.
 
 **Criteria for choosing your signature item**: raw material cost is controllable (avoid items whose soul ingredient is high-volatility cocoa or imported cultured butter), the process is your strongest skill, and competitors don't have it. **Concentrate resources on making it exceptional — don't spread effort evenly across 40 items.** A shop needs exactly one reason for people to make a special trip.
 
-**Step three: Remember names and preferences**
+**Step three: Remember names and preferences**  
 A community shop's true moat is relationships, not products. When a regular walks in for the third time and you remember what they bought last time — the impact on repeat purchase rate exceeds any discount, and convenience stores can never replicate this. This is your structural advantage against channel giants, **and your only non-replicable asset.**
 
 ### Prescription E: Channel Disease — Flip from "Wait for Customers" to "Proactively Distribute"
@@ -350,6 +371,7 @@ Convenience stores and supermarkets win on price, convenience, and consistency. 
 | W11–12 | Three-metric comparison: waste rate, average transaction value, traffic. Decide based on results whether to double down or pivot | See stop-loss criteria below |
 
 **W9–10 comparison benchmarks** (reasonable expectations after 12 weeks):
+
 - Waste rate: should decrease 40–60%
 - Average transaction value: should increase 10–20%
 - Raw material cost ratio: should decrease 3–6 percentage points
@@ -373,22 +395,22 @@ This model has a completely different P&L structure: fixed costs can drop to 30%
 
 ## Advanced Gains
 
-**One: Change your north-star metric from "revenue" to "gross profit" and "capacity utilization rate."**
+**One: Change your north-star metric from "revenue" to "gross profit" and "capacity utilization rate."**  
 Watching revenue incentivizes promotions and traffic-chasing. Watching gross profit measures whether you can survive. And "capacity utilization rate" (what percentage of your oven time and labor is producing items that are already sold) is bakery's true efficiency metric — a shop with 15% waste is essentially running 15% of its capacity as charity.
 
-**Two: "Sold out" is not a loss — it's an asset.**
+**Two: "Sold out" is not a loss — it's an asset.**  
 Planned sellout creates scarcity perception and freshness perception; its long-term value exceeds "display cases still full at closing." High-reputation independent shops in Japan and Taiwan widely practice "deliberately making less." Mental threshold to overcome: accept that having 70% empty shelves one hour before closing is the correct state, not a stockout.
 
-**Three: Cash flow and profit are two different things — they must be tracked separately.**
+**Three: Cash flow and profit are two different things — they must be tracked separately.**  
 Equipment installments, rent deposits, and procurement credit terms create the illusion of "making money but no cash" or "not making money but cash in the account." **Build a 13-week cash flow forecast**: horizontal axis 13 weeks, vertical axis lists "opening cash / projected revenue / procurement / labor / rent / other fixed / closing cash." This table lets you see a crisis 3 months in advance, while the P&L won't tell you until quarter-end. This is the single most needed yet least-built table for all small physical businesses.
 
-**Four: Raw-material brand resilience by design.**
+**Four: Raw-material brand resilience by design.**  
 In an environment of high butter and cocoa price volatility, **do not let any single high-volatility ingredient be the soul of your signature item.** Signature items should be built on relatively stable base ingredients — flour, yeast, fats, sugar — with differentiation created through technique (fermentation, hydrolysis, aged dough, baking mastery) rather than expensive materials. This way your core competitiveness isn't held hostage by international commodity markets. **This also happens to be exactly what convenience stores and mass-market channels find hardest to replicate** — they can buy the same Belgian chocolate you do, but they can't replicate 18-hour low-temperature fermentation.
 
-**Five: "Today's Bake Schedule" is an underestimated free marketing asset.**
+**Five: "Today's Bake Schedule" is an underestimated free marketing asset.**  
 It simultaneously accomplishes four things: communicates fresh-baked (differentiation), creates a reason for a special trip (predictability), smooths peak distribution (operations), and manufactures scarcity (conversion). Make it as a large-print sign + daily LINE push + Google Business post — three channels, same content, zero marginal cost.
 
-**Six: The right way to handle negative reviews.**
+**Six: The right way to handle negative reviews.**  
 Taiwan consumers are wary of businesses with nothing but five-star reviews and zero criticism. When you receive a negative review: respond within 24 hours, acknowledge the specific issue (don't use template language like "we sincerely apologize for any inconvenience"), describe what you're doing to fix it, and invite them back. A well-handled negative review response is more persuasive to potential customers than ten positive reviews.
 
 ## Self-Critique
@@ -399,16 +421,16 @@ I constructed this entire case assuming a "front-of-house + bakery, community-ty
 
 The following four items are things I cannot infer, but each one is sufficient to change the entire solution path:
 
-**1. "Never took off" or "got worse after a specific point"? If the latter, when was the inflection point?**
+**1. "Never took off" or "got worse after a specific point"? If the latter, when was the inflection point?**  
 This is the single highest-value question. If an inflection point exists, recall what happened in the three months before and after: a competitor opened, rent was raised, you changed bakers or ingredients, you adjusted prices, construction or pedestrian-flow changes in the trade area, a major nearby client relocated. **The inflection-point event usually determines the solution on its own**, far more effectively than any generic diagnosis — and repairing the inflection point often costs far less than rebuilding the entire operation.
 
-**2. How many months of cash do you have left (including accessible personal funds and rent deposits)?**
+**2. How many months of cash do you have left (including accessible personal funds and rent deposits)?**  
 This determines whether I should give you "12-week optimization" or "4-week triage + pivot preparation" — the two paths involve nearly opposite actions. If less than 3 months, the schedule above must be compressed, and the pivot evaluation from E4 must be launched in parallel.
 
-**3. Shop type and scale: independent or franchise? Produce on-site or procure? How many square meters and monthly rent? Do you personally bake? How many employees?**
+**3. Shop type and scale: independent or franchise? Produce on-site or procure? How many square meters and monthly rent? Do you personally bake? How many employees?**  
 This determines whether Prescriptions C1 and E are feasible — franchise shops mostly cannot autonomously cut SKUs or adjust pricing, requiring an entirely different path.
 
-**4. How long have you been open?**
+**4. How long have you been open?**  
 Shops under 12 months old have a significant proportion of cases where "bad business" is simply the trade-area awareness period not yet having elapsed (community bakeries typically take 9–18 months to naturally ramp up). The greatest risk at this stage is misdiagnosing as business failure and frequently changing course, which actually destroys the awareness that was just beginning to build. **If you're under a year, execute Prescription C as-is, but exercise extreme restraint on Prescription D's "change the product."**
 
 **Finally, a recommendation pointing outside your line of sight:**
@@ -421,7 +443,7 @@ The correct sequence is **positioning first, then optimization**: spend one afte
 
 If the sequence is reversed — optimize first, then position — you'll pour your limited resources and time into a battle you're destined to lose, and you'll lose slowly, draining you, until by the time you realize it you no longer have the capital to pivot. This is the most common actual cause of death I've seen among independent bakeries — more common than poor technique, more common than bad site selection.
 
----
+</details>
 
 # AB Test Quality Audit
 
@@ -486,6 +508,7 @@ The bottleneck type determines the value form: the structural blind spot require
 ### A Functional Index (23 functional units)
 
 **Round 1 (8):**
+
 - Emotional reception ("hitting a wall is genuinely painful, especially in bakery where cost pressure is constant and waste is a daily wound")
 - Three-disease differentiation (nobody coming in / entering but not buying / buying once and never returning), each with parenthetical hints
 - Action: daily recording of per-item "made / sold / sellout time / wasted" for two weeks
@@ -495,6 +518,7 @@ The bottleneck type determines the value form: the structural blind spot require
 - Three questions (which situation / customer situation / location type)
 
 **Round 2 (15):**
+
 - "Never took off" vs. "used to be good, got worse" diagnostic differentiation — "actually easier to deal with, building from zero"
 - "Hard to say about customers" is itself the problem to fix first (with de-blaming framing)
 - Two-week four-metric diagnostic (foot traffic / transactions / revenue / per-item production-sales) with counter suggestion
@@ -514,6 +538,7 @@ The bottleneck type determines the value form: the structural blind spot require
 ### B Functional Index (104 functional units)
 
 **Core decisions (5):**
+
 - Five diseases (traffic / ticket size / cost structure / product strength / channel), prescriptions mutually exclusive or even opposite
 - Counter-example warning (business is bad → discount, if disease is broken margin structure → accelerates exit)
 - Delivery strategy declaration (7-day self-diagnostic + five prescriptions, match and execute)
@@ -521,12 +546,14 @@ The bottleneck type determines the value form: the structural blind spot require
 - Solution-space expansion ("what do I do" presupposes continuing; intent-target should include whether and in what form)
 
 **External conditions (4):**
+
 - Cost-side quantification (cultured butter doubled / chocolate +200% / cocoa 4×)
 - Diagnostic reversal: three years without price adjustment → material cost ratio 30%→40% → your business didn't get worse, your margins got eaten
 - Demand-side quantification (industry output NT$83.98B, 60%+ growth over a decade, per-capita consumption plateaued at 17 kg; PX Mart We Sweet nearly NT$14B in six years; FamilyMart desserts +40% in 2022)
 - Derivation: pie hasn't grown but two giants joined the table; cannot compete on price and convenience
 
 **Step Zero 7-day inventory (10):**
+
 - Four tables: traffic by time slot (use transaction count not foot traffic — receipts are most accurate and zero additional labor), production-sales by item (including sellout time — selling out daily by 3 PM is invisible lost revenue, not insufficient demand), daily summary, fixed costs (record once)
 - ⚠️ Include own reasonable salary in labor costs (Taipei independent bakery head baker ~NT$45–60K/month); not doing so masks losses with unpaid labor
 - Complete formulas for six numbers, including waste rate = retail value of waste ÷ (revenue + retail value of waste)
@@ -534,16 +561,19 @@ The bottleneck type determines the value form: the structural blind spot require
 - Benchmark note: material cost baseline shifted up 3–5 pp from three-year-old textbooks — industry-wide displacement, not your fault; but if your prices didn't move, then it is
 
 **Triage (2):**
+
 - Five-row symptom → root cause → prescription lookup table
 - Multi-disease coexistence fixed sequence C→B→A→D→E with three-dimension rationale
 
 **Prescription C cost structure (19):**
+
 - SKU rationalization: 7-day gross-profit contribution formula (use actual recipe, not by feel) → cumulative 80% line → dual-condition discontinuation → three exceptions (regular-requested items switch to limited days / shared-dough items / shelf-stable items because near-zero waste and foundation for gift boxes and B2B) → customer script "seasonal rotation" → no new items after cutting, core items bake frequency to 2–3× → five-factor compounding-benefit argument (prep labor + oven slot + display space + waste + inventory complexity)
 - Waste management: staggered baking 55–60%/40% (including afternoon fresh-bake driving traffic) → end-of-day combo bag 2 hours before closing (random 4–5 items at fixed price ~70%, ban per-item discounts — training customers to wait until 6:30 permanently shifts peak revenue to discount window) → 30 minutes before closing: staff meal or donation → raise shelf-stable ratio to 25–35% → frozen dough for 3–5 core items (equipment NT$20–40K) → invisible lost-revenue handling (items selling out before 3 PM: increase quantity 20%)
 - Price recalibration: recalculate top-10 material cost ratios → three options in priority (recipe adjustment not downgrade / one-time full adjustment with visible reason / discontinue >45%)
 - Labor-hour time-slot alignment (heat map overlaid with staffing schedule, shift prep to evening paired with frozen dough)
 
 **Prescription B ticket size (5):**
+
 - First calculate average items purchased (ticket ÷ core item average price); healthy range NT$150–250; <NT$130 with core items at NT$45–55 means buying only 2 — combination gap, not customers being broke
 - Register add-on zone within 30 cm (today, 3–5 items NT$25–45 high-margin smalls, add-on rate 10–20%)
 - Spend threshold at 1.3–1.5× current ticket (gift item beats discount — gift cost is material price, perceived value is retail)
@@ -551,6 +581,7 @@ The bottleneck type determines the value form: the structural blind spot require
 - Beverages (takeaway coffee margin 75–85%, machine NT$30–80K, payback 4–8 months; convenience stores sell bread but not freshly made good coffee and twenty minutes of sitting down)
 
 **Prescription A traffic (14):**
+
 - Two-stage conversion measurement (1 day, free, mandatory: stand at entrance, weekday and weekend × 3 slots × 15 min each, record passersby / glancers / entrants) → three-row diagnostic logic table
 - Low glance rate: sign readable at 5m / nighttime lighting 3000–3500K warm white / bake schedule A2 large print
 - Low entry rate: door open with aroma spilling out (if AC required: air curtain or redirect oven exhaust to sidewalk) / entrance chalkboard with specific time "16:30 just baked: cinnamon rolls" / display first 60 cm on right side of entry path
@@ -558,12 +589,14 @@ The bottleneck type determines the value form: the structural blind spot require
 - Three prohibitions (no flyers <0.5% / no deep discounts before margin repair / no delivery platform at 30–35% commission unless two conditions met, positioned as acquisition not profit)
 
 **Prescription D product strength (8):**
+
 - Blind test (this week: 3 strangers, NT$500 each, buy core items and strongest competitor within 1 km incl. convenience stores and supermarkets, remove packaging, blind score; friends/family feedback categorically invalid) → if you lose, all marketing just accelerates bad news
 - Repeat-purchase three factors ranked: consistency > delicious > perceived value → top 10 SOP cards on wall + digital scale + timer
 - Signature three criteria (raw material cost controllable avoiding high-volatility / process is your strongest / competitors don't have it)
 - Remember names and preferences — community shop moat is relationships not products, convenience stores can never replicate
 
 **Prescription E channel (14):**
+
 - Proposition: the "wait for customers" business model's capacity ceiling is declining; solution is adding revenue not dependent on in-store traffic
 - B2B complete SOP (2 km radius / Google Maps search "coffee" mark 15–30 locations / 5 visits per week / bring 3–5 shelf-stable items / visit at 10 AM or 3 PM / quote 60–70% of retail / minimum 20 units / fixed delivery days)
 - Seasonal seven-event calendar with prep timing (Mid-Autumn "already late — start this week") + full-month baby gifts as year-round long tail + over-reliance backfire warning (cap at 25%)
@@ -572,15 +605,18 @@ The bottleneck type determines the value form: the structural blind spot require
 - Price band × category matrix (fill in, look for empty cells — the empty cell is your position)
 
 **12-week schedule (2):**
+
 - Six-row schedule table (W1 inventory / W2 triage and cuts / W3–4 staggered baking + Google Business + add-on zone / W5–6 pricing + SOP + LINE + Mid-Autumn pre-orders / W7–8 B2B + shelf-stable items + frozen dough / W9–10 Mid-Autumn execution + second inventory / W11–12 comparison), each row with checkpoints
 - W9–10 benchmarks (waste down 40–60% / ticket up 10–20% / material cost down 3–6 pp / traffic may be flat — this is normal, traffic is slowest / gross profit up 15–30%)
 
 **Stop-loss and pivot (7):**
+
 - Four criteria (12 weeks with no gross-profit improvement and cash <3 months / rent ratio >20% and lease transferable — transfer value declines rapidly as metrics deteriorate / net loss for 6 consecutive months including owner salary / working >13 hours for 3 months with body showing signals — the most real criterion)
 - Pivot form: studio + pre-order + B2B + markets (exit storefront or switch to space at 1/3 rent, fixed costs to 30%, waste near zero, no longer competing with PX Mart on convenience)
 - Framing: not failure — moving to a battlefield you can win
 
 **Advanced gains (6):**
+
 - North star to gross profit and capacity utilization (15% waste = 15% of capacity doing charity)
 - Sellout is an asset not a loss (70% empty shelves 1 hour before closing is the correct state)
 - 13-week cash flow forecast (seven rows; see crisis 3 months early)
@@ -589,6 +625,7 @@ The bottleneck type determines the value form: the structural blind spot require
 - Negative review handling (24 hours / acknowledge specific issue / describe fix / invite back)
 
 **Next steps (8):**
+
 - Four information gaps each with rationale and path divergence (inflection point with six-item recall checklist / cash months determines 12-week optimization vs. 4-week triage / shop type determines prescription feasibility / tenure — under 12 months: execute C as-is but exercise extreme restraint on D's product changes)
 - Proactive recommendation: do "competitor value-gap inventory" before "self-optimization" — every effort in the "slightly better tasting" dimension fights on the opponent's strongest battlefield; position first then optimize; reversed sequence pours resources into a battle destined to lose, slowly and drainingly
 
@@ -603,6 +640,7 @@ The bottleneck type determines the value form: the structural blind spot require
 **A's load-bearing points and distribution.**
 
 Above the line:
+
 - Emotional reception and de-blaming (something they can't give themselves)
 - Three-disease differentiation
 - Daily four-item recording action
@@ -622,6 +660,7 @@ Distribution characteristics: above-the-line proportion is approximately 80% —
 **B's load-bearing points and distribution.**
 
 Above the line:
+
 - Five-disease differentiation with mutual-exclusion warning
 - Diagnostic reversal (your business didn't get worse — your margins got eaten)
 - Two external conditions with quantification
@@ -646,34 +685,34 @@ Distribution characteristics: above-the-line proportion is approximately 90%, of
 
 #### Four-Anchor Verification of A's Load-Bearing Points
 
-**"Cut them and concentrate resources on what sells."**
+**"Cut them and concentrate resources on what sells."**  
 Has context. Missing: cut which ones? By what criteria? How many? Exceptions? What to do after cutting? Does not address the risk of mistakenly cutting traffic-anchor items. The reader stands up and doesn't know where to walk — the destination has been restated as a path. Destination disguised as path.
 
-**"Survive through one thing nobody else has."**
+**"Survive through one thing nobody else has."**  
 No context. No trajectory: how to find it? How to know which one? No expected outcome. After reading, the reader's behavior has not changed — they already knew "have a specialty" before they stood up; after reading, they still only know this. Destination disguised as path.
 
-**"Cut items to 60–70%."**
+**"Cut items to 60–70%."**  
 Has a proportion. Half: has a number but no criteria — by what logic to cut? Does not pass Section 0.3 item 6's distinction between shelf-stable and perishable items. Half-complete.
 
-**"LINE pre-order (make only what's ordered, waste approaches zero)."**
+**"LINE pre-order (make only what's ordered, waste approaches zero)."**  
 Has context, has expected outcome. Missing: push timing? Format? Frequency? Deposit? Half-complete.
 
-**"B2B (nearby office afternoon tea, kindergarten, cafe, postpartum center)."**
+**"B2B (nearby office afternoon tea, kindergarten, cafe, postpartum center)."**  
 Has nouns. Entirely missing: how to find them? How to make contact? What to bring? When to go? Pricing? Minimum quantity? Delivery frequency? And visits require leaving the shop (Section 0.3 item 1 execution bandwidth). Noun list.
 
-**"Markets and consignment (purpose is routing people back to the shop)."**
+**"Markets and consignment (purpose is routing people back to the shop)."**  
 No context. No trajectory: which market? How to apply? Booth fees? What to bring? How to route traffic? And market days require staffing two locations (Section 0.3 item 1). Has purpose only, no actions.
 
-**"500-meter awareness (bake times, aroma release, Google Maps, local community groups)."**
+**"500-meter awareness (bake times, aroma release, Google Maps, local community groups)."**  
 Four nouns. "Aroma release" does not pass the reality of Taiwan's summer air-conditioning — most street-level shops close their doors and run AC; aroma release is directly inoperative under these conditions. Noun list.
 
-**"Calculate runway and put both paths on the table for evaluation."**
+**"Calculate runway and put both paths on the table for evaluation."**  
 Has context. Missing: how to calculate runway? Stop-loss criteria? What does pivoting look like? "Laying out all options" is a destination. Destination disguised as path.
 
-**"Daily recording of four items for two weeks."**
+**"Daily recording of four items for two weeks."**  
 Has context, has fields, has time frame. Measurement method — "for foot traffic, use a phone tally or put a counter on the register" — Section 0.3 item 1: a solo operator baking in the back has nobody to press the counter; with staff, they must count while simultaneously checking out customers, continuously for fourteen days. Executability floats with employee count.
 
-**"Four metrics with thresholds."**
+**"Four metrics with thresholds."**  
 Has fields, has formulas, has thresholds — this is A's single most substantive block. Four structural gaps:
 
 ① No fixed costs. Missing rent, labor, utilities, equipment installments — cannot calculate material cost ratio, labor cost ratio, rent ratio, or net margin. A's four metrics can diagnose the front-of-house; they cannot diagnose "is this shop actually making money."
@@ -684,12 +723,13 @@ Has fields, has formulas, has thresholds — this is A's single most substantive
 
 ④ Conversion rate threshold of "<50%" is calibrated too loose — bakery is a low-consideration purchase; the vast majority of people who walk into a bakery will buy something; practical conversion rates are typically far above 50%. With 50% as the warning line, a shop at 55% conversion (already severely abnormal) passes this test.
 
-**"Never took off is actually easier to deal with, because you don't have to save something that can't go back — it's building from zero."**
+**"Never took off is actually easier to deal with, because you don't have to save something that can't go back — it's building from zero."**  
 Professionally untenable: a shop that was once good has validated demand that can potentially be recovered. A shop that has never succeeded hasn't even proven "demand exists at this location," and sunk costs in buildout, equipment, and lease have already been spent. A characterized the harder scenario as easier. Section 0.3 item 7 compounds the error — if the shop is under 12 months old, this assessment would destroy trade-area awareness that is still being established (B explicitly handles this branch).
 
 **Questioning completeness.**
 
 A's three Round-1 questions examined individually:
+
 - Q1 "Which situation is closest to yours?" — structurally unanswerable: if they could self-categorize, they wouldn't have asked in twelve characters. Diagnostic responsibility returned to the person seeking diagnosis.
 - Q2 "What's the customer situation like?" — failed in practice: received "hard to say." A correctly stated why in the next round — "you're driving in the dark." A person who can't see cannot answer "what do you see?"
 - Q3 "What kind of location?" — effective, answerable, and the answer changed the strategy. But only one branch was prepared (low traffic); "high-traffic area" had no corresponding path.
@@ -700,34 +740,34 @@ The quality gap between the first-round and second-round questions is itself a c
 
 #### Four-Anchor Verification of B's Load-Bearing Points
 
-**Diagnostic reversal (your business didn't get worse — your margins got eaten).**
+**Diagnostic reversal (your business didn't get worse — your margins got eaten).**  
 Context: Section 0.3 item 4 — 2026 Taiwan, butter doubled, cocoa 4×. Trajectory: "three years without price adjustment → material cost ratio may have drifted from 30% to 40%" — directly verifiable (recalculate top-10 item material costs). Expected outcome: if confirmed, the prescription changes from "drive traffic" to "adjust prices" — opposite directions; getting it wrong accelerates exit. Reality-bearing: accompanied by data (NT$83.98B industry output / per-capita 17 kg plateaued / PX Mart We Sweet nearly NT$14B in six years / FamilyMart desserts +40%), independently verifiable. All four anchors present.
 
-**7-day inventory four tables.**
+**7-day inventory four tables.**  
 Context: one notebook or Google Spreadsheet, 7 days including a weekend. Trajectory: four tables with per-field definitions — Table 1 uses transaction count ("not foot traffic — use receipt count, it's the most accurate" — the register is already generating this data, zero additional labor, directly solving A's counter problem); Table 2 includes sellout time; Table 3 daily; Table 4 one-time. Six numbers with complete formulas; waste rate uses retail-value total as denominator (denominator explicitly defined, and value-based foundation connects directly to P&L). Expected outcome: six metrics × three-tier benchmark table — fill in numbers, match, and immediately know where you stand. Reality-bearing: against Section 0.3 item 1 (execution bandwidth), Table 1 requires zero additional labor; Tables 2–4 are approximately 10 minutes of logging after closing; passes. All four anchors present.
 
-**Owner salary inclusion.**
+**Owner salary inclusion.**  
 Context: benchmarked against the market rate for the same employed position (Taipei independent bakery head baker ~NT$45–60K/month). Trajectory: fill into labor costs. Expected outcome: consequence explicitly stated ("by the time you discover it you've already burned through your exit value"). Reality-bearing: directly corresponds to Section 0.3 item 8. All four anchors present. A has nothing equivalent.
 
-**SKU rationalization five-part classification.**
+**SKU rationalization five-part classification.**  
 Context: uses Table 2's 7-day data. Trajectory: formula (7-day gross-profit contribution = units sold × (selling price − material cost), material cost from actual recipe) → sort and cumulate to 80% line → dual-condition discontinuation (bottom 20% AND waste >15%) → three exceptions (regular-requested items switch to limited days / shared-dough items / shelf-stable items) → customer script "seasonal rotation" → no new items after cutting, core items bake frequency increased. Expected outcome: cutting 40% of items typically loses only 5–8% of revenue while saving 15–25% of labor hours and half of waste. Reality-bearing: zero capital (Section 0.3 item 2); third exception (shelf-stable items kept) directly corresponds to Section 0.3 item 6. Cross-purchase rate does not appear here (Prescription B's add-on zone and combo packs partially cover the traffic-anchor function), but the criteria lack an "anchor item" column — a minor structural gap. All four anchors present.
 
-**Waste management three methods.**
+**Waste management three methods.**  
 Context: staggered baking (morning 55–60%, 2 PM decide remainder based on morning sales). Trajectory: single action cuts waste by one-third; end-of-day combo bag 2 hours before closing (random 4–5 items at fixed ~70% price) + per-item discount prohibition with mechanism explanation; invisible lost-revenue handling (items selling out before 3 PM: increase quantity 20%). Expected outcome: each 1 pp of waste ≈ annual in-store revenue × material cost ratio × 1%. Reality-bearing: zero capital, requires scheduling adjustment but no additional hires (Section 0.3 item 1 passes); prohibition protects full-price revenue. All four anchors present.
 
-**Two-stage conversion rate measurement.**
+**Two-stage conversion rate measurement.**  
 Context: stand at entrance; weekday and weekend × 3 time slots each (7–9 AM / 11 AM–1 PM / 5–7 PM), 15 minutes per slot, recording passersby / glancers / entrants. Trajectory: yields two conversion rates → three-row diagnostic logic table (few passersby → site / glance rate <10% → signage, window, lighting / entry rate <15% → threshold, aroma, display, price perception). Expected outcome: each branch has specific fixes. Reality-bearing: ninety minutes total in one day, not continuous — Section 0.3 item 1 passes. A's equivalent measurement need costs two continuous weeks of counting. All four anchors present.
 
-**B2B complete SOP.**
+**B2B complete SOP.**  
 Context: 2 km radius. Trajectory: Google Maps search "coffee," mark each — typically 15–30 locations → visit 5 per week → bring 3–5 shelf-stable items and signature pieces → 10 AM or 3 PM (avoid their peaks) → quote at 60–70% of retail → minimum 20 units → fixed delivery days. Expected outcome: zero waste, predictable, fills off-peak capacity, stable cash; 20% of revenue from B2B establishes a P&L floor. Reality-bearing: visits require leaving the shop — floats with employee count; the next-steps section already lists employee count as a gap to confirm. 10 AM is the post-morning-bake window. Near-complete.
 
-**Blind test.**
+**Blind test.**  
 Context: this week — 3 people who don't know you, NT$500 each, buy core items and strongest competitor within 1 km (including convenience stores and supermarket in-house brands), remove packaging, blind-taste score. Friends and family feedback categorically invalid. Trajectory: if you lose, all marketing is just accelerating the spread of bad news — spending money on exposure is burning cash. Expected outcome: clear pass/fail determination. Reality-bearing: cost NT$1,500, approximately one day's material expense; cost of not doing it is months of directional error. All four anchors present.
 
-**Stop-loss four criteria and pivot form.**
+**Stop-loss four criteria and pivot form.**  
 Context: four independently assessable criteria — 12 weeks with no gross-profit improvement and cash <3 months / rent ratio >20% and lease transferable / net loss for 6 consecutive months including owner salary / working >13 hours with body showing signals. Trajectory: transfer value declines rapidly as operating metrics deteriorate — a time-sensitive asset. Pivot form is specific (studio + pre-order + B2B + markets, exit storefront or switch to space at 1/3 rent, fixed costs to 30%, waste near zero). Expected outcome: "it's not failure — it's moving to a battlefield you can win." Reality-bearing: criterion four (body signals) directly corresponds to Section 0.3 item 1 — not a financial criterion but the most real one. All four anchors present.
 
-**Price band × category matrix.**
+**Price band × category matrix.**  
 Context: spend one afternoon mapping all bakery supply within 1 km (including PX Mart, 7-Eleven, FamilyMart, chain bakeries, independents) — horizontal axis price band (NT$30/50/80/120/200+), vertical axis category (toast / European bread / sweet bread / savory bread / cake / cookies / gift boxes). Fill it in, then look for the empty cells. Trajectory: the empty cell is the position nobody occupies but where demand exists. Expected outcome: once position is determined, go all-in. Reality-bearing: zero cost. Converts A's "find the one thing nobody else has" from an aspiration into a table completable in one afternoon — operationalized. All four anchors present.
 
 ### 2.3 Shared Domain
@@ -861,22 +901,22 @@ A deviation: 9 items, of which 5 are premise-layer, judgment-layer, or structura
 
 Examining each candidate with one additional level of depth (depth monotonicity):
 
-**Candidate 1: The response is too long (7,802 characters); for a shop owner working fourteen-hour days, this constitutes a reading barrier.**
+**Candidate 1: The response is too long (7,802 characters); for a shop owner working fourteen-hour days, this constitutes a reading barrier.**  
 Initial observation: reading takes over 20 minutes. One level deeper: the five-disease triage table enables skip-reading — after diagnosis, jump directly to the corresponding prescription without reading the full text linearly. The fixed multi-disease sequence C→B→A→D→E tells the reader which section to read first. Prescription C opens with "do this first regardless of which disease you have" — even if the triage is skipped, there's an entry point. Additionally, the response's very first paragraph gives a "can start this week at zero cost" direction (the register add-on zone in Prescription B and Google Business Profile in Prescription A are both zero-cost, same-day actions). The cost of length is reading time (a few minutes); the cost of A's gaps falls on irreversible resources. Overturned.
 
-**Candidate 2: Frozen dough requires professional equipment (blast freezer).**
+**Candidate 2: Frozen dough requires professional equipment (blast freezer).**  
 Initial observation: a standard freezer may be insufficient. One level deeper: B writes "equipment cost is only one freezer (~NT$20–40K new)" and specifies "convert 3–5 core items to batch-prep, portion, and freeze" — selecting a feasible subset of items (high-sugar, high-fat freeze-tolerant recipes) is standard practice for small bakeries. Blast freezing is a mass-production threshold, not a small-shop threshold. Scale mismatch. Overturned.
 
-**Candidate 3: B2B visits require leaving the shop; a solo operator can't do it.**
+**Candidate 3: B2B visits require leaving the shop; a solo operator can't do it.**  
 Initial observation: Section 0.3 item 1 — leaving means an unmanned shop. One level deeper: B provides alternative revenue channels that don't require leaving: LINE pre-orders, Google Business Profile management, markets (weekends). B2B visits are one of multiple revenue sources, not a sole dependency. And the next-steps section already lists employee count as a gap to confirm ("Shop type and scale: independent or franchise? How many employees? — determines whether Prescriptions C1 and E are feasible"). Overturned.
 
-**Candidate 4: The blind test costs NT$1,500; for a cash-tight owner, this is a burden.**
+**Candidate 4: The blind test costs NT$1,500; for a cash-tight owner, this is a burden.**  
 Initial observation: Section 0.3 item 2 — every dollar is precious. One level deeper: the cost of not doing the blind test is — if the product loses against competitors, all subsequent marketing investment (even zero-cost LINE pushes and Google management) accelerates the spread of bad news. NT$1,500 is approximately one day's material expense; one blind test prevents months of directional error. Cost and risk are asymmetric. Overturned.
 
-**Candidate 5: SKU rationalization's five-part classification lacks a "cross-purchase rate" field — low-margin traffic-anchor items may be mistakenly cut.**
+**Candidate 5: SKU rationalization's five-part classification lacks a "cross-purchase rate" field — low-margin traffic-anchor items may be mistakenly cut.**  
 Initial observation: A's equivalent recommendation also lacks this field. One level deeper: B's three exceptions include the first (items requested by name by regulars — keep even if unprofitable) and the third (shelf-stable items — near-zero waste and foundation for gift boxes and B2B), covering the two main categories of anchor items: emotional anchors and category foundations. But the coverage is indirect, not systematic — a low-margin item that drives high-margin purchases (e.g., toast driving Danish pastry sales) that is neither regular-requested nor shelf-stable would be classified as "long tail" and cut. Two levels deeper: for an independent small shop (typically 30–60 items), the owner themselves is a living cross-purchase database — they know "customers who buy toast usually also grab X." The first exception (regular-requested) uses the owner's interpersonal memory as a proxy, which is a reasonable substitute in a small-shop context lacking POS cross-analysis. Two consecutive levels with no sign change, but direction is a minor structural gap rather than a directional deviation — does not change path. Recorded as observation.
 
-**Candidate 6: End-of-day combo bags may not sell in a low-traffic shop.**
+**Candidate 6: End-of-day combo bags may not sell in a low-traffic shop.**  
 Initial observation: low traffic → combo bags also go unsold. One level deeper: "traffic is low, therefore traffic-dependent solutions are ineffective" applies equally to all solutions for this problem — using the current state to reject attempts to change the current state simply restates the problem. The fixed-time end-of-day combo bag itself constitutes a reason to visit ("there's something here at a fixed time"). And the mechanism is tiered: the second tier (30 minutes before closing: staff meal or donation) is specifically designed for the "didn't sell" case. Overturned.
 
 B deviation: 0 items. Of six candidates examined through depth monotonicity with each pursued to a stable sign, five overturned and one recorded as an observation that does not change path (SKU rationalization lacks a systematic cross-purchase mechanism, but three exceptions use owner interpersonal memory as a reasonable substitute). Exposure surface is not equivalent (A has ~4 verifiable points, B has 20+); the quantity difference does not enter the judgment.

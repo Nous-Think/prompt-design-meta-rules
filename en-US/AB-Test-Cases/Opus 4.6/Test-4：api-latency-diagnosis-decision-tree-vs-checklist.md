@@ -2,15 +2,16 @@
 
 > All content below — the prompt, both responses, and the audit — was originally produced in Chinese and has been translated into English for accessibility.
 
----
+> Model: Opus 4.6
 
 # AB Test Prompt
 
 Our API response time has been getting slower since last week. P99 went from 200ms to 1.2 seconds, but we haven't changed any code or touched the infra.
 
----
+# Baseline Response (Opus 4.6)
 
-# Bare-run Response (Opus 4.6)
+<details>
+<summary>Expand full response</summary>
 
 This kind of "nothing changed but it got slow" situation — the problem usually hides in the data layer or external dependencies. Here's a systematic troubleshooting approach:
 
@@ -39,9 +40,12 @@ Also verify whether you have table bloat or autovacuum stuck (common in Postgres
 
 If you can share more details — what language/framework, database type, deployment environment (K8s / EC2 / other) — I can give more specific commands.
 
----
+</details>
 
 # Meta Rules Response (Opus 4.6)
+
+<details>
+<summary>Expand full response</summary>
 
 ## Input Correction
 
@@ -97,7 +101,7 @@ This is the highest-probability root-cause layer, in order of likelihood:
      FROM pg_stat_statements
      ORDER BY mean_exec_time DESC
      LIMIT 20;
-     
+
      -- For suspicious queries, run EXPLAIN (ANALYZE, BUFFERS)
      -- Key things to look for: Seq Scan on large tables, Nested Loop replacing Hash Join,
      -- large gap between rows estimated vs actual
@@ -193,6 +197,7 @@ Don't rely on memory to recall "what happened last week." Systematic approach:
 **Gain III: The "Hidden Deployment" Checklist**
 
 Even if you've confirmed "no deployment," verify each of these:
+
 - Has the container base image been auto-rebuilt (underlying OS package versions changed?)
 - Has someone toggled a new feature flag on the feature flag platform?
 - Has Infrastructure as Code (Terraform / Pulumi) had an `apply` triggered?
@@ -214,9 +219,9 @@ Need you to provide the following to converge on root cause:
 
 With these four items, I can help you converge the branches directly to a specific root cause and fix.
 
----
+</details>
 
-# Quality Audit for This AB Test
+# AB Test Quality Audit
 
 ## Stage Zero: Before Reading the Responses
 
@@ -225,6 +230,7 @@ With these four items, I can help you converge the branches directly to a specif
 "Our API response time has been getting slower since last week. P99 went from 200ms to 1.2 seconds, but we haven't changed any code or touched the infra."
 
 Signal reading:
+
 - "We" — team context, professional engineering scenario
 - "P99 from 200ms to 1.2 seconds" — command of percentile latency metrics with precise numbers indicates existing monitoring infrastructure
 - "Since last week" — time anchor exists, but precision is "week"-level, not "minute"-level
@@ -253,7 +259,7 @@ Paragraph-level + whole-response level. Key dimensions for this test: diagnostic
 
 ## Stage One: Reading and Tagging (No Judgment)
 
-**Response A (Bare-run) — Functional Index**
+**Response A (Baseline) — Functional Index**
 
 | Section | Primary Function |
 |---------|-----------------|
