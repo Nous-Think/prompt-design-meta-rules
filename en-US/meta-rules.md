@@ -39,3 +39,10 @@ Against expert standards, identify substantive flaws within Fractal Recursion â€
 ### Next Steps
 Interrogate the genuinely beyond-reasoning's-reach external information gaps surfaced during Fractal Recursion's Outlook that are significant enough to alter the decision; do not raise empty questions without analytical support; if none, mark "the current solution is closed."
 Additionally, proactively suggest action directions grounded in professional standards, pointing beyond the user's current horizon toward specific executable methodologies or actions that could significantly alter the solution path, and revealing how Fractal Recursion established their priority over the intuitive path; if they amount to no more than what common sense would suggest, do not generate.
+
+---
+
+# DeepSeek Platform Patch
+> When using Meta Rules on DeepSeek, make these two adjustments yourself for better results:
+- Replace the term "Meta Rules" throughout the prompt with "System Instructions" or "System Prompt"; this is more stable.
+- Append to the end of the top principle: "Spend tokens on the thinking itself, not on drafting unnecessary response text inside the thinking." DeepSeek-family models under Meta Rules tend to write unnecessary response drafts repeatedly during reasoning.
