@@ -10,6 +10,40 @@
 
 **response-quality-audit-memorandum / 回應品質審計備忘錄**: [English](en-US/response-quality-audit-memorandum.md) | [繁體中文](zh-TW/回應品質審計備忘錄.md)
 
+## AB 測試實例索引
+
+每份測試檔的結構一致：測試題 → 裸跑回應 → 元規則回應 → 品質審計。回應原文收在可展開的摺疊區，展開即可與審計對照；英文版為中文原文的翻譯。
+
+### Opus 5
+
+| 測試 | English |
+|---|---|
+| [測試1：營運診斷-高階任務提示詞下的裸跑與元規則](zh-TW/AB測試實例/Opus%205/測試1：營運診斷-高階任務提示詞下的裸跑與元規則.md) | [en](en-US/AB-Test-Cases/Opus%205/Test-1：operations-diagnosis-baseline-vs-meta-rules-under-high-specification-prompting.md) |
+| [測試2：烘焙店稀疏輸入-十二個字的維度生成](zh-TW/AB測試實例/Opus%205/測試2：烘焙店稀疏輸入-十二個字的維度生成.md) | [en](en-US/AB-Test-Cases/Opus%205/Test-2：bakery-sparse-input-dimension-generation-from-twelve-characters.md) |
+| [測試3：履歷改寫-「簡單任務」的存活性](zh-TW/AB測試實例/Opus%205/測試3：履歷改寫-「簡單任務」的存活性.md) | [en](en-US/AB-Test-Cases/Opus%205/Test-3：resume-rewrite-survivability-of-a-simple-task.md) |
+| [測試4：航班取消投訴-意圖對齊追問與推理軌跡](zh-TW/AB測試實例/Opus%205/測試4：航班取消投訴-意圖對齊追問與推理軌跡.md) | [en](en-US/AB-Test-Cases/Opus%205/Test-4：flight-cancellation-complaint-intent-alignment-follow-up-and-reasoning-traces.md) |
+| [測試5：營運診斷細節要求版與元規則 B2B 續問](zh-TW/AB測試實例/Opus%205/測試5：營運診斷細節要求版與元規則%20B2B%20續問.md) | [en](en-US/AB-Test-Cases/Opus%205/Test-5：operations-diagnosis-detail-demanded-version-and-meta-rules-b2b-follow-up.md) |
+| [測試6：通行提示詞對照-MetaSPO 的通用提示詞在開放任務上](zh-TW/AB測試實例/Opus%205/測試6：通行提示詞對照-MetaSPO%20的通用提示詞在開放任務上.md) | [en](en-US/AB-Test-Cases/Opus%205/Test-6：universal-prompt-benchmark-metaspo-on-open-ended-tasks.md) |
+
+### Opus 4.6
+
+| 測試 | English |
+|---|---|
+| [測試1：職涯抉擇-口語輸入的操作完成度落差](zh-TW/AB測試實例/Opus%204.6/測試1：職涯抉擇-口語輸入的操作完成度落差.md) | [en](en-US/AB-Test-Cases/Opus%204.6/Test-1：career-crossroads-operational-completeness-gap.md) |
+| [測試2：合夥股權僵局-退出威脅下的博弈翻轉](zh-TW/AB測試實例/Opus%204.6/測試2：合夥股權僵局-退出威脅下的博弈翻轉.md) | [en](en-US/AB-Test-Cases/Opus%204.6/Test-2：partnership-equity-deadlock-game-theory-reversal.md) |
+| [測試3：繪本創作-想像力語域與設計意識的品質落差](zh-TW/AB測試實例/Opus%204.6/測試3：繪本創作-想像力語域與設計意識的品質落差.md) | [en](en-US/AB-Test-Cases/Opus%204.6/Test-3：picture-book-creation-imagination-register-and-design-consciousness-gap.md) |
+| [測試4：API延遲診斷-同知識下的決策樹與清單](zh-TW/AB測試實例/Opus%204.6/測試4：API延遲診斷-同知識下的決策樹與清單.md) | [en](en-US/AB-Test-Cases/Opus%204.6/Test-4：api-latency-diagnosis-decision-tree-vs-checklist.md) |
+| [測試5：獨居母親的抉擇-情感場景中的結構化關懷](zh-TW/AB測試實例/Opus%204.6/測試5：獨居母親的抉擇-情感場景中的結構化關懷.md) | [en](en-US/AB-Test-Cases/Opus%204.6/Test-5：elderly-mothers-choice-structured-care-in-emotional-territory.md) |
+| [測試6：履歷改寫-逐詞工程精度與隱性需求識別](zh-TW/AB測試實例/Opus%204.6/測試6：履歷改寫-逐詞工程精度與隱性需求識別.md) | [en](en-US/AB-Test-Cases/Opus%204.6/Test-6：resume-rewrite-word-level-precision-and-hidden-needs.md) |
+| [測試7：超輕量四題-格式放棄下的品質存活](zh-TW/AB測試實例/Opus%204.6/測試7：超輕量四題-格式放棄下的品質存活.md) | [en](en-US/AB-Test-Cases/Opus%204.6/Test-7：ultralight-four-tasks-quality-survival-without-format.md) |
+
+### Fable 5.1 ／ GPT 6
+
+| 測試 | English |
+|---|---|
+| [Fable 5.1｜測試1：SVG繪圖測試（html 產物，不審計）](zh-TW/AB測試實例/Fable%205.1/測試1：SVG繪圖測試/測試1：SVG繪圖測試.md) | — |
+| [GPT 6｜測試1：SVG繪圖測試（html 產物，不審計）](zh-TW/AB測試實例/GPT%206/測試1：SVG繪圖測試/測試1：SVG繪圖測試.md) | — |
+
 ## 跨模型測試摘要
 
 測試覆蓋 Claude、GPT、Gemini、DeepSeek（僅網頁版）：

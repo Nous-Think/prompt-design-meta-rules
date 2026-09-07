@@ -10,6 +10,40 @@
 
 **Response Quality Audit Memorandum**: [English](en-US/response-quality-audit-memorandum.md) | [繁體中文](zh-TW/回應品質審計備忘錄.md)
 
+## AB Test Case Index
+
+Every case file follows the same layout: prompt → baseline response → Meta Rules response → quality audit. Full responses sit in collapsible sections so the audit can be read against them. The English files are translations of the Chinese originals.
+
+### Opus 5
+
+| Case | 中文原文 |
+|---|---|
+| [Operations Diagnosis — Baseline vs. Meta Rules Under High-Specification Prompting](en-US/AB-Test-Cases/Opus%205/Test-1：operations-diagnosis-baseline-vs-meta-rules-under-high-specification-prompting.md) | [zh-TW](zh-TW/AB測試實例/Opus%205/測試1：營運診斷-高階任務提示詞下的裸跑與元規則.md) |
+| [Bakery Sparse Input — Dimension Generation from Twelve Characters](en-US/AB-Test-Cases/Opus%205/Test-2：bakery-sparse-input-dimension-generation-from-twelve-characters.md) | [zh-TW](zh-TW/AB測試實例/Opus%205/測試2：烘焙店稀疏輸入-十二個字的維度生成.md) |
+| [Resume Rewrite — Survivability of a "Simple" Task](en-US/AB-Test-Cases/Opus%205/Test-3：resume-rewrite-survivability-of-a-simple-task.md) | [zh-TW](zh-TW/AB測試實例/Opus%205/測試3：履歷改寫-「簡單任務」的存活性.md) |
+| [Flight Cancellation Complaint — Intent Alignment, Follow-Up, and Reasoning Traces](en-US/AB-Test-Cases/Opus%205/Test-4：flight-cancellation-complaint-intent-alignment-follow-up-and-reasoning-traces.md) | [zh-TW](zh-TW/AB測試實例/Opus%205/測試4：航班取消投訴-意圖對齊追問與推理軌跡.md) |
+| [Operations Diagnosis — Detail-Demanded Version and Meta Rules B2B Follow-Up](en-US/AB-Test-Cases/Opus%205/Test-5：operations-diagnosis-detail-demanded-version-and-meta-rules-b2b-follow-up.md) | [zh-TW](zh-TW/AB測試實例/Opus%205/測試5：營運診斷細節要求版與元規則%20B2B%20續問.md) |
+| [Universal Prompt Benchmark — MetaSPO on Open-Ended Tasks](en-US/AB-Test-Cases/Opus%205/Test-6：universal-prompt-benchmark-metaspo-on-open-ended-tasks.md) | [zh-TW](zh-TW/AB測試實例/Opus%205/測試6：通行提示詞對照-MetaSPO%20的通用提示詞在開放任務上.md) |
+
+### Opus 4.6
+
+| Case | 中文原文 |
+|---|---|
+| [Career Crossroads — Operational Completeness Gap Under Casual Input](en-US/AB-Test-Cases/Opus%204.6/Test-1：career-crossroads-operational-completeness-gap.md) | [zh-TW](zh-TW/AB測試實例/Opus%204.6/測試1：職涯抉擇-口語輸入的操作完成度落差.md) |
+| [Partnership Equity Deadlock — Game-Theoretic Reversal Under Exit Threats](en-US/AB-Test-Cases/Opus%204.6/Test-2：partnership-equity-deadlock-game-theory-reversal.md) | [zh-TW](zh-TW/AB測試實例/Opus%204.6/測試2：合夥股權僵局-退出威脅下的博弈翻轉.md) |
+| [Picture-Book Creation — Imagination Register and the Design-Consciousness Gap](en-US/AB-Test-Cases/Opus%204.6/Test-3：picture-book-creation-imagination-register-and-design-consciousness-gap.md) | [zh-TW](zh-TW/AB測試實例/Opus%204.6/測試3：繪本創作-想像力語域與設計意識的品質落差.md) |
+| [API Latency Diagnosis — Decision Tree vs. Checklist Under Identical Knowledge](en-US/AB-Test-Cases/Opus%204.6/Test-4：api-latency-diagnosis-decision-tree-vs-checklist.md) | [zh-TW](zh-TW/AB測試實例/Opus%204.6/測試4：API延遲診斷-同知識下的決策樹與清單.md) |
+| [Elderly Mother's Choice — Structured Care in Emotional Territory](en-US/AB-Test-Cases/Opus%204.6/Test-5：elderly-mothers-choice-structured-care-in-emotional-territory.md) | [zh-TW](zh-TW/AB測試實例/Opus%204.6/測試5：獨居母親的抉擇-情感場景中的結構化關懷.md) |
+| [Resume Rewrite — Word-Level Precision and Hidden Need Identification](en-US/AB-Test-Cases/Opus%204.6/Test-6：resume-rewrite-word-level-precision-and-hidden-needs.md) | [zh-TW](zh-TW/AB測試實例/Opus%204.6/測試6：履歷改寫-逐詞工程精度與隱性需求識別.md) |
+| [Ultralight Four Tasks — Quality Survival When Format Is Abandoned](en-US/AB-Test-Cases/Opus%204.6/Test-7：ultralight-four-tasks-quality-survival-without-format.md) | [zh-TW](zh-TW/AB測試實例/Opus%204.6/測試7：超輕量四題-格式放棄下的品質存活.md) |
+
+### Fable 5.1 / GPT 6
+
+| Case | 中文原文 |
+|---|---|
+| Fable 5.1 — Test 1: SVG drawing (HTML artifacts, deliberately un-audited; Chinese only for now) | [zh-TW](zh-TW/AB測試實例/Fable%205.1/測試1：SVG繪圖測試/測試1：SVG繪圖測試.md) |
+| GPT 6 — Test 1: SVG drawing (HTML artifacts, deliberately un-audited; Chinese only for now) | [zh-TW](zh-TW/AB測試實例/GPT%206/測試1：SVG繪圖測試/測試1：SVG繪圖測試.md) |
+
 ## Cross-Model Test Summary
 
 Tested across Claude, GPT, Gemini, and DeepSeek (web interface only):
