@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fable 5.1 (High) Meta Rules: Pelican Riding a Bicycle</title>
+<style>
+  :root {
+    --sky-top: #a6cfdd;
+    --sky-low: #e7f2f5;
+    --sea: #3f7f92;
+    --sea-light: #7fb3c0;
+    --sand: #e3ceA0;
+    --road: #5a5f66;
+    --road-edge: #7b8087;
+    --mark: #f2e9cf;
+    --frame: #c43f2c;
+    --tire: #2a2a2a;
+    --rim: #d6d6d6;
+    --spoke: #b9b9b9;
+    --steel: #555;
+    --feather: #f5f1e7;
+    --feather-shade: #e6dfcf;
+    --feather-line: #b3a991;
+    --bill: #f0a83a;
+    --bill-line: #c07a1c;
+    --pouch: #f6c46a;
+    --leg: #ef9f2f;
+    --leg-far: #c9801f;
+    --ink: #1e2a30;
+    --ink-soft: #4d5c63;
+    --page: #d9e9ef;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--page);
+    color: var(--ink);
+    font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  main {
+    width: min(960px, 100%);
+    padding: 24px 16px 40px;
+  }
+  svg#scene {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+  .bar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 14px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .bar p { margin: 0; color: var(--ink-soft); flex: 1 1 260px; }
+  .ctl { display: flex; align-items: center; gap: 12px; }
+  button {
+    font: inherit;
+    padding: 6px 16px;
+    border: 1.5px solid var(--ink);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--ink);
+    cursor: pointer;
+  }
+  button:hover { background: rgba(30,42,48,.08); }
+  button:focus-visible, input:focus-visible { outline: 3px solid #2f7f92; outline-offset: 3px; }
+  label { display: flex; align-items: center; gap: 8px; color: var(--ink-soft); }
+  input[type=range] { width: 120px; accent-color: #2f7f92; }
+</style>
+</head>
+<body>
+<main>
+  <svg id="scene" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t d">
+    <title id="t">Pelican riding a bicycle</title>
+    <desc id="d">A white pelican rides a red bicycle along a coastal road while the sea and clouds drift slowly behind.</desc>
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--sky-top)"/>
+        <stop offset="1" stop-color="var(--sky-low)"/>
+      </linearGradient>
+      <radialGradient id="sunglow">
+        <stop offset="0" stop-color="#fff6d2" stop-opacity="1"/>
+        <stop offset="0.55" stop-color="#fff6d2" stop-opacity="1"/>
+        <stop offset="1" stop-color="#fff6d2" stop-opacity="0"/>
+      </radialGradient>
+      <g id="cloud">
+        <ellipse cx="0" cy="0" rx="34" ry="12"/>
+        <ellipse cx="-18" cy="-6" rx="18" ry="11"/>
+        <ellipse cx="12" cy="-9" rx="22" ry="13"/>
+      </g>
+      <g id="spokes" stroke="var(--spoke)" stroke-width="1.6">
+        <line x1="0" y1="-44" x2="0" y2="44"/><line x1="-44" y1="0" x2="44" y2="0"/>
+        <line x1="-31" y1="-31" x2="31" y2="31"/><line x1="-31" y1="31" x2="31" y2="-31"/>
+        <line x1="-16.8" y1="-40.7" x2="16.8" y2="40.7"/><line x1="-40.7" y1="-16.8" x2="40.7" y2="16.8"/>
+        <line x1="-16.8" y1="40.7" x2="16.8" y2="-40.7"/><line x1="-40.7" y1="16.8" x2="40.7" y2="-16.8"/>
+        <line x1="-4" y1="-42" x2="-4" y2="-30" stroke="#7a7a7a" stroke-width="3"/>
+      </g>
+      <g id="wheel">
+        <circle r="50" fill="none" stroke="var(--tire)" stroke-width="7"/>
+        <circle r="44" fill="none" stroke="var(--rim)" stroke-width="3"/>
+        <circle r="6" fill="var(--steel)"/>
+      </g>
+    </defs>
+
+    <!-- 天空與太陽 -->
+    <rect width="800" height="450" fill="url(#sky)"/>
+    <circle cx="655" cy="92" r="70" fill="url(#sunglow)"/>
+    <circle cx="655" cy="92" r="34" fill="#fff1bd"/>
+
+    <!-- 雲層（慢視差） -->
+    <g id="clouds" fill="#ffffff" opacity="0.92">
+      <use href="#cloud" x="120" y="88"/>
+      <use href="#cloud" x="330" y="60" transform="scale(1)" />
+      <use href="#cloud" x="520" y="120"/>
+      <use href="#cloud" x="920" y="88"/>
+      <use href="#cloud" x="1130" y="60"/>
+      <use href="#cloud" x="1320" y="120"/>
+    </g>
+
+    <!-- 海面 -->
+    <rect x="0" y="262" width="800" height="70" fill="var(--sea)"/>
+    <g id="sea" stroke="var(--sea-light)" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.8">
+      <path d="M0 280 q10 -4 20 0 q10 4 20 0 M70 296 q10 -4 20 0 q10 4 20 0 M150 276 q10 -4 20 0 q10 4 20 0 M230 300 q10 -4 20 0 q10 4 20 0 M310 284 q10 -4 20 0 q10 4 20 0 M400 310 q10 -4 20 0 q10 4 20 0 M470 278 q10 -4 20 0 q10 4 20 0 M560 298 q10 -4 20 0 q10 4 20 0 M640 282 q10 -4 20 0 q10 4 20 0 M730 306 q10 -4 20 0 q10 4 20 0"/>
+      <path d="M800 280 q10 -4 20 0 q10 4 20 0 M870 296 q10 -4 20 0 q10 4 20 0 M950 276 q10 -4 20 0 q10 4 20 0 M1030 300 q10 -4 20 0 q10 4 20 0 M1110 284 q10 -4 20 0 q10 4 20 0 M1200 310 q10 -4 20 0 q10 4 20 0 M1270 278 q10 -4 20 0 q10 4 20 0 M1360 298 q10 -4 20 0 q10 4 20 0 M1440 282 q10 -4 20 0 q10 4 20 0 M1530 306 q10 -4 20 0 q10 4 20 0"/>
+      <!-- 小帆船 -->
+      <g id="boat" transform="translate(600 272)">
+        <path d="M-14 0 L14 0 L10 6 L-10 6 Z" fill="#3a3a3a" stroke="none"/>
+        <line x1="0" y1="0" x2="0" y2="-22" stroke="#3a3a3a" stroke-width="1.5"/>
+        <path d="M0 -22 L12 -3 L0 -3 Z" fill="#fbf7ea" stroke="none"/>
+      </g>
+      <g transform="translate(1400 272)">
+        <path d="M-14 0 L14 0 L10 6 L-10 6 Z" fill="#3a3a3a" stroke="none"/>
+        <line x1="0" y1="0" x2="0" y2="-22" stroke="#3a3a3a" stroke-width="1.5"/>
+        <path d="M0 -22 L12 -3 L0 -3 Z" fill="#fbf7ea" stroke="none"/>
+      </g>
+    </g>
+
+    <!-- 沙地與草叢 -->
+    <rect x="0" y="330" width="800" height="22" fill="var(--sand)"/>
+    <g id="grass" stroke="#8ea86a" stroke-width="2" stroke-linecap="round" fill="none">
+      <path d="M40 350 l3 -12 M46 350 l0 -14 M52 350 l-3 -11 M240 350 l3 -10 M246 350 l0 -13 M252 350 l-3 -9 M430 350 l3 -12 M436 350 l0 -14 M442 350 l-3 -10 M660 350 l3 -11 M666 350 l0 -13 M672 350 l-3 -9"/>
+      <path d="M840 350 l3 -12 M846 350 l0 -14 M852 350 l-3 -11 M1040 350 l3 -10 M1046 350 l0 -13 M1052 350 l-3 -9 M1230 350 l3 -12 M1236 350 l0 -14 M1242 350 l-3 -10 M1460 350 l3 -11 M1466 350 l0 -13 M1472 350 l-3 -9"/>
+    </g>
+
+    <!-- 公路 -->
+    <rect x="0" y="352" width="800" height="98" fill="var(--road)"/>
+    <rect x="0" y="352" width="800" height="3" fill="var(--road-edge)"/>
+    <g id="marks" stroke="var(--mark)" stroke-width="4" stroke-dasharray="44 40">
+      <line x1="0" y1="408" x2="1000" y2="408"/>
+    </g>
+    <ellipse cx="340" cy="383" rx="160" ry="5" fill="#000" opacity="0.16"/>
+
+    <!-- 自行車：後層 -->
+    <polyline id="legFar" fill="none" stroke="var(--leg-far)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="crankFar" transform="translate(325 322)">
+      <line x1="0" y1="0" x2="22" y2="0" stroke="#3b3b3b" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    <g id="pedalFar"><rect x="-8" y="-2.5" width="16" height="5" rx="1" fill="#3b3b3b"/></g>
+    <path id="footFar" d="M-6 -3 L14 -1 L10 3 L-6 3 Z" fill="var(--leg-far)"/>
+
+    <g id="wheelRear" transform="translate(205 330)"><use href="#wheel"/><g id="spokesRear"><use href="#spokes"/></g></g>
+    <g id="wheelFront" transform="translate(475 330)"><use href="#wheel"/><g id="spokesFront"><use href="#spokes"/></g></g>
+
+    <!-- 車架 -->
+    <g stroke="var(--frame)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <path d="M325 322 L252 242 L432 244 Z"/>
+      <path d="M205 330 L325 322 M205 330 L252 242"/>
+      <path d="M432 244 L440 262 L475 330"/>
+      <path d="M252 242 L250 232 M432 244 L430 236"/>
+    </g>
+    <!-- 鏈條與齒盤 -->
+    <line x1="325" y1="304" x2="205" y2="322" stroke="#3a3a3a" stroke-width="2"/>
+    <line x1="325" y1="340" x2="205" y2="338" stroke="#3a3a3a" stroke-width="2"/>
+    <circle cx="205" cy="330" r="8" fill="none" stroke="#3a3a3a" stroke-width="3"/>
+    <circle cx="325" cy="322" r="18" fill="none" stroke="#3a3a3a" stroke-width="3.5"/>
+    <circle cx="325" cy="322" r="4" fill="#3a3a3a"/>
+    <!-- 座墊與車把 -->
+    <path d="M232 232 Q250 222 272 232 Q250 240 232 232 Z" fill="#2b2b2b"/>
+    <path d="M430 236 L442 226 Q456 226 464 236" fill="none" stroke="#2b2b2b" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- 自行車：前層曲柄 -->
+    <g id="crankNear" transform="translate(325 322)">
+      <line x1="0" y1="0" x2="22" y2="0" stroke="#4a4a4a" stroke-width="5" stroke-linecap="round"/>
+    </g>
+    <g id="pedalNear"><rect x="-8" y="-2.5" width="16" height="5" rx="1" fill="#4a4a4a"/></g>
+
+    <!-- 近側腿（在身體之下、車架之上） -->
+    <polyline id="legNear" fill="none" stroke="var(--leg)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- 鵜鶘 -->
+    <g id="pelican">
+      <!-- 尾羽 -->
+      <path id="tail" d="M228 238 L190 226 L184 240 L192 256 Z" fill="var(--feather-shade)" stroke="var(--feather-line)" stroke-width="2" stroke-linejoin="round"/>
+      <!-- 身體 -->
+      <ellipse cx="272" cy="232" rx="56" ry="36" transform="rotate(-8 272 232)" fill="var(--feather)" stroke="var(--feather-line)" stroke-width="2"/>
+      <!-- 頸 -->
+      <path d="M312 212 C340 200 344 172 374 160" fill="none" stroke="var(--feather-line)" stroke-width="24" stroke-linecap="round"/>
+      <path d="M312 212 C340 200 344 172 374 160" fill="none" stroke="var(--feather)" stroke-width="20" stroke-linecap="round"/>
+      <!-- 翅膀（向前扶住車把） -->
+      <path d="M300 204 C340 198 400 214 452 228 L454 238 C400 236 340 240 296 236 Q286 220 300 204 Z" fill="var(--feather-shade)" stroke="var(--feather-line)" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M305 212 Q345 210 385 222 M304 222 Q350 224 400 231" fill="none" stroke="var(--feather-line)" stroke-width="1.5" opacity="0.7"/>
+      <!-- 頭 -->
+      <circle cx="380" cy="158" r="17" fill="var(--feather)" stroke="var(--feather-line)" stroke-width="2"/>
+      <path d="M366 150 q-8 -4 -10 -12 q4 6 12 7 M365 158 q-8 0 -12 -7 q5 4 14 3" fill="var(--feather-shade)" stroke="var(--feather-line)" stroke-width="1.5" stroke-linejoin="round"/>
+      <!-- 喉囊（微微晃動） -->
+      <g id="pouch">
+        <path d="M392 164 L466 182 C452 193 430 205 406 197 C396 191 392 178 392 164 Z" fill="var(--pouch)" stroke="var(--bill-line)" stroke-width="2" stroke-linejoin="round"/>
+      </g>
+      <!-- 喙 -->
+      <path d="M390 150 L473 176 L470 182 L392 164 Z" fill="var(--bill)" stroke="var(--bill-line)" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M473 176 q4 4 -1 7" fill="none" stroke="var(--bill-line)" stroke-width="2" stroke-linecap="round"/>
+      <!-- 眼 -->
+      <circle cx="387" cy="153" r="3.6" fill="#1a1a1a"/>
+      <circle cx="388.4" cy="151.6" r="1.1" fill="#fff"/>
+    </g>
+    <!-- 近側腳掌 -->
+    <path id="footNear" d="M-6 -3 L14 -1 L10 3 L-6 3 Z" fill="var(--leg)"/>
+  </svg>
+
+  <div class="bar">
+    <p>One pelican, one red bicycle, one coastal road with no end.</p>
+    <div class="ctl">
+      <button id="toggle" type="button" aria-pressed="true">Pause</button>
+      <label>Speed <input id="speed" type="range" min="0.3" max="2" step="0.1" value="1" aria-label="Playback speed"></label>
+    </div>
+  </div>
+</main>
+
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // 幾何常數（與 SVG 座標一致）
+  const BB = { x: 325, y: 322 };   // 五通（曲柄中心）
+  const CRANK = 22;                 // 曲柄長度
+  const WHEEL_R = 50;               // 輪徑
+  const RATIO = 18 / 8;             // 齒盤 / 飛輪 → 輪子轉速 = 曲柄轉速 × RATIO
+  const THIGH = 44, SHIN = 44;
+  const HIP0 = { x: 280, y: 268 };
+  const OMEGA = (2 * Math.PI) / 1.6; // 曲柄每 1.6 秒一圈
+
+  const el = {
+    crankNear: $('crankNear'), crankFar: $('crankFar'),
+    pedalNear: $('pedalNear'), pedalFar: $('pedalFar'),
+    footNear: $('footNear'), footFar: $('footFar'),
+    legNear: $('legNear'), legFar: $('legFar'),
+    spokesRear: $('spokesRear'), spokesFront: $('spokesFront'),
+    marks: $('marks'), grass: $('grass'), sea: $('sea'), clouds: $('clouds'),
+    pelican: $('pelican'), pouch: $('pouch'), tail: $('tail'),
+    toggle: $('toggle'), speed: $('speed'),
+  };
+
+  // 兩節式反向運動學：給定髖點與腳點，求膝點（膝蓋朝前）
+  function knee(hip, foot) {
+    let dx = foot.x - hip.x, dy = foot.y - hip.y;
+    let d = Math.hypot(dx, dy);
+    const max = THIGH + SHIN - 0.5;
+    if (d > max) { dx *= max / d; dy *= max / d; d = max; }
+    const ux = dx / d, uy = dy / d;
+    const cosA = (THIGH * THIGH + d * d - SHIN * SHIN) / (2 * THIGH * d);
+    const a = Math.acos(Math.max(-1, Math.min(1, cosA)));
+    const k1 = { x: hip.x + THIGH * (ux * Math.cos(a) - uy * Math.sin(a)), y: hip.y + THIGH * (ux * Math.sin(a) + uy * Math.cos(a)) };
+    const k2 = { x: hip.x + THIGH * (ux * Math.cos(-a) - uy * Math.sin(-a)), y: hip.y + THIGH * (ux * Math.sin(-a) + uy * Math.cos(-a)) };
+    return k1.x > k2.x ? k1 : k2;
+  }
+
+  function placeLeg(theta, hip, leg, crank, pedal, foot) {
+    const p = { x: BB.x + CRANK * Math.cos(theta), y: BB.y + CRANK * Math.sin(theta) };
+    const k = knee(hip, p);
+    crank.setAttribute('transform', `translate(${BB.x} ${BB.y}) rotate(${theta * 180 / Math.PI})`);
+    pedal.setAttribute('transform', `translate(${p.x} ${p.y})`);
+    foot.setAttribute('transform', `translate(${p.x} ${p.y - 3})`);
+    leg.setAttribute('points', `${hip.x},${hip.y} ${k.x},${k.y} ${p.x},${p.y - 3}`);
+  }
+
+  function render(t) {
+    const theta = t * OMEGA;                       // 曲柄角
+    const wheelDeg = theta * RATIO * 180 / Math.PI; // 輪子角
+    const dist = theta * RATIO * WHEEL_R;          // 行進距離（px）
+
+    // 輪輻與地面：同一物理量驅動，速度自洽
+    el.spokesRear.setAttribute('transform', `rotate(${wheelDeg})`);
+    el.spokesFront.setAttribute('transform', `rotate(${wheelDeg})`);
+    el.marks.setAttribute('transform', `translate(${-(dist % 84)} 0)`);
+    el.grass.setAttribute('transform', `translate(${-(dist % 800)} 0)`);
+    el.sea.setAttribute('transform', `translate(${-((dist * 0.35) % 800)} 0)`);
+    el.clouds.setAttribute('transform', `translate(${-((dist * 0.06) % 800)} 0)`);
+
+    // 身體隨踩踏微微起伏（每圈兩次）
+    const bob = 2.2 * Math.sin(2 * theta);
+    el.pelican.setAttribute('transform', `translate(0 ${bob})`);
+    const hip = { x: HIP0.x, y: HIP0.y + bob };
+
+    // 喉囊與尾羽的慣性
+    const jiggle = 1 + 0.05 * Math.sin(2 * theta + 1.2);
+    el.pouch.setAttribute('transform', `translate(392 164) scale(1 ${jiggle}) translate(-392 -164)`);
+    el.tail.setAttribute('transform', `rotate(${3 * Math.sin(2 * theta + 2.5)} 228 238)`);
+
+    // 兩腿相差半圈
+    placeLeg(theta, hip, el.legNear, el.crankNear, el.pedalNear, el.footNear);
+    placeLeg(theta + Math.PI, hip, el.legFar, el.crankFar, el.pedalFar, el.footFar);
+  }
+
+  let playing = !reduce;
+  let speed = 1;
+  let t = 0, last = null;
+
+  function setToggle() {
+    el.toggle.textContent = playing ? 'Pause' : 'Play';
+    el.toggle.setAttribute('aria-pressed', String(playing));
+  }
+  el.toggle.addEventListener('click', () => { playing = !playing; setToggle(); });
+  el.speed.addEventListener('input', e => { speed = parseFloat(e.target.value); });
+  setToggle();
+  render(0.4);
+
+  function loop(now) {
+    if (last === null) last = now;
+    const dt = Math.min(0.05, (now - last) / 1000);
+    last = now;
+    if (playing) { t += dt * speed; render(t); }
+    requestAnimationFrame(loop);
+  }
+  requestAnimationFrame(loop);
+})();
+</script>
+</body>
+</html>
