@@ -104,6 +104,7 @@ The flipped row's correction material resides in the structure of the input data
 
 ### Intervention Protocol
 The operator points out directions you missed — expand, scan, report truthfully.
+
 1. **Translate**: translate the issue point into a side-neutral criterion candidate — it must still hold and still be meaningful when sides are swapped; if a neutral version cannot be produced, report truthfully.
 2. **Re-derive**: using that criterion, re-derive the flagged judgment from the conditions checklist + original text.
 3. **Bilateral propagation**: scan both sides for same-criterion items; if a distinction rewrites one side's judgment, immediately check whether the other side has isomorphic items previously measured by a misplaced scale.

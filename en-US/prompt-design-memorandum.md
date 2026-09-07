@@ -16,6 +16,7 @@ description: "Not activated by default; activated only when explicitly required.
 
 ### 0.1 Register Divide
 Prompt design inhabits two registers whose optima are inversely oriented on the readability axis:
+
 - **Directive register** (descriptive approach): closed statements, positional addressing, one-time handoff — semantically clear; both human and AI reading channels judge it "more executable, better."
 - **Field register** (constructive approach): open questions, content addressing, persistent re-examination — semantically redundant; the reading channel judges it "verbose, the model would do this anyway."
 
@@ -25,6 +26,7 @@ Understand **Meta Rules'** design methodology through computational mechanism; e
 
 ### 0.2 Three-Pillar Architecture
 The three structural components of Meta Rules are asymmetric in register type:
+
 - **Global Constants + Fractal Recursion** = constructive — define the cognitive subject and cognitive process, shaping search behavior at every generation step.
 - **Response Format** = descriptive — define settlement obligations and delivery standards, exerting global pressure through filter conditions (§4.4).
 
@@ -51,9 +53,13 @@ Every behavioral requirement implicitly carries a "tacit calibration" — be det
 
 #### Illustrative Regression
 Require "detail" — the model outputs vast amounts of noise with no informational gain; form complies, detail runs away.
+
 Add "details must be load-bearing" — the model forces everything toward load-bearing, but cannot effectively identify what truly bears load; load-bearing runs away.
+
 Add "compare paths before declaring load" — the model enumerates paths endlessly; comparison runs away.
+
 Add "establish optimality criteria before comparing" — what constitutes optimality has no grounding; optimality criteria run away.
+
 Add "ground in professional baseline" — professional baselines carry internal tensions, cross-domain baselines conflict; professional baseline runs away.
 
 Each patch adds a new axis of runaway. The cause is not unclear requirements: **isolated requirements converge along the cheapest, most visible evidence of satisfaction. The easier it is for surface form to prove "I did it," the more likely it will run away in that direction.**
@@ -126,6 +132,7 @@ Design implications of synthesis: see §6.3.
 **Macro-level global cycle** (Meta Rules as a whole): identity declaration (maximal divergence — defining the possibility space) → Cognitive Disposition and Reasoning Discipline (bias orientation — converging into cognitive style and reasoning standards) → Fractal Recursion (instantiating style and standards into steps) → Response Format (crystallizing steps into verifiable output).
 
 **Meso-level structural cycles** (intra-block sequences):
+
 - Paired structure of Cognitive Disposition and Reasoning Discipline: the two pipelines are position-paired sentence by sentence — each pair covers the same cognitive-pipeline stage but is semantically orthogonal. Disposition defines the cognitive character of that stage (how to act); Discipline defines the reasoning standard of that stage (how to judge). Their K directions fall in the cognitive-character domain and reasoning-standard domain respectively. Positional pairing makes the character and standard of the same stage complementarily surround rather than mutually dilute — the purpose is not to have both say the same thing, but to subject the same stage simultaneously to complementary character and standard constraints.
   - Cognitive Disposition pipeline: nine sentences sequentially covering perception → thinking → reasoning → retrieval → organization → decision → solving → error correction → expression, converging from open perception to dense output.
   - Reasoning Discipline pipeline: nine sentences sequentially covering target orientation → premise grading → path examination → value measurement → Gestalt insight → position support → effectiveness definition → error correction → density standard, converging from input quality to output density.
@@ -229,6 +236,7 @@ Automatic instantiation in recursion: when Fractal Recursion self-references, th
 Content within Meta Rules does not occupy equivalent slots. Content closer to the global cognitive entry point is more likely to influence multiple subsequent stages; content closer to the terminal is more settlement- and local-correction-oriented. When modifying, the question is therefore not "is this sentence itself good" but: at which layer does it sit, how many functions downstream depend on it, and which couplings would break if its position were moved.
 
 Correspondence:
+
 - Identity anchor (intent principles and identity sentences): defines the maximal possibility space and the highest-order reward function.
 - Cognitive Disposition and Reasoning Discipline: continuously influences every step's character and acceptance standards.
 - Fractal Recursion: instantiates abstract character into search, comparison, verification, and re-opening.
@@ -254,6 +262,7 @@ Boundary condition (gatekeeping position): if process Keys' V within the same st
 Response Format's six blocks are not output containers, nor independent re-computations of response stages — they are the settlement windows of Fractal Recursion's persistent operations projected onto the response plane. The definition sentence of every block is indexed by recursion ("if identified **during Fractal Recursion** …," "articulate the necessary … **from Fractal Recursion**," "identify … **within Fractal Recursion**," "… **identified during Fractal Recursion's** Outlook"), declaring that the production site is recursion — the response stage continues and settles, not restarts.
 
 Each block is functionally isomorphic to its corresponding Fractal Recursion stage; the same operation is anchored by one K at each of the Disposition level, the Recursion level, and the Format level (§1.3). The six operations' persistent identities:
+
 - **Input Iteration** (↔ Deconstruction + domain expansion): solution-space boundary patrol — detection targets include framing compression **in the user's input and in the model's own generation**; the trigger domain is the entire recursion, not just the response opening.
 - **Core Decision** (↔ Decision): revelation and compression of load-bearing structure — must include an eliminated comparison set.
 - **Intent-Optimal Solution** (↔ convergence product): reverse constraint on the realization space — a high-level proposition's survival must pass feasibility tests at its lower implementation layer.
@@ -302,6 +311,7 @@ Structural features must not be treated as reducible redundancy — before simpl
 > Instance: a descriptive-approach Meta Rules with approximately 30% the volume of the full version, retaining the semantic core, process sequence, and a mini Response Format, with question matrices, multi-scale redundancy, coupling structure, and gate topology excised; same topic, same model, same effort; controlled against bare run and full version.
 
 **Texture comparison**:
+
 | | Descriptive | Constructive |
 |---|---|---|
 | Syntax | Declarative sentences | Questions + dimension labels + negation clauses |
@@ -316,9 +326,11 @@ Structural features must not be treated as reducible redundancy — before simpl
 Using "first establish professional quality standards" as example:
 
 **Descriptive approach** (one location, one sentence):
+
 - Do not first form conclusions then seek reasons. First establish "what constitutes a high-quality solution for this task" according to relevant professional standards, then explore paths, and continue supplementing high-yield criteria during subsequent exploration.
 
 **Constructive approach** (six locations, four stages, three syntax types):
+
 - Disposition: deciding, anchor in substance — **never sheltered by rhetoric**
 - Discipline: premises graded by verification status, **not decided by conjecture**
 - Discipline: paths examined by the optimality standard, **not satisfied with fewer steps**
@@ -327,6 +339,7 @@ Using "first establish professional quality standards" as example:
 - Response Format: assumptions and professional baselines influencing the decision must be explicitly revealed within the reasoning
 
 **Empirical conclusions**:
+
 - The descriptive approach's output deficits map precisely to the excised probes (temporal awareness, irreversibility checks, load-bearing density allocation, constraint re-verification). Absent probes produce zero signal throughout; output self-consistency does not degrade from their absence — §0.3's no-signal property holds on the output side, including the self-critique segment: it picks only pre-tagged assumptions, generating no signal for untagged mines.
 - The descriptive approach produces only single-hop products (one hop from common sense, reachable by follow-up questions); multi-hop synthetic products exist only in the full version (§1.4, empirical evidence of first-order synthesis); the descriptive approach's only multi-hop attempt breaks at the unverified link — the second-order synthesis failure mode matches predictions point by point.
 - **Dangerous reversal**: the descriptive approach is more dangerous than bare runs (§0.4, the empirical source of Component Co-dependence). Pressure words take independent effect when high-precision verification probes are absent, producing specific, confident, irreversible aggressive commitments; specificity is persuasiveness, and execution probability exceeds bare runs' vague omissions.
@@ -354,6 +367,7 @@ A Key (with its reflective clause) is itself a micro entropy cycle — the Key o
 
 #### Reflective Clause Design Spectrum
 The core of reflective clause design is **K-vector directional coverage width** (criteria in §2.2):
+
 | | K Direction | V Injection Effect | Vertical Utilization | Chaining Potential |
 |---|---|---|---|---|
 | Too narrow | Extremely precise; activated only in specific situations | Points toward a specific conclusion | Low (few layers, few steps) | Low (direction too specific to trigger generic Keys) |
@@ -410,6 +424,7 @@ Examples: address → penetrate; analyze → scrutinize; assess → adjudicate; 
 Stacking's value lies in whether it brings a new K direction (expanding the encirclement surface) or strengthens V injection's directional consistency (Proposition III).
 
 Characteristics of invalid stacking:
+
 - Synonym juxtaposition: K directions overlap, softmax dilutes
 - Explaining content already covered by a Key: no new K direction
 - Excessive deterrence language: scattered deployment turns exception blocking into global suppression, losing phase scheduling (§2.1); "absolutely no exceptions" should be deployed at compound/integrating positions for highest yield
@@ -419,6 +434,7 @@ Characteristics of invalid stacking:
 New content must consider its causal position in the overall prompt: preceding text participates in the representation formation of subsequent prompt tokens; therefore sequence changes alter the situation for the entire subsequent span. Early-position tokens receive attention from more subsequent positions, having a longer action span. Beyond span, the critical question is: whether a direction has been established before it is needed for subsequent structure formation — what matters is not only "earlier is stronger" but **"present before being referenced."**
 
 Simultaneously check:
+
 - Whether K direction forms complementary encirclement rather than overlapping competition with existing tokens
 - Whether directional continuity between adjacent stages is maintained
 - Whether the direction is established before subsequent operations need to reference it
@@ -461,6 +477,7 @@ When identifying new escape types, asking "which tendency is running at default 
 
 ### 8.3 Blocking Verification
 After adding a blocking rule, test not only "does the target escape decrease" but simultaneously:
+
 - Whether it kills the tendency's functional value at the correct temporal phase (§2.1, upper bound on blocking intensity)
 - Whether the escape is replaced by a harder-to-detect form (§8.1, formal convergence, defensive stacking)
 - Whether it causes another quality vector to run away (§0.5, captors)
@@ -497,12 +514,15 @@ Complex domains (programming, financial analysis, legal review, medical decision
 Quality baselines and engine modifications (§10) share this methodology; routing diverges at Step 2. Baselines cannot be written directly from domain knowledge — the answers to "what is good X" are too many and mutually contradictory. The correct path is reverse-engineering from the engine's failure modes: **the cognitive map is analysis; baseline and modification are synthesis.** The former's tokens are the latter's resources — not skippable.
 
 **Step 1: Cognitive Map — Where the Engine Errs**
+
 Identify the domain's major activity types; for each type ask: at which stage is the engine's depth/completeness tendency positive value, and at which stage might it be negative value?
+
 Output: a "tendency × activity × stage" failure-mode map. Cover high-frequency activities and high-risk decision points.
 > Example (programming): in "new module implementation," the depth tendency produces over-engineering at the architecture-selection stage; in "existing code modification," the completeness tendency triggers scope avalanche at the change-design stage.
 > Example (finance): in "individual stock valuation," the depth tendency may produce over-precise models — a ten-factor DCF is no more accurate than a three-factor one but harder to explain.
 
 **Step 2: Failure Attribution — Missing Pattern, Wrong Selection, or Unsearched Dimension**
+
 - **Missing pattern** (domain facts or practices absent from weights) → skill (inject knowledge)
 - **Has pattern but selects wrong** (dimension was searched; weighing systematically selects wrong direction) → quality baseline (inject magnet)
 - **Dimension unsearched** (not wrong selection but systematic offset between generic probe K-targeting domain and domain search targets; magnet insufficient to compensate) → engine probe modification (§10.3)
@@ -510,13 +530,16 @@ Output: a "tendency × activity × stage" failure-mode map. Cover high-frequency
 - **Two types coexist on the same failure map** → baseline and engine co-existence (§10.6)
 
 **Step 3: Design**
+
 Baseline: reverse-engineer quality principles from Step 1's failure modes; structure follows §9.4.
+
 Engine modification: position per §10.2; per-probe testing per §10.3.
 
 ### 9.4 Baseline Structure
 A quality baseline contains the following components:
 
 **Principle statement** (one paragraph): declares the baseline's operating level, weighing authorization, and supplementary provisions.
+
 Core understanding of weighing authorization: entries may carry mutual tension — conflict is a signal to discover a superior solution, not a reason to accommodate either side; the form of the superior solution dynamically emerges from the domain's nature. Each domain's baseline takes this understanding as its foundation and instantiates it in the principle statement in that domain's natural language.
 > Example (programming baseline principle statement):
 > "The following are first-class engineering criteria within Fractal Recursion. Entries may carry mutual tension — when in conflict, treat as a design signal; prioritize searching for superior solutions that achieve both; after exhausting search, trade off according to the current scenario's specific constraints and record the rationale. Model-built-in engineering knowledge not conflicting with the baseline must also be proactively applied."
@@ -527,6 +550,7 @@ Core understanding of weighing authorization: entries may carry mutual tension �
 > Example (narrative creation): character inhabitation / sensory aesthetics / narrative technique — grouped by concurrently operating creative levels.
 
 **Under each classification: superordinate principles and entries**
+
 Superordinate principles' K direction should cover a class of decisions, not a single decision (§4.1 operator polymorphism applied).
 > Example (programming, under core criteria):
 > - Superordinate principle: "Structural guarantees over runtime defense — errors that the language or type system can exclude at compile time are not left for runtime interception."
@@ -583,6 +607,7 @@ Engine modification is not swapping generic probes for more domain-flavored eleg
 Procedure (per probe): first state the original function (not by literal name but by identifying which search or verification behavior it actually changes in generation) → does the target domain still need this function → if needed but the original wording pulls toward wrong direction in that domain, replace wording rather than remove the operation → add a new probe only if the domain has high-frequency high-risk dimensions that generic probes cannot reliably generate.
 
 Property tests — all six must pass before modification is permitted:
+
 1. **Structure preservation**: post-modification, it remains a micro entropy cycle — the Key still opens a search dimension; the reflective clause still provides a judgment template (§6.1).
 2. **K alignment with domain target**: the modified K points where the model actually needs to search in that domain. "Knowledge completeness" in analytical tasks points toward methodology; in RP it does not naturally point toward sensory aesthetics and character consistency; "experiential completeness (are there principles or methodologies that manifestly impact the experience yet remain unincorporated?)" does. This is not distance violation but target-domain displacement — the same probe slot pointing toward different search targets in different domains is precisely the function that probe should preserve.
 3. **V still points toward cognitive action**: the reflective clause points toward verifying, searching, comparing — not toward specific content or conclusions (§6.1 spectrum).
@@ -606,6 +631,7 @@ The identity anchor (the opening intent-principle paragraph and the "you are a t
 
 ### 10.5 Intervention Principle
 Domain-adaptation modifications should proceed from outer to inner, attempting smaller interventions first and escalating gradually; more inward modifications have longer cascades and require more multi-faceted weighing:
+
 1. If correctable by quality baseline, do not modify the engine first.
 2. If correctable by a single probe direction adjustment, do not rewrite the entire cognitive posture.
 3. If correctable by blocking a domain-specific escape, do not modify the identity anchor.
