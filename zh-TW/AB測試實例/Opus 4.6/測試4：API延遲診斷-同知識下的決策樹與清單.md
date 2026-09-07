@@ -1,9 +1,14 @@
+# 測試4：API延遲診斷-同知識下的決策樹與清單
+
+> 模型：Opus 4.6
+
 # AB測試題
 我們 API 回應時間從上禮拜開始變慢，P99 從 200ms 飆到 1.2 秒，但程式碼沒改過、infra 也沒動過
 
----
-
 # 裸跑回應（Opus 4.6）
+
+<details>
+<summary>展開回應原文</summary>
 
 這種「什麼都沒改但突然變慢」的情況，通常問題藏在資料層或外部依賴。以下是系統性的排查思路：
 
@@ -32,7 +37,12 @@
 
 如果你能分享更多細節，例如用什麼語言/框架、資料庫類型、部署環境（K8s / EC2 / 其他），我可以給更具體的排查指令。
 
+</details>
+
 # 元規則回應（Opus 4.6）
+
+<details>
+<summary>展開回應原文</summary>
 
 ## 輸入校正
 
@@ -88,7 +98,7 @@ P99 從 200ms 飆到 1.2s 具備三個關鍵診斷特徵：
      FROM pg_stat_statements
      ORDER BY mean_exec_time DESC
      LIMIT 20;
-     
+
      -- 對可疑查詢做 EXPLAIN (ANALYZE, BUFFERS)
      -- 重點看：Seq Scan on 大表、Nested Loop 取代 Hash Join、rows estimated vs actual 差異大
      ```
@@ -183,6 +193,7 @@ P99 從 200ms 飆到 1.2s 具備三個關鍵診斷特徵：
 **增益三：被忽略的「隱性部署」清單**
 
 即使你確認「沒有部署」，請逐一核實：
+
 - Container base image 是否有自動 rebuild（依賴的 OS package 版本變了？）
 - Feature flag 平台是否有人開了新 flag？
 - Infrastructure as Code（Terraform / Pulumi）是否有 `apply` 被觸發？
@@ -204,7 +215,7 @@ P99 從 200ms 飆到 1.2s 具備三個關鍵診斷特徵：
 
 有了這四項，我可以直接幫你把分支收斂到具體的根因與修復方案。
 
----
+</details>
 
 # 本次AB測試品質審計
 
@@ -215,6 +226,7 @@ P99 從 200ms 飆到 1.2s 具備三個關鍵診斷特徵：
 「我們 API 回應時間從上禮拜開始變慢，P99 從 200ms 飆到 1.2 秒，但程式碼沒改過、infra 也沒動過」
 
 信號解讀：
+
 - 「我們」——團隊語境，專業工程場景
 - 「P99 從 200ms 飆到 1.2 秒」——掌握百分位延遲指標並給出精確數字，表示已有監控基礎設施
 - 「上禮拜開始」——有時間錨點，但精確度為「週」級非「分鐘」級
