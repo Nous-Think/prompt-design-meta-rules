@@ -278,6 +278,23 @@ The model's native parameter bias is to not expand (§2.1, shortest-path prefere
 **The revision passed through the four-step test's precise failure point**: the semantic level classified it as "a refinement in delivery form subtlety" → same category as existing flexibility → computational-layer assessment judged same-category revision marginal return near zero, not triggering deep inspection → the last two steps never launched. The four steps are sequential; the first step's misclassification prevents the remaining three from existing.
 **Lesson**: any revision touching "whether a certain cognitive operation executes" rather than "how its result is presented" belongs functionally to the constructive-type revision category (§0.2), regardless of how much it reads like a descriptive-type fine-tuning at the semantic level. Identification criterion: **if the revision were removed, would the model still be required to complete equivalent cognitive labor before legitimately converging?** If the answer is "no," the revision moved depth, not format.
 
+### 5.3 Blank Lines as Decoupling: The Legitimacy of In-Field Blank Lines
+> Instance: same Meta Rules, same topic, same model; only the layout was changed to platform-style paragraph spacing — `#`/`##` headings stay adjacent to their `> Principle` line, and blank lines are inserted between all other blocks: between a principle and its expansion, between the six stages of Fractal Recursion, between a `###` key and its obligation body, and between two paragraphs of the same obligation. In-sentence semicolon chains and sub-items (2.1/2.2, Disposition/Discipline) were left untouched.
+
+**Test results**:
+- Reasoning steps fell by roughly 40%, reasoning time by roughly 30%.
+- Trajectory verbs shifted from "construct the strongest rebuttal — test residual boundaries over multiple rounds — build a unifying principle — cross-check citations" to "inventory — map — reconcile — plan citations".
+- The terminal shifted from verification to planning.
+- Stance language (restated warnings, pre-emptive disclaimers, commitment sentences, "left open") rose from near zero to multiple occurrences.
+- Constructive-type products disappeared; coverage-type products held level.
+- The blank-line version's step set is a subset of the dense version's; the missing steps are precisely the latter halves defined by reference to a preceding stage (Convergence's falsification, Decision's impact, Recursion's re-deconstruction) and the terminal obligations.
+
+**Core conjectures**:
+- Register normalization: platform-style blank lines are the visual form of behavioral-rule documents and raise the prior of a compliance reading; Meta Rules' semicolon chaining, absence of blank lines, and long sentences are the register signal of "not a policy document" — the first door out of the directive-register reading (§0.1, §7.2). Signature: stance language, restated directives, handing the verdict back.
+- Weakened adjacency coupling: per §7.4, preceding text participates in the representation formation of subsequent text; blank lines sever the immediate context of chained clauses, and cross-sentence force pairs (grading against decision, divergence against convergence, the "carrying this / drawing on this" stage references) loosen — probes are processed one at a time, at uniform depth, by template. Signature: reconciliation replaces attack; single-round rebuttal; terminal planning rather than verification; no constructive-type steps.
+
+**Boundary**: two dense samples, two blank-line samples; single topic, single model, single language; the four blank-line categories were applied simultaneously, so attribution by category is not separated.
+
 ## Six: Key and Probe Design
 
 ### 6.1 Key-Driven Principle
