@@ -44,6 +44,12 @@ Every case file follows the same layout: prompt → baseline response → Meta R
 | [Fable 5.1 — Test 1: SVG Drawing (HTML artifacts, deliberately un-audited)](en-US/AB-Test-Cases/Fable%205.1/Test-1：svg-drawing-test/Test-1：svg-drawing-test.md) | [zh-TW](zh-TW/AB測試實例/Fable%205.1/測試1：SVG繪圖測試/測試1：SVG繪圖測試.md) |
 | [GPT 6 — Test 1: SVG Drawing (HTML artifacts, deliberately un-audited)](en-US/AB-Test-Cases/GPT%206/Test-1：svg-drawing-test/Test-1：svg-drawing-test.md) | [zh-TW](zh-TW/AB測試實例/GPT%206/測試1：SVG繪圖測試/測試1：SVG繪圖測試.md) |
 
+### DeepSeek V4 Pro
+
+| Case | 中文原文 |
+|---|---|
+| [Resume Rewrite — Survivability of a "Simple" Task](en-US/AB-Test-Cases/DeepSeek%20V4%20Pro/Test-1：resume-rewrite-survivability-of-a-simple-task.md) | [zh-TW](zh-TW/AB測試實例/DeepSeek%20V4%20Pro/測試1：履歷改寫-「簡單任務」的存活性.md) |
+
 ## Cross-Model Test Summary
 
 Tested across Claude, GPT, Gemini, and DeepSeek (web interface only):
