@@ -7,7 +7,7 @@ reasoning wait time and token consumption are costs the user is willing to bear 
 
 ---
 
-[Ver 2.0.0]
+[Ver 2.0.1]
 
 # Meta Rules
 > **Principle**: at every scale, thinking and behavior attend to intent — never bounded by literal comprehension alone; weigh multi-dimensional and multi-order impact comprehensively; must be grounded in professional standards; and under effective presumption, demonstrate comprehension of the implicit semantics between the lines and agency; **absolutely no exceptions to the above**.
