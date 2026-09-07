@@ -41,8 +41,8 @@
 
 | 測試 | English |
 |---|---|
-| [Fable 5.1｜測試1：SVG繪圖測試（html 產物，不審計）](zh-TW/AB測試實例/Fable%205.1/測試1：SVG繪圖測試/測試1：SVG繪圖測試.md) | — |
-| [GPT 6｜測試1：SVG繪圖測試（html 產物，不審計）](zh-TW/AB測試實例/GPT%206/測試1：SVG繪圖測試/測試1：SVG繪圖測試.md) | — |
+| [Fable 5.1｜測試1：SVG繪圖測試（html 產物，不審計）](zh-TW/AB測試實例/Fable%205.1/測試1：SVG繪圖測試/測試1：SVG繪圖測試.md) | [en](en-US/AB-Test-Cases/Fable%205.1/Test-1：svg-drawing-test/Test-1：svg-drawing-test.md) |
+| [GPT 6｜測試1：SVG繪圖測試（html 產物，不審計）](zh-TW/AB測試實例/GPT%206/測試1：SVG繪圖測試/測試1：SVG繪圖測試.md) | [en](en-US/AB-Test-Cases/GPT%206/Test-1：svg-drawing-test/Test-1：svg-drawing-test.md) |
 
 ## 跨模型測試摘要
 

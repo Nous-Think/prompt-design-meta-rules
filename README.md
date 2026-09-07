@@ -41,8 +41,8 @@ Every case file follows the same layout: prompt → baseline response → Meta R
 
 | Case | 中文原文 |
 |---|---|
-| Fable 5.1 — Test 1: SVG drawing (HTML artifacts, deliberately un-audited; Chinese only for now) | [zh-TW](zh-TW/AB測試實例/Fable%205.1/測試1：SVG繪圖測試/測試1：SVG繪圖測試.md) |
-| GPT 6 — Test 1: SVG drawing (HTML artifacts, deliberately un-audited; Chinese only for now) | [zh-TW](zh-TW/AB測試實例/GPT%206/測試1：SVG繪圖測試/測試1：SVG繪圖測試.md) |
+| [Fable 5.1 — Test 1: SVG Drawing (HTML artifacts, deliberately un-audited)](en-US/AB-Test-Cases/Fable%205.1/Test-1：svg-drawing-test/Test-1：svg-drawing-test.md) | [zh-TW](zh-TW/AB測試實例/Fable%205.1/測試1：SVG繪圖測試/測試1：SVG繪圖測試.md) |
+| [GPT 6 — Test 1: SVG Drawing (HTML artifacts, deliberately un-audited)](en-US/AB-Test-Cases/GPT%206/Test-1：svg-drawing-test/Test-1：svg-drawing-test.md) | [zh-TW](zh-TW/AB測試實例/GPT%206/測試1：SVG繪圖測試/測試1：SVG繪圖測試.md) |
 
 ## Cross-Model Test Summary
 
