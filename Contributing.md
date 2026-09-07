@@ -38,18 +38,25 @@ zh-TW 為源語言，en-US 為適配版（adaptation），不是逐字翻譯。
 Follow the structure of an existing case in the same model folder. A text-based case is one Markdown file:
 
 ```
-# AB測試題              ← the prompt exactly as given to the model
-> optional note: model, thinking level, test date
-# 裸跑回應（<model>）     ← baseline response, verbatim
-# 元規則回應（<model>）   ← Meta Rules response, verbatim
+# 測試N：<title>                        ← one H1 title = the filename without .md
+> 模型：<model>｜思考等級：<level>｜元規則：中文版（Ver x.y.z）｜測試日期：YYYY-MM-DD｜執行時間：<mm:ss>
+# AB測試題                              ← the prompt exactly as given to the model
+# 裸跑回應（<model>）                    ← baseline response, verbatim, folded:
+<details><summary>展開回應原文</summary>
+
+…response…
+
+</details>
+# 元規則回應（<model>）                  ← Meta Rules response, same folding
 # 本次AB測試品質審計      ← audit (optional — some tests are deliberately left un-audited)
 ```
 
+- Metadata line (second line of the file): model, thinking level, which Meta Rules edition was loaded (zh-TW or en-US) and its `[Ver x.y.z]`, test date, run time, and optionally a short reasoning summary. Omit any field you do not actually know rather than guessing.
 - Responses are **evidence**: paste them verbatim, mistakes included. Commentary belongs only in the audit or note sections.
 - English cases open with a note stating that the material was originally produced in Chinese (see any file under `en-US/AB-Test-Cases/`).
 - Cases whose output is an artifact (e.g. HTML/SVG) use a folder: one description `.md` plus one file per `<model>（<level>）<condition>.html`.
 
-測試報告請對齊同一模型資料夾內既有檔案的結構。回應原文是**證據**：原樣貼上，錯誤也保留；評論只放在審計或註記段。產物型測試（如 HTML／SVG）以資料夾呈現：一份說明 md，加上每個「模型（等級）條件」一個檔案。
+測試報告請對齊同一模型資料夾內既有檔案的結構。第二行為中繼資料：模型、思考等級、載入的元規則語言版本與 `[Ver x.y.z]`、測試日期、執行時間、可選的思考摘要，不知道的欄位省略而非推估。回應原文是**證據**：原樣貼上，錯誤也保留；評論只放在審計或註記段。產物型測試（如 HTML／SVG）以資料夾呈現：一份說明 md，加上每個「模型（等級）條件」一個檔案。
 
 ### Encoding / 編碼
 
